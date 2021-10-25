@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
-<div class="navbar navbar-inverse">
-        <div class="container-fluid">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <div class="navbar navbar-inverse " style="Border-radius:0 ;">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
 
@@ -19,20 +20,9 @@
                     <div class="navbar-collapse collapse" id="mobile_menu">
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#">Home</a></li>
-                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">About One</a></li>
-                                    <li><a href="#">About Two</a></li>
-                                    <li><a href="#">About Three</a></li>
-                                    <li><a href="#">About Four</a></li>
-                                    <li><a href="#">About Five</a></li>
-                                    <li><a href="#">About Six</a></li>
-                                </ul>
-                            </li>
                             <li><a href="#">Welcome</a></li>
                             <li><a href="#">Services</a></li>
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Contact Us</a></li>
+
                         </ul>
                         <ul class="nav navbar-nav">
                             <li>
@@ -61,10 +51,12 @@
             </div>
         </div>
     </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>

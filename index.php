@@ -63,25 +63,25 @@
                 </div>
             </div>
         </div>
-        <div class="container mt-3">
+        <div class="container mt-4">
             <div class="row">
                 <div class="col-md-3 col-sm-12 col-xs-12 mb-3 text-center  ">
                     <ul class="list-group shadow-sm list-responsive  ">
                         <li class="list-group-item  bg-info  disabled" aria-current="true">Danh sách</li>
                         <li class="list-group-item cur-point active subject">Môn học</li>
                         <li class="list-group-item cur-point info-person">Thông tin</li>
-                        <li class="list-group-item cur-point ">A fourth item</li>
+                        <li class="list-group-item cur-point document ">Tài liệu</li>
                         <li class="list-group-item cur-point">And a fifth one</li>
                     </ul>
                     <div class="  btn-group-responsive">
                         <p class="btn btn-primary btn_smart   active subject" aria-current="page">Môn học</p>
-                        <p class="btn btn-primary btn_smart  info-person">Thông báo</p>
-                        <p class="btn btn-primary btn_smart ">Link</p>
+                        <p class="btn btn-primary btn_smart  info-person">Thông tin</p>
+                        <p class="btn btn-primary btn_smart document ">Tài liệu </p>
                         <p class="btn btn-primary btn_smart ">Link</p>
                     </div>
                 </div>
                 <div class="col-md-8 col-sm-12  ">
-                    <div class="row" id="tab-dieuhuong">
+                    <div class="row " id="tab-dieuhuong">
                         <div class="col-md-4 col-sm-6  mb-3  ">
                             <div class="card shadow-sm  ">
                                 <img src="assets/images/logo_TLU.png" class="card-img-top xs-img" alt="...">
@@ -113,11 +113,12 @@
                             </div>
                         </div>
 
+
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid mt-4 mb-1 ">
+        <div class="container-fluid  mb-1 " style="margin-top: 17%;">
             <div class="row">
                 <div class="col-md-12">
                     <footer class="bg-light text-center text-white">

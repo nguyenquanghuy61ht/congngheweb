@@ -20,10 +20,10 @@ $(document).ready(function (e) {
           });
         })();
       });
-      $(".tab-2").on("click", function (e) {
+      $(".document").on("click", function (e) {
         (function worker() {
           $.ajax({
-            url: "person_Info.php",
+            url: "document.php",
             success: function (data) {
               $("#tab-dieuhuong").html(data);
             },

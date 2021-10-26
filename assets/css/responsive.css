@@ -1,27 +1,38 @@
 /*reponsive header*/
-        @media screen and (min-width: 1024px) {
-            .nav-logout1 {
-                display: none;
-            }
-        }
+@media screen and (min-width: 1024px) {
+  .nav-logout1 {
+    display: none;
+  }
+  .btn-group-responsive {
+    display: none;
+  }
+}
 
-        @media screen and (min-width: 740px) and (max-width: 1023px) {
-            .drop-logout {
-                display: none;
-            }
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+  .drop-logout {
+    display: none;
+  }
 
-            .nav-logout1 {
-                display: block;
-            }
-        }
+  .nav-logout1 {
+    display: block;
+  }
+  .btn-group-responsive {
+    display: none;
+  }
+}
 
-        @media screen and (max-width:740px) {
-            .drop-logout {
-                display: none;
-            }
+@media screen and (max-width: 740px) {
+  .drop-logout {
+    display: none;
+  }
 
-            .nav-logout1 {
-                display: block;
-            }
-        }
-  
+  .nav-logout1 {
+    display: block;
+  }
+ .list-responsive {
+    display: none;
+  }
+ .btn-group-responsive {
+    display: block;
+  }
+}

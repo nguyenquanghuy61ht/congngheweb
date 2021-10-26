@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 
@@ -65,19 +65,35 @@
         </div>
         <div class="container mt-3">
             <div class="row">
-                <div class="col-md-3  ">
-                    <ul class="list-group ">
+                <div class="col-md-3 col-sm-12 col-xs-12 mb-3 text-center  ">
+                    <ul class="list-group shadow-sm list-responsive  ">
                         <li class="list-group-item " aria-current="true">Danh sách</li>
                         <li class="list-group-item active">Môn học</li>
                         <li class="list-group-item">A third item</li>
                         <li class="list-group-item">A fourth item</li>
                         <li class="list-group-item">And a fifth one</li>
                     </ul>
+                    <div class="btn-group  btn-group-responsive">
+                        <a href="#" class="btn btn-primary active" aria-current="page">Môn học</a>
+                        <a href="#" class="btn btn-primary">Thông báo</a>
+                        <a href="#" class="btn btn-primary">Link</a>
+                        <a href="#" class="btn btn-primary">Link</a>
+                    </div>
                 </div>
-                <div class="col-md-8 ">
+                <div class="col-md-8 col-sm-12  ">
                     <div class="row">
-                        <div class="col-md-4 mb-3  ">
-                            <div class="card shadow-sm " style="width: 15rem;">
+                        <div class="col-md-4 col-sm-6  mb-3  ">
+                            <div class="card shadow-sm  ">
+                                <img src="assets/images/logo_TLU.png" class="card-img-top xs-img" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6  mb-3 ">
+                            <div class="card shadow-sm ">
                                 <img src="assets/images/logo_TLU.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
@@ -86,18 +102,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 mb-3 ">
-                            <div class="card shadow-sm" style="width: 15rem;">
-                                <img src="assets/images/logo_TLU.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-3 ">
-                            <div class="card shadow-sm" style="width: 15rem;">
+                        <div class="col-md-4 col-sm-6  mb-3 ">
+                            <div class="card shadow-sm ">
                                 <img src="assets/images/logo_TLU.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
@@ -131,7 +137,7 @@
                                 <!-- Instagram -->
                                 <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
 
-                              
+
                             </section>
                             <!-- Section: Social media -->
                         </div>

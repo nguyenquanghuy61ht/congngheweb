@@ -29,7 +29,7 @@
                             <div class="collapse navbar-collapse" id="navbarScroll">
                                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                        <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-house-user"></i></a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Link</a>
@@ -67,21 +67,21 @@
             <div class="row">
                 <div class="col-md-3 col-sm-12 col-xs-12 mb-3 text-center  ">
                     <ul class="list-group shadow-sm list-responsive  ">
-                        <li class="list-group-item " aria-current="true">Danh sách</li>
-                        <li class="list-group-item active">Môn học</li>
-                        <li class="list-group-item">A third item</li>
-                        <li class="list-group-item">A fourth item</li>
-                        <li class="list-group-item">And a fifth one</li>
+                        <li class="list-group-item  bg-info  disabled" aria-current="true">Danh sách</li>
+                        <li class="list-group-item cur-point active subject">Môn học</li>
+                        <li class="list-group-item cur-point info-person">Thông tin</li>
+                        <li class="list-group-item cur-point ">A fourth item</li>
+                        <li class="list-group-item cur-point">And a fifth one</li>
                     </ul>
-                    <div class="btn-group  btn-group-responsive">
-                        <a href="#" class="btn btn-primary active" aria-current="page">Môn học</a>
-                        <a href="#" class="btn btn-primary">Thông báo</a>
-                        <a href="#" class="btn btn-primary">Link</a>
-                        <a href="#" class="btn btn-primary">Link</a>
+                    <div class="  btn-group-responsive">
+                        <p class="btn btn-primary btn_smart   active subject" aria-current="page">Môn học</p>
+                        <p class="btn btn-primary btn_smart  info-person">Thông báo</p>
+                        <p class="btn btn-primary btn_smart ">Link</p>
+                        <p class="btn btn-primary btn_smart ">Link</p>
                     </div>
                 </div>
                 <div class="col-md-8 col-sm-12  ">
-                    <div class="row">
+                    <div class="row" id="tab-dieuhuong">
                         <div class="col-md-4 col-sm-6  mb-3  ">
                             <div class="card shadow-sm  ">
                                 <img src="assets/images/logo_TLU.png" class="card-img-top xs-img" alt="...">
@@ -117,7 +117,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid mt-4 mb-1">
+        <div class="container-fluid mt-4 mb-1 ">
             <div class="row">
                 <div class="col-md-12">
                     <footer class="bg-light text-center text-white">
@@ -155,7 +155,12 @@
         </div>
 
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/myscript.js"></script>
+    <script type="text/javascript" src="assets/js/home.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

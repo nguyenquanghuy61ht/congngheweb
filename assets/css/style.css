@@ -8,3 +8,4 @@ body {
 }
 .logo-img{width: 70px;height: 100%;}
 .bgroud-orange{ background: linear-gradient(to bottom, #0066ff 0%, #3399ff 100%);}
+.cur-point{cursor: pointer ;}

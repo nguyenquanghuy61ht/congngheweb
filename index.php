@@ -121,7 +121,7 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid  mb-1 " style="margin-top: 10%;">
+        <div class="container-fluid  mb-1 " style="margin-top: 17%;">
             <div class="row">
                 <div class="col-md-12">
                     <footer class="bg-light text-center text-white">

@@ -1,5 +1,5 @@
 <div class="col-md-3 col-sm-3 border-end">
-    <img src="https://png.pngtree.com/png-vector/20190704/ourlarge/pngtree-businessman-user-avatar-free-vector-png-image_1538405.jpg" class="img-thumbnail" alt="user">
+    <img src="https://png.pngtree.com/png-vector/20190704/ourlarge/pngtree-businessman-user-avatar-free-vector-png-image_1538405.jpg" class="img-thumbnail  img-infomation" alt="user">
 </div>
 <div class="col-md-4 col-sm-4 mt-2 border-end">
     <p class="text-primary">Nguyễn Văn Phúc</p>

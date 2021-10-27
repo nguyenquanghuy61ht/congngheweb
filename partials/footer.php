@@ -1,4 +1,4 @@
-<footer class="new_footer_area bg_color">
+<footer class="new_footer_area bg_color" style="margin-top: 17%;">
     <div class="new_footer_top">
         <div class="container">
             <div class="row">

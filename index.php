@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Học Mãi</title>
 </head>
 
 <body>
@@ -35,12 +35,12 @@
                                         <a class="nav-link" href="#">Link</a>
                                     </li>
                                     <li class="nav-item  nav-logout1">
-                                        <a class="nav-link" href="#" tabindex="-1">Sign out</a>
+                                        <a class="nav-link" href="#" tabindex="-1">Đăng xuất</a>
                                     </li>
                                 </ul>
                                 <form class="d-flex ">
-                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                    <button class="btn btn-outline-success  " type="submit" style="margin-right: 19px; background-color:orange;">Search</button>
+                                    <input class="form-control me-2 rounded-pill" type="search" placeholder="Tài liệu, môn học,..." aria-label="Search">
+                                    <button class="btn btn-outline-success rounded-pill  " type="submit" style="margin-right: 19px; background-color:orange;">Tìm</button>
 
                                 </form>
                                 <div class="dropdown text-end mr-4 drop-logout">
@@ -54,7 +54,7 @@
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
                                     </ul>
                                 </div>
                             </div>

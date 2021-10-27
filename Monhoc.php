@@ -22,7 +22,7 @@
 </div>
 <div class="col-md-4 col-sm-6  mb-3 ">
     <div class="card shadow-sm ">
-        <img src="https://cinnamon.is/en/wp-content/themes/Cinnamon-2017-en/images/ai.png" style="width: 80%;padding-top:38px" class="card-img-top card-img-top m-auto " alt="...">
+        <img src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png" style="width: 80%;padding-top:38px" class="card-img-top card-img-top m-auto " alt="...">
         <div class="card-body">
             <h5 class="card-title">Trí tuệ nhân tạo</h5>
             <p class="card-text m-0"><b>Bộ môn:</b> Hệ thống thông tin.</p>

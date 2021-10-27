@@ -7,8 +7,9 @@ body {
     background-color: #fff;
 }
 .logo-img{width: 70px;height: 100%;}
-.bgroud-orange{ background: linear-gradient(to bottom, #0066ff 0%, #3399ff 100%);}
+.bgroud-orange{ background: linear-gradient(to bottom, #0675AB 0%, #BCDEE2 100%);}
 .cur-point{cursor: pointer ;}
+.img-infomation{width: 150px;}
 .card-trantion:hover .card-img-top {
 
 transition-duration: .3s;
@@ -16,4 +17,4 @@ transition-property: transform;
 transition-timing-function: ease-out;
 transform: translateY(-8px);
 }
-.card-trantion:hover{box-shadow: 2px 2px 2px 2px rgb(231, 231, 231);}
+.card-trantion:hover{box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);}

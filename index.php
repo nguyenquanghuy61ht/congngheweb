@@ -13,12 +13,12 @@
 </head>
 
 <body>
-    <div class="warpper">
+    <div class="warpper" style="background-color: #BADDE1;">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 p-0">
                     <nav class="navbar navbar-expand-lg navbar-light bgroud-orange fw-bolder fs-6 ">
-                        <div class="container ">
+                        <div class="container  ">
 
                             <a class="navbar-brand " href="#">
                                 <img src="http://thptthanglonghp.edu.vn/uploads/images/logo_Thang_Long.jpg" alt="logo" class="img-fluid logo-img rounded-circle">
@@ -29,7 +29,7 @@
                             <div class="collapse navbar-collapse" id="navbarScroll">
                                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-house-user"></i> Trang chủ</a>
+                                        <a class="nav-link " aria-current="page" href="#"> Trang chủ</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Về chúng tôi</a>
@@ -37,9 +37,7 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Liên hê</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Link</a>
-                                    </li>
+
                                     <li class="nav-item  nav-logout1">
                                         <a class="nav-link" href="#" tabindex="-1">Đăng xuất</a>
                                     </li>
@@ -53,7 +51,7 @@
                                     <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                                         <img src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png" alt="mdo" width="32" height="32" class="rounded-circle">
                                     </a>
-                                    <ul class="dropdown-menu  " style=" min-width: 8rem;" aria-labelledby="dropdownUser1">
+                                    <ul class="dropdown-menu  " style=" min-width: 6rem;" aria-labelledby="dropdownUser1">
                                         <li><a class="dropdown-item" href="#">Trang cá nhân</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
@@ -67,9 +65,9 @@
                 </div>
             </div>
         </div>
-        <div class="container mt-4">
+        <div class="container mt-5">
             <div class="row">
-                <div class="col-md-3 col-sm-12 col-xs-12 mb-3 text-center  ">
+                <div class="col-md-2 col-sm-12 col-xs-12 mb-3 text-center  ">
                     <ul class="list-group shadow-sm list-responsive  ">
                         <li class="list-group-item  bg-info  disabled" aria-current="true">Danh sách</li>
                         <li class="list-group-item cur-point active subject">Môn học</li>
@@ -84,22 +82,22 @@
                         <p class="btn btn-primary btn_smart ">Link</p>
                     </div>
                 </div>
-                <div class="col-md-8 col-sm-12  ">
+                <div class="col-md-10 col-sm-12  ">
                     <div class="row " id="tab-dieuhuong">
-                        <div class="col-md-4 col-sm-6  mb-3  ">
+                        <div class="col-md-3 col-sm-6  mb-3  ">
                             <div class="card  card-trantion  ">
-                                <img src="https://phanmemcntt.com/wp-content/uploads/2020/08/download-dev-c-5.9.2-moi-nhat.png" style="width: 80%;" class="card-img-top  m-auto mt-3" alt="...">
+                                <img src="https://phanmemcntt.com/wp-content/uploads/2020/08/download-dev-c-5.9.2-moi-nhat.png" class="card-img-top  m-auto mt-3 " alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Ngôn ngữ lập trình</h5>
-                                    <p class="card-text  m-0"><b>Bộ môn:</b> kỹ thuật phần mền. </p>
+                                    <p class="card-text  m-0"><b>Bộ môn:</b> hệ thống thông tin. </p>
                                     <p class="card-text">Trường đại học thủy lợi </p>
                                     <a href="page-subject/NGLT.php" class="btn btn-primary">Vào học</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6  mb-3 ">
+                        <div class="col-md-3 col-sm-6  mb-3 ">
                             <div class="card  card-trantion">
-                                <img src="https://v1study.com/public/images/article/1547524099_php-laravel.png" style="width: 80%;" class="card-img-top m-auto mt-3" alt="...">
+                                <img src="https://v1study.com/public/images/article/1547524099_php-laravel.png" class="card-img-top m-auto mt-3" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Công nghệ web</h5>
                                     <p class="card-text  m-0"><b>Bộ môn:</b> hệ thống thông tin.</p>
@@ -108,9 +106,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-6  mb-3 ">
+                        <div class="col-md-3 col-sm-6  mb-3 ">
                             <div class="card  card-trantion">
-                                <img src="https://cinnamon.is/en/wp-content/themes/Cinnamon-2017-en/images/ai.png" style="width: 80%;padding-top:38px" class="card-img-top card-img-top m-auto " alt="...">
+                                <img src="https://cinnamon.is/en/wp-content/themes/Cinnamon-2017-en/images/ai.png" style="padding-top:38px" class="card-img-top card-img-top m-auto   " alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Trí tuệ nhân tạo</h5>
+                                    <p class="card-text m-0"><b>Bộ môn:</b> Hệ thống thông tin.</p>
+                                    <p class="card-text">Trường đại học thủy lợi </p>
+                                    <a href="page-subject/Ai.php" class="btn btn-primary">Vào học</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6  mb-3 ">
+                            <div class="card  card-trantion">
+                                <img src="https://cinnamon.is/en/wp-content/themes/Cinnamon-2017-en/images/ai.png" style="padding-top:38px" class="card-img-top card-img-top m-auto" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Trí tuệ nhân tạo</h5>
                                     <p class="card-text m-0"><b>Bộ môn:</b> Hệ thống thông tin.</p>
@@ -194,7 +203,7 @@
                                     <div class="col-lg-6 col-sm-7">
                                         <p class="mb-0 f_400">©2021 Tất cả quyền được bảo lưu </p>
                                     </div>
-                            
+
                                 </div>
                             </div>
                         </div>

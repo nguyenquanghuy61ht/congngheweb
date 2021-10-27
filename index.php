@@ -134,11 +134,11 @@
                                 <div class="row">
                                     <div class="col-lg-3 col-md-6">
                                         <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
-                                            <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
-                                            <p>Don’t miss any updates of our new templates and extensions.!</p>
+                                            <h3 class="f-title f_600 t_color f_size_18">Liên hệ</h3>
+                                            <p>Điền email phía dưới để nhận thông báo khi có môn học mới !</p>
                                             <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
                                                 <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
-                                                <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                                                <button class="btn btn_get btn_get_two" type="submit">Đăng ký</button>
                                                 <p class="mchimp-errmessage" style="display: none;"></p>
                                                 <p class="mchimp-sucmessage" style="display: none;"></p>
                                             </form>
@@ -146,33 +146,33 @@
                                     </div>
                                     <div class="col-lg-3 col-md-6">
                                         <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
-                                            <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                                            <h3 class="f-title f_600 t_color f_size_18">Tải xuống</h3>
                                             <ul class="list-unstyled f_list">
-                                                <li><a href="#">Company</a></li>
-                                                <li><a href="#">Android App</a></li>
-                                                <li><a href="#">ios App</a></li>
-                                                <li><a href="#">Desktop</a></li>
-                                                <li><a href="#">Projects</a></li>
-                                                <li><a href="#">My tasks</a></li>
+                                                <li><a href="#">Công ty</a></li>
+                                                <li><a href="#">Ứng dụng Android</a></li>
+                                                <li><a href="#">Ứng dụng IOS</a></li>
+                                                <li><a href="#">Máy tính</a></li>
+                                                <li><a href="#">Dự án</a></li>
+                                                <li><a href="#">Nhiệm vụ</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6">
                                         <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
-                                            <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                                            <h3 class="f-title f_600 t_color f_size_18">Trợ giúp</h3>
                                             <ul class="list-unstyled f_list">
-                                                <li><a href="#">FAQ</a></li>
-                                                <li><a href="#">Term &amp; conditions</a></li>
-                                                <li><a href="#">Reporting</a></li>
-                                                <li><a href="#">Documentation</a></li>
-                                                <li><a href="#">Support Policy</a></li>
-                                                <li><a href="#">Privacy</a></li>
+                                                <li><a href="#">Các câu hỏi thường gặp</a></li>
+                                                <li><a href="#">Chính sách và bảo mật</a></li>
+                                                <li><a href="#">Báo cáo</a></li>
+                                                <li><a href="#">Tài Liệu</a></li>
+                                                <li><a href="#">Chính sách hỗ trợ</a></li>
+                                                <li><a href="#">Quyền riêng tư</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="col-lg-3 col-md-6">
                                         <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-                                            <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                                            <h3 class="f-title f_600 t_color f_size_18">Giải pháp nhóm</h3>
                                             <div class="f_social_icon">
                                                 <a href="#" class="fab fa-facebook"></a>
                                                 <a href="#" class="fab fa-twitter"></a>
@@ -192,11 +192,9 @@
                             <div class="container">
                                 <div class="row align-items-center">
                                     <div class="col-lg-6 col-sm-7">
-                                        <p class="mb-0 f_400">© cakecounter Inc.. 2019 All rights reserved.</p>
+                                        <p class="mb-0 f_400">©2021 Tất cả quyền được bảo lưu </p>
                                     </div>
-                                    <div class="col-lg-6 col-sm-5 text-right">
-                                        <p>Made with <i class="icon_heart"></i> in <a href="http://cakecounter.com" target="_blank">CakeCounter</a></p>
-                                    </div>
+                            
                                 </div>
                             </div>
                         </div>

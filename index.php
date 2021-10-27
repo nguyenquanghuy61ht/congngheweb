@@ -134,6 +134,7 @@
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
         <div class="container-fluid  mb-1 " style="margin-top: 17%;">
             <div class="row">
                 <div class="col-md-12">
@@ -211,6 +212,9 @@
                 </div>
             </div>
         </div>
+=======
+        <?php include"./partials/footer.php" ?>
+>>>>>>> f3f699416845c11e1ad2bdd0dc28450afeb80ced
 
     </div>
 

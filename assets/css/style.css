@@ -8,7 +8,9 @@ body {
 }
 .logo-img{width: 70px;height: 100%;}
 .bgroud-orange{ background: linear-gradient(to bottom, #0675AB 0%, #BCDEE2 100%);}
+.warpper{ background: linear-gradient(to bottom, #ffffff 3%, #33ccff 89%);}
 .cur-point{cursor: pointer ;}
+
 .img-infomation{width: 150px;}
 .card-trantion:hover .card-img-top {
 

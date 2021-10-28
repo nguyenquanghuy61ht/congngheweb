@@ -7,21 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/thu.css">
     <title>AI</title>
 </head>
 
 <body>
     <div class="wrapper ">
-        <div class="container shadow-sm bg-light pt-3">
+        <div class="container shadow-sm   pt-3">
             <div class="row ">
                 <div class="col-md-3">
-                    <h5 style="color: #8DA1AD;">Home</h5>
+                    <h5 style="color: #8DA1AD;">Nhà</h5>
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Môn học
+                                    Môn Học
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -69,9 +69,10 @@
                         <p class="m-0"><b>Giáo trình:</b></p>
                         <p class="m-0" style="text-indent: 20px;">C++ toàn tập (Phạm Văn Tùng dịch), NXB Khoa học tự nhiên và công nghệ, 2013</p>
                         <p class="m-0"><b> Tài liệu tham khảo:</b></p>
-                        <p class="m-0" style="text-indent: 20px;">1, W. Savitch, Absolute C++, Addison Wesley, 2003 (tải về)</p>
-                        <p class="m-0" style="text-indent: 20px;"> 2, Phạm Văn Ất, Lê Trường Thông, Giáo trình C++ và Lập trình hướng đối tượng, NXB Bách Khoa Hà Nội, 2018</p>
-                        <p class="m-0" style="text-indent: 20px;"> 3, A. Ford and T. Teorey, Practical Debugging in C++, Prentice Hall, 2002</p>
+                        <p class="m-0" style="text-indent: 20px;">1- Đinh Mạnh Tường, Trí tuệ nhân tạo, NXB Khoa học Kỹ thuật, 2002</p>
+                        <p class="m-0" style="text-indent: 20px;"> 2- Nguyễn Thanh Thuỷ, Trí tuệ nhân tạo: Các phương pháp giải quyết vấn đề và kĩ thuật xử lý
+                                tri thức, NXB Giáo dục, 1996</p>
+                        <p class="m-0" style="text-indent: 20px;"> 1. Stuart Russell and Peter Norvig, Artificial Intelligence: A Modern Approach, 2nd edition;</p>
 
 
                     </div><br>

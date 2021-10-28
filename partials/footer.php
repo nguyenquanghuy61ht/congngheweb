@@ -16,20 +16,20 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
-                        <h3 class="f-title f_600 t_color f_size_18">Tải xuống</h3>
+                        <h3 class="f-title f_600 t_color f_size_18">Tải Xuống</h3>
                         <ul class="list-unstyled f_list">
-                            <li><a href="#">Công ty</a></li>
-                            <li><a href="#">Ứng dụng Android</a></li>
-                            <li><a href="#">Ứng dụng IOS</a></li>
-                            <li><a href="#">Máy tính</a></li>
+                            <li><a href="#">Công Ty</a></li>
+                            <li><a href="#">Ứng Dụng Android</a></li>
+                            <li><a href="#">Ứng Dụng IOS</a></li>
+                            <li><a href="#">Máy Tính</a></li>
                             <li><a href="#">Dự án</a></li>
-                            <li><a href="#">Nhiệm vụ</a></li>
+                            <li><a href="#">Nhiệm Vụ</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
-                        <h3 class="f-title f_600 t_color f_size_18">Trợ giúp</h3>
+                        <h3 class="f-title f_600 t_color f_size_18">Trợ Giúp</h3>
                         <ul class="list-unstyled f_list">
                             <li><a href="#">Các câu hỏi thường gặp</a></li>
                             <li><a href="#">Chính sách và bảo mật</a></li>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-                        <h3 class="f-title f_600 t_color f_size_18">Giải pháp nhóm</h3>
+                        <h3 class="f-title f_600 t_color f_size_18">Giải Pháp Nhóm</h3>
                         <div class="f_social_icon">
                             <a href="#" class="fab fa-facebook"></a>
                             <a href="#" class="fab fa-twitter"></a>

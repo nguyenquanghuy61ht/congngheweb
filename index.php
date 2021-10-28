@@ -9,11 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Học Mãi</title>
+    <title>Học Mãi Mãi </title>
 </head>
 
 <body>
-    <div class="warpper" style="background-color: #BADDE1;">
+    <div class="warpper" >
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 p-0">
@@ -32,14 +32,14 @@
                                         <a class="nav-link " aria-current="page" href="#"> Trang chủ</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Về chúng tôi</a>
+                                        <a class="nav-link" href="#">Về Chúng Tôi</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Liên hê</a>
+                                        <a class="nav-link" href="#">Liên Hê</a>
                                     </li>
 
                                     <li class="nav-item  nav-logout1">
-                                        <a class="nav-link" href="#" tabindex="-1">Đăng xuất</a>
+                                        <a class="nav-link" href="#" tabindex="-1">Đăng Xuất</a>
                                     </li>
                                 </ul>
                                 <form class="d-flex ">
@@ -49,10 +49,10 @@
                                 </form>
                                 <div class="dropdown text-end mr-4 drop-logout">
                                     <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                                        <img src="https://pdp.edu.vn/wp-content/uploads/2021/01/hinh-anh-girl-xinh-toc-ngan-de-thuong.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
                                     </a>
                                     <ul class="dropdown-menu  " style=" min-width: 6rem;" aria-labelledby="dropdownUser1">
-                                        <li><a class="dropdown-item" href="#">Trang cá nhân</a></li>
+                                        <li><a class="dropdown-item" href="#">Trang Cá Nhân</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
@@ -119,9 +119,9 @@
                         </div>
                         <div class="col-md-3 col-sm-6  mb-3 ">
                             <div class="card  card-trantion">
-                                <img src="https://cinnamon.is/en/wp-content/themes/Cinnamon-2017-en/images/ai.png" style="padding-top:38px" class="card-img-top card-img-top m-auto" alt="...">
+                                <img src="https://cdn.tgdd.vn/hoi-dap/804907/he-dieu-hanh-la-gi%20(3).jpg" style="padding-top:90px" class="card-img-top card-img-top m-auto" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Trí tuệ nhân tạo</h5>
+                                    <h5 class="card-title">Hệ Điều Hành </h5>
                                     <p class="card-text m-0"><b>Bộ môn:</b> Hệ thống thông tin.</p>
                                     <p class="card-text">Trường đại học thủy lợi </p>
                                     <a href="page-subject/Ai.php" class="btn btn-primary">Vào học</a>

@@ -69,8 +69,8 @@
                         <p class="m-0"><b>Giáo trình:</b></p>
                         <p class="m-0" style="text-indent: 20px;">C++ toàn tập (Phạm Văn Tùng dịch), NXB Khoa học tự nhiên và công nghệ, 2013</p>
                         <p class="m-0"><b> Tài liệu tham khảo:</b></p>
-                        <p class="m-0" style="text-indent: 20px;">1, W. Savitch, Absolute C++, Addison Wesley, 2003 (tải về)</p>
-                        <p class="m-0" style="text-indent: 20px;"> 2, Phạm Văn Ất, Lê Trường Thông, Giáo trình C++ và Lập trình hướng đối tượng, NXB Bách Khoa Hà Nội, 2018</p>
+                        <p class="m-0" style="text-indent: 20px;">https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxhZ3Vjb245MTB8Z3g6NTkxMzljZDJlNWNlNTIwOA</p>
+                        <p class="m-0" style="text-indent: 20px;"> https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxhZ3Vjb245MTB8Z3g6NDkzZWUzNWI2YTkyMDUxYg</p>
                         <p class="m-0" style="text-indent: 20px;"> 3, A. Ford and T. Teorey, Practical Debugging in C++, Prentice Hall, 2002</p>
 
 

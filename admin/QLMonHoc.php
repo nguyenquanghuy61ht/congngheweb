@@ -1,44 +1,90 @@
-<div class="col-md-3 col-sm-6  mb-3  ">
-             <div class="card  card-trantion  ">
-                 <img src="https://phanmemcntt.com/wp-content/uploads/2020/08/download-dev-c-5.9.2-moi-nhat.png"  class="card-img-top  m-auto mt-3 " alt="...">
-                 <div class="card-body">
-                     <h5 class="card-title">Ngôn ngữ lập trình</h5>
-                     <p class="card-text  m-0"><b>Bộ môn:</b> hệ thống thông tin. </p>
-                     <p class="card-text">Trường đại học thủy lợi </p>
-                     <a href="page-subject/NGLT.php" class="btn btn-primary">Vào học</a>
-                 </div>
-             </div>
-         </div>
-         <div class="col-md-3 col-sm-6  mb-3 ">
-             <div class="card  card-trantion">
-                 <img src="https://v1study.com/public/images/article/1547524099_php-laravel.png"  class="card-img-top m-auto mt-3" alt="...">
-                 <div class="card-body">
-                     <h5 class="card-title">Công nghệ web</h5>
-                     <p class="card-text  m-0"><b>Bộ môn:</b> hệ thống thông tin.</p>
-                     <p class="card-text">Trường đại học thủy lợi </p>
-                     <a href="page-subject/LT_php.php" class="btn btn-primary">vào học</a>
-                 </div>
-             </div>
-         </div>
-         <div class="col-md-3 col-sm-6  mb-3 ">
-             <div class="card  card-trantion">
-                 <img src="https://cinnamon.is/en/wp-content/themes/Cinnamon-2017-en/images/ai.png" style="padding-top:38px" class="card-img-top card-img-top m-auto   " alt="...">
-                 <div class="card-body">
-                     <h5 class="card-title">Trí tuệ nhân tạo</h5>
-                     <p class="card-text m-0"><b>Bộ môn:</b> Hệ thống thông tin.</p>
-                     <p class="card-text">Trường đại học thủy lợi </p>
-                     <a href="page-subject/Ai.php" class="btn btn-primary">Vào học</a>
-                 </div>
-             </div>
-         </div>
-         <div class="col-md-3 col-sm-6  mb-3 ">
-             <div class="card  card-trantion">
-                 <img src="https://cinnamon.is/en/wp-content/themes/Cinnamon-2017-en/images/ai.png" style="padding-top:38px" class="card-img-top card-img-top m-auto" alt="...">
-                 <div class="card-body">
-                     <h5 class="card-title">Trí tuệ nhân tạo</h5>
-                     <p class="card-text m-0"><b>Bộ môn:</b> Hệ thống thông tin.</p>
-                     <p class="card-text">Trường đại học thủy lợi </p>
-                     <a href="page-subject/Ai.php" class="btn btn-primary">Vào học</a>
-                 </div>
-             </div>
-         </div>
+<div class="col-md-6">
+    <h5 class="text-success">Tải file điểm</h5>
+    <div class="input-group mb-5 mt-1">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Upload</span>
+        </div>
+        <div class="custom-file">
+            <input type="file" class="custom-file-input" id="inputGroupFile01">
+            <label class="custom-file-label" for="inputGroupFile01">Chọn file</label>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-12">
+    <h5 class="text-success">Quản lý môn học</h5>
+    <table class="table table-bordered boder-primary mt-3">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Ảnh</th>
+                <th scope="col">Tên môn học</th>
+                <th scope="col">Bộ môn</th>
+                <th scope="col">Thời lượng</th>
+                <th scope="col">Giáo trình</th>
+                <th scope="col">sửa</th>
+                <th scope="col">xóa</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>1</td>
+                <td>img</td>
+                <td>Công nghệ web</td>
+                <td>Hệ thống thông tin</td>
+                <td>chưa có</td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td>1</td>
+                <td>img</td>
+                <td>Công nghệ web</td>
+                <td>Hệ thống thông tin</td>
+                <td>chưa có</td>
+                <td></td>
+                <td></td>
+
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+<div class="col-md-12">
+    <h5 class="text-success mt-5">Quản lý tài liệu</h5>
+</div>
+<div class="col-md-12">
+    <button type="button" class="btn btn-primary mt-3 ">Thêm tài liệu</button>
+</div>
+
+</div>
+<div class="col-md-12">
+    <table class="table table-bordered boder-primary mt-3">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">STT</th>
+                <th scope="col">Ảnh</th>
+                <th scope="col">Tên tài liệu</th>
+                <th scope="col">sửa</th>
+                <th scope="col">xóa</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>1</td>
+                <td>img</td>
+                <td>Công nghệ web</td>
+                <td></td>
+                <td></td>
+
+            </tr>
+
+        </tbody>
+    </table>
+</div>

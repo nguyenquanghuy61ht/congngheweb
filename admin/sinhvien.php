@@ -1,45 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
-
-<div class="container">
-  <h2>Striped Rows</h2>
-  <p>The .table-striped class adds zebra-stripes to a table:</p>            
-  <table class="table table-striped">
-    <thead>
+  <h5 class="text-success">Quản lý Sinh viên</h5>
+  <table class="table table-bordered mt-3 ">
+    <thead class="thead-dark ">
       <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Email</th>
+        <th scope="col">STT</th>
+        <th scope="col">Tên sinh viên</th>
+        <th scope="col">Lớp</th>
+        <th scope="col">Số điện thoại </th>
+        <th scope="col">email</th>
+        <th scope="col">Ngày đăng ký</th>
+        <th scope="col">Trạng thái</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td>John</td>
-        <td>Doe</td>
-        <td>john@example.com</td>
+        <th scope="row">1</th>
+        <td>Nguyễn Quang Huy</td>
+        <td>61HT</td>
+        <td>098983982</td>
+        <td>huy23@gmail.com</td>
+        <td>15-4-2020</td>
+        <td>1</td>
+
       </tr>
-      <tr>
-        <td>Mary</td>
-        <td>Moe</td>
-        <td>mary@example.com</td>
-      </tr>
-      <tr>
-        <td>July</td>
-        <td>Dooley</td>
-        <td>july@example.com</td>
-      </tr>
+
+
     </tbody>
   </table>
-</div>
-
-</body>
-</html>

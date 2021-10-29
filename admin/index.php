@@ -133,15 +133,15 @@
                                         <span class="quantity">3</span>
                                         <div class="notifi-dropdown js-dropdown">
                                             <div class="notifi__title">
-                                                <p>You have 3 Notifications</p>
+                                                <p>Nộp bài đi các em ai </p>
                                             </div>
                                             <div class="notifi__item">
                                                 <div class="bg-c1 img-cir img-40">
                                                     <i class="zmdi zmdi-email-open"></i>
                                                 </div>
                                                 <div class="content">
-                                                    <p>You got a email notification</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
+                                                    <p>em xin phép cho em xin nghỉ đi tiêm vacxin</p>
+                                                    <span class="date">April 12, 2021 06:50</span>
                                                 </div>
                                             </div>
                                             <div class="notifi__item">
@@ -149,8 +149,8 @@
                                                     <i class="zmdi zmdi-account-box"></i>
                                                 </div>
                                                 <div class="content">
-                                                    <p>Your account has been blocked</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
+                                                    <p>cho em xin nghỉ em bị đau bụng đia ỉa ạ </p>
+                                                    <span class="date">April 12, 20121 06:50</span>
                                                 </div>
                                             </div>
                                             <div class="notifi__item">
@@ -158,12 +158,12 @@
                                                     <i class="zmdi zmdi-file-text"></i>
                                                 </div>
                                                 <div class="content">
-                                                    <p>You got a new file</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
+                                                    <p>cho em xin phép nghỉ nay chị họ của thằng bạn con em họ dưới quê của em cưới ạ </p>
+                                                    <span class="date">April 12, 2021 06:50</span>
                                                 </div>
                                             </div>
                                             <div class="notifi__footer">
-                                                <a href="#">All notifications</a>
+                                                <a href="#">tất cả thông báo </a>
                                             </div>
                                         </div>
                                     </div>

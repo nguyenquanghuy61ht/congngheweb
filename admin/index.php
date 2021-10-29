@@ -36,14 +36,14 @@
 </head>
 
 <body class="animsition">
-    <div class="page-wrapper">
+    <div class="page-wrapper pb-0">
         <!-- HEADER MOBILE-->
         <header class="header-mobile d-block d-lg-none">
             <div class="header-mobile__bar">
                 <div class="container-fluid">
                     <div class="header-mobile-inner">
                         <a class="logo" href="index.html">
-                            <img src="images/icon/logo.png" alt="Hocmai" />
+                            <img src="https://i.pinimg.com/736x/34/d6/f4/34d6f424bedf3dbc00ad054aec65a28b.jpg" alt="Hocmai" />
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">
@@ -172,10 +172,10 @@
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <div class="image">
-                                            <img src="images/icon/avatar-01.jpg" alt="John Doe" />
+                                            <img src="https://i.pinimg.com/736x/34/d6/f4/34d6f424bedf3dbc00ad054aec65a28b.jpg" alt="John Doe" />
                                         </div>
                                         <div class="content">
-                                            <a class="js-acc-btn" href="#">Tên giáo viên</a>
+                                            <a class="js-acc-btn" href="#">Lò Thị Huy </a>
                                         </div>
                                         <div class="account-dropdown js-dropdown">
 
@@ -202,7 +202,7 @@
             <!-- MAIN CONTENT-->
             <div class="main-content">
                 <div class="section__content section__content--p30">
-                    <div class="container-fluid">
+                    <div class="container-fluid ">
 
                         <div class="row m-t-25 wrapp_content">
                             <div class="col-sm-6 col-lg-3">
@@ -262,11 +262,75 @@
                         </div>
 
 
-                        <div class="row m-t-40">
-                            <div class="col-md-12">
-                                <div class="copyright">
-                                    <p>Copyright © 2021 Tất cả quyền được bảo lưu</p>
-                                </div>
+                        <div class="row m-t-80 ">
+                            <div class="col-md-12 p-0">
+                                <footer class="text-center text-white " style="background-color: #caced1;">
+                                    <!-- Grid container -->
+                                    <div class="container p-4">
+                                        <!-- Section: Images -->
+                                        <section class="">
+                                            <div class="row">
+                                                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                                                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                                                        <img src="https://mdbootstrap.com/img/new/fluid/city/113.jpg" class="w-100" />
+                                                        <a href="#!">
+                                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                                                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                                                        <img src="https://mdbootstrap.com/img/new/fluid/city/111.jpg" class="w-100" />
+                                                        <a href="#!">
+                                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                                                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                                                        <img src="https://mdbootstrap.com/img/new/fluid/city/112.jpg" class="w-100" />
+                                                        <a href="#!">
+                                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                                                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                                                        <img src="https://mdbootstrap.com/img/new/fluid/city/114.jpg" class="w-100" />
+                                                        <a href="#!">
+                                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                                                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                                                        <img src="https://mdbootstrap.com/img/new/fluid/city/115.jpg" class="w-100" />
+                                                        <a href="#!">
+                                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+                                                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
+                                                        <img src="https://mdbootstrap.com/img/new/fluid/city/116.jpg" class="w-100" />
+                                                        <a href="#!">
+                                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <!-- Section: Images -->
+                                    </div>
+                                    <!-- Grid container -->
+
+                                    <!-- Copyright -->
+                                    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                                        © 2020 Copyright:
+                                        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                                    </div>
+                                    <!-- Copyright -->
+                                </footer>
                             </div>
                         </div>
                     </div>

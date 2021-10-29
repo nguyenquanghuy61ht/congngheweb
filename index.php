@@ -9,7 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Học Mãi Mãi </title>
+    <title>Học Mãi</title>
+    
 </head>
 
 <body>
@@ -33,7 +34,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Về Chúng Tôi</a>
-                                    </li>
+        `                            </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Liên Hê</a>
                                     </li>
@@ -73,7 +74,7 @@
                         <li class="list-group-item cur-point active subject">Môn học</li>
                         <li class="list-group-item cur-point info-person">Thông tin</li>
                         <li class="list-group-item cur-point document ">Tài liệu</li>
-                        <li class="list-group-item cur-point">And a fifth one</li>
+                        <li class="list-group-item cur-point">And a fifth one</li>`
                     </ul>
                     <div class="  btn-group-responsive">
                         <p class="btn btn-primary btn_smart   active subject" aria-current="page">Môn học</p>
@@ -135,7 +136,7 @@
             </div>
         </div>
     
-        <?php include"./partials/footer.php" ?>
+         <?php include"./partials/footer.php" ?> 
 
 
     </div>
@@ -144,7 +145,8 @@
     <script type="text/javascript" src="assets/js/myscript.js"></script>
     <script type="text/javascript" src="assets/js/home.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+   
+  </body>
 </body>
 
 </html>

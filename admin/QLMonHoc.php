@@ -37,7 +37,6 @@
         <td>chưa có</td>
         <td></td>
         <td></td>
-
       </tr>
       <tr>
         <th scope="row">1</th>

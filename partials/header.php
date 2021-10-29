@@ -10,4 +10,3 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Học Mãi</title>
-</head>

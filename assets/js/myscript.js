@@ -5,6 +5,7 @@ $(document).ready(function (e) {
             url: "Monhoc.php",
             success: function (data) {
               $("#tab-dieuhuong").html(data);
+            
             },
           });
         })();
@@ -16,6 +17,7 @@ $(document).ready(function (e) {
             url: "person_Info.php",
             success: function (data) {
               $("#tab-dieuhuong").html(data);
+             
             },
           });
         })();
@@ -25,7 +27,9 @@ $(document).ready(function (e) {
           $.ajax({
             url: "document.php",
             success: function (data) {
+             
               $("#tab-dieuhuong").html(data);
+              
             },
           });
         })();

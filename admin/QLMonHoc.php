@@ -61,7 +61,7 @@
   <h5 class="text-success mt-5">Quản lý tài liệu</h5>
 </div>
 <div class="col-md-12">
-  <button type="button" class="btn btn-primary mt-3 ">Thêm tài liệu</button>
+  <a href="processer_admin/page_add_document.php"><button type="button" class="btn btn-primary mt-3 ">Thêm tài liệu</button></a>
 </div>
 
 </div>

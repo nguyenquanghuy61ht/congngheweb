@@ -149,7 +149,7 @@
                                                     <i class="zmdi zmdi-account-box"></i>
                                                 </div>
                                                 <div class="content">
-                                                    <p>cho em xin nghỉ em bị đau bụng đia ỉa ạ </p>
+                                                    <p>cho em xin nghỉ em bị đau bụng ạ </p>
                                                     <span class="date">April 12, 20121 06:50</span>
                                                 </div>
                                             </div>

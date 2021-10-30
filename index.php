@@ -74,7 +74,7 @@
                         <li class="list-group-item cur-point active subject">Môn học</li>
                         <li class="list-group-item cur-point info-person">Thông tin</li>
                         <li class="list-group-item cur-point document ">Tài liệu</li>
-                        <li class="list-group-item cur-point">And a fifth one</li>`
+                        <li class="list-group-item cur-point">And a fifth one</li>
                     </ul>
                     <div class="  btn-group-responsive">
                         <p class="btn btn-primary btn_smart   active subject" aria-current="page">Môn học</p>

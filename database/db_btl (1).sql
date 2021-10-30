@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 29, 2021 lúc 10:40 AM
+-- Thời gian đã tạo: Th10 30, 2021 lúc 11:32 AM
 -- Phiên bản máy phục vụ: 10.4.21-MariaDB
 -- Phiên bản PHP: 8.0.10
 
@@ -67,6 +67,13 @@ CREATE TABLE `giaovien` (
   `code_gv` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Đang đổ dữ liệu cho bảng `giaovien`
+--
+
+INSERT INTO `giaovien` (`magv`, `tengv`, `chucvu`, `khoa`, `sdt_gv`, `email_gv`, `pass_gv`, `registration_date_gv`, `status_gv`, `code_gv`) VALUES
+(1, 'Nguyễn Văn Phúc', 'Giảng Viên', 'Công nghệ thông tin', '02898738738', 'phuc@gmail.com', '123', '2021-10-29 20:58:35', 0, '');
+
 -- --------------------------------------------------------
 
 --
@@ -90,6 +97,15 @@ CREATE TABLE `lop` (
   `magv` int(20) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Đang đổ dữ liệu cho bảng `lop`
+--
+
+INSERT INTO `lop` (`malop`, `tenlop`, `magv`) VALUES
+(1, '61HT', 1),
+(2, '61PM1', 1),
+(3, '61PM2', 1);
+
 -- --------------------------------------------------------
 
 --
@@ -105,6 +121,16 @@ CREATE TABLE `monhoc` (
   `giaotrinh` varchar(250) DEFAULT NULL,
   `magv` int(20) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Đang đổ dữ liệu cho bảng `monhoc`
+--
+
+INSERT INTO `monhoc` (`mamh`, `avatar_mh`, `tenmh`, `bomon`, `thoiluong`, `giaotrinh`, `magv`) VALUES
+(13, 'assets/images/download-dev-c-5.9.2-moi-nhat.png', 'Ngôn ngữ lập trình', 'Hệ thống thông tin', '45 tiết lý thuyết, 15x2 tiết bài tập (4TC)', 'C++ toàn tập (Phạm Văn Tùng dịch), NXB Khoa học tự nhiên và công nghệ, 2013', 1),
+(14, 'assets/images/1547524099_php-laravel.png', 'Công nghệ web', 'Hệ thống thông tin', '30 tiết lý thuyết, 15x2 tiết bài tập (4TC)', 'PHP toàn tập (Phạm Văn Tùng dịch), NXB Khoa học tự nhiên và công nghệ, 2013', 1),
+(15, 'assets/images/ai.png', 'Trí tuệ nhân tạo', 'Hệ thống thông tin', '45 tiết lý thuyết, 15x2 tiết bài tập (4TC)', 'Ai toàn tập (Phạm Văn Tùng dịch), NXB Khoa học tự nhiên và công nghệ, 2013', 1),
+(16, 'assets/images/he-dieu-hanh-la-gi (3).jpg', 'Hệ điều hành', 'Hệ thống thông tin', '25 tiết lý thuyết, 15x2 tiết bài tập (3TC)', 'hệ điều hành toàn tập (Phạm Văn Tùng dịch), NXB Khoa học tự nhiên và công nghệ, 2013', 1);
 
 -- --------------------------------------------------------
 
@@ -124,6 +150,13 @@ CREATE TABLE `sinhvien` (
   `malop` int(20) UNSIGNED NOT NULL,
   `magv` int(20) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Đang đổ dữ liệu cho bảng `sinhvien`
+--
+
+INSERT INTO `sinhvien` (`masv`, `tensv`, `sodt_sv`, `email_sv`, `pass_sv`, `registration_date_sv`, `status_sv`, `code_sv`, `malop`, `magv`) VALUES
+(2, 'Nguyễn Quang Huy', '09389392000', 'huyn67811@gmail.com', '$2y$10$plszG/.KhQcehVN.deEP6OMRhEOZ9yHzmXSYDKVfyFyaVJq6Z9T/O', '2021-10-30 16:28:37', 1, 'a2edcc7d34d711803ade0cd6fda764f5', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -223,25 +256,25 @@ ALTER TABLE `thongbao`
 -- AUTO_INCREMENT cho bảng `giaovien`
 --
 ALTER TABLE `giaovien`
-  MODIFY `magv` int(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `magv` int(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT cho bảng `lop`
 --
 ALTER TABLE `lop`
-  MODIFY `malop` int(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `malop` int(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT cho bảng `monhoc`
 --
 ALTER TABLE `monhoc`
-  MODIFY `mamh` int(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `mamh` int(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT cho bảng `sinhvien`
 --
 ALTER TABLE `sinhvien`
-  MODIFY `masv` int(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `masv` int(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT cho bảng `tailieu`

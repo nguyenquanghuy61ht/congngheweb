@@ -6,7 +6,7 @@
   .btn-group-responsive {
     display: none;
   }
-   .card-trantion img{width: 80%;}
+.card-trantion img{width:160px;height:160px}
 }
 
 @media screen and (min-width: 740px) and (max-width: 1023px) {
@@ -20,7 +20,7 @@
   .btn-group-responsive {
     display: none;
   }
-  .card-trantion img{width: 80%;}
+  .card-trantion img{width:120px;height:120px}
 }
 
 @media screen and (max-width: 740px) {

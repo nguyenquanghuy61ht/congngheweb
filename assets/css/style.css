@@ -11,7 +11,7 @@ body {
 .warpper{ background: linear-gradient( bottom, #ffffff 3%, #ffffff 89%to);}
 .cur-point{cursor: pointer ;}
 
-.img-infomation{width: 150px;}
+.img-infomation{width: 210px;}
 .card-trantion:hover .card-img-top {
 
 transition-duration: .3s;

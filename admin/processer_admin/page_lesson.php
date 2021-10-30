@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/processer.css">
+    <link rel="stylesheet" href="page_lesson.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <nav class="navbar navbar-expand-lg navbar-light bg-light  ">
-                                            <a class="navbar-brand" href="#">Navbar</a>
+                                            <a class="navbar-brand" href="#">Thêm </a>
                                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                                                 <span class="navbar-toggler-icon"></span>
                                             </button>
@@ -108,5 +108,67 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
 
+<body>
+
+  
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12">
+                    <div class="first">
+                        <h4>My Skills</h4>
+                       
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xs-12">
+                    <div class="second">
+                        <h4> Navigate</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-xs-12">
+                    <div class="third">
+                        <h4> Contact</h4>
+                        <ul>
+                            <li>Andreea Mihaela Bunget </li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="line"></div>
+                    <div class="second2">
+                        <a href="https://codepen.io/AndreeaBunget" target="_blank"> <i class="fab fa-codepen fa-2x margin"></i></a>
+                        <a href="https://github.com/WebDeveloperCodeRep" target="_blank"> <i class="fab fa-github fa-2x margin"></i></a>
+                        <a href="https://www.linkedin.com/in/andreea-mihaela-bunget-a4248812b/" target="_blank"> <i class="fab fa-linkedin fa-2x margin"></i></a>
+                        <a href="https://www.youtube.com/channel/UCX674BUbomzBCakbb75lhfA?view_as=subscriber" target="_blank"><i class="fab fa-youtube fa-2x margin" ></i></a>
+
+                    </div>
+
+                </div>
+            </div>
+            </div>
+    </div>
+   
+
+
+</body>
 </html>

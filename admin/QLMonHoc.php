@@ -40,7 +40,7 @@
       ?>
           <tr>
             <th scope="row"><?php echo $i; ?></th>
-            <td><img width="100px" height="150px" src="<?php echo '../'.$row['avatar_mh'];  ?>" alt=""></td>
+            <td><img class="img-thumbnail" width="50px" height="80px" src="<?php echo '../'.$row['avatar_mh'];  ?>" alt=""></td>
             <td><?php echo $row['tenmh'];  ?></td>
             <td><?php echo $row['bomon'];   ?></td>
             <td><?php echo $row['thoiluong'];  ?></td>

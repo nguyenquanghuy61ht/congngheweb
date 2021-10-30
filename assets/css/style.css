@@ -8,7 +8,7 @@ body {
 }
 .logo-img{width: 70px;height: 100%;}
 .bgroud-orange{ background: linear-gradient(to bottom, #0675AB 0%, #BCDEE2 100%);}
-.warpper{ background: linear-gradient(to bottom, #ffffff 3%, #33ccff 89%);}
+.warpper{ background: linear-gradient( bottom, #ffffff 3%, #ffffff 89%to);}
 .cur-point{cursor: pointer ;}
 
 .img-infomation{width: 150px;}
@@ -20,3 +20,30 @@ transition-timing-function: ease-out;
 transform: translateY(-8px);
 }
 .card-trantion:hover{box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -28,29 +28,32 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>1</td>
-        <td>img</td>
-        <td>Công nghệ web</td>
-        <td>Hệ thống thông tin</td>
-        <td>chưa có</td>
-        <td></td>
-        <td></td>
+      <?php
+      include("../config/db_conect.php");
+      $sql1 = "SELECT avatar_mh, tenmh, bomon, thoiluong, giaotrinh From monhoc";
+      $result = (mysqli_query($conn, $sql1));
+      // Bước 3 trả về két quả 
+      if (mysqli_num_rows($result) > 0) {
+        
+        $i = 1;
+        while ($row = mysqli_fetch_assoc($result)) {
+      ?>
+          <tr>
+            <th scope="row"><?php echo $i; ?></th>
+            <td><img width="100px" height="150px" src="<?php echo '../'.$row['avatar_mh'];  ?>" alt=""></td>
+            <td><?php echo $row['tenmh'];  ?></td>
+            <td><?php echo $row['bomon'];   ?></td>
+            <td><?php echo $row['thoiluong'];  ?></td>
+            <td><?php echo $row['giaotrinh'];   ?></td>
+            
+          </tr>
+      <?php
 
-      </tr>
-      <tr>
-        <th scope="row">1</th>
-        <td>1</td>
-        <td>img</td>
-        <td>Công nghệ web</td>
-        <td>Hệ thống thông tin</td>
-        <td>chưa có</td>
-        <td></td>
-        <td></td>
+          $i++;
+        }
+      }
 
-      </tr>
-
+      ?>
     </tbody>
   </table>
 </div>

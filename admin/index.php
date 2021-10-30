@@ -263,73 +263,71 @@
 
                         <div class="row m-t-80 ">
                             <div class="col-md-12 p-0">
-                                <footer class="text-center text-white " style="background-color: #caced1;">
-                                    <!-- Grid container -->
-                                    <div class="container p-4">
-                                        <!-- Section: Images -->
-                                        <section class="">
+                            <head>
+                                    <meta charset="utf-8" />
+                                    <title></title>
+                                <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+                                    <link href="StyleSheet.css" rel="stylesheet" />
+                                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+                                </head>
+
+                                <body>
+
+                                
+                                    <!-- footer -->
+                                    <div class="footer">
+                                        <div class="container">
                                             <div class="row">
-                                                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-                                                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-                                                        <img src="https://mdbootstrap.com/img/new/fluid/city/113.jpg" class="w-100" />
-                                                        <a href="#!">
-                                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                                                        </a>
+                                                <div class="col-md-4 col-xs-12">
+                                                    <div class="first">
+                                                        <h4>My Skills</h4>
+                                                        <p> Analytical Skills</p>
+                                                        
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-                                                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-                                                        <img src="https://mdbootstrap.com/img/new/fluid/city/111.jpg" class="w-100" />
-                                                        <a href="#!">
-                                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                                                        </a>
+
+                                                <div class="col-md-4 col-xs-12">
+                                                    <div class="second">
+                                                        <h4> Navigate</h4>
+                                                        <ul>
+                                                            <li><a href="#">Home</a></li>
+                                                                                                                       
+                                                        </ul>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-                                                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-                                                        <img src="https://mdbootstrap.com/img/new/fluid/city/112.jpg" class="w-100" />
-                                                        <a href="#!">
-                                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-                                                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-                                                        <img src="https://mdbootstrap.com/img/new/fluid/city/114.jpg" class="w-100" />
-                                                        <a href="#!">
-                                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-                                                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-                                                        <img src="https://mdbootstrap.com/img/new/fluid/city/115.jpg" class="w-100" />
-                                                        <a href="#!">
-                                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
-                                                    <div class="bg-image hover-overlay ripple shadow-1-strong rounded" data-ripple-color="light">
-                                                        <img src="https://mdbootstrap.com/img/new/fluid/city/116.jpg" class="w-100" />
-                                                        <a href="#!">
-                                                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
-                                                        </a>
+
+                                                <div class="col-md-4 col-xs-12">
+                                                    <div class="third">
+                                                        <h4> Contact</h4>
+                                                        <ul>
+                                                            <li>Andreea Mihaela Bunget </li>
+                                                            <li></li>                                                
+                                                            
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </section>
-                                        <!-- Section: Images -->
-                                    </div>
-                                    <!-- Grid container -->
+                                        </div>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="line"></div>
+                                                    <div class="second2">
+                                                        <a href="https://codepen.io/AndreeaBunget" target="_blank"> <i class="fab fa-codepen fa-2x margin"></i></a>
+                                                        <a href="https://github.com/WebDeveloperCodeRep" target="_blank"> <i class="fab fa-github fa-2x margin"></i></a>
+                                                        <a href="https://www.linkedin.com/in/andreea-mihaela-bunget-a4248812b/" target="_blank"> <i class="fab fa-linkedin fa-2x margin"></i></a>
+                                                        <a href="https://www.youtube.com/channel/UCX674BUbomzBCakbb75lhfA?view_as=subscriber" target="_blank"><i class="fab fa-youtube fa-2x margin" ></i></a>
 
-                                    <!-- Copyright -->
-                                    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                                        © 2020 Copyright:
-                                        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-                                    </div>
-                                    <!-- Copyright -->
-                                </footer>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+    </div>
+   
+
+
+</body>
                             </div>
                         </div>
                     </div>

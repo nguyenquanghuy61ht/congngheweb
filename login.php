@@ -19,7 +19,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
                                     <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Đăng nhập</p>
-                                    <form class="mx-1 mx-md-4 " method="post" action="process_signin.php">
+                                    <form class="mx-1 mx-md-4 " method="post" action="">
                                         <div class="d-flex flex-row align-items-center mb-4">
                                             <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
@@ -33,7 +33,17 @@
                                                 <input type="password" id="pass" name="pass" class="form-control" placeholder="Password" />
                                             </div>
                                         </div>
+                                        <?php
+                                            // if (isset($_GET['response'])) {
+                                            //     if ($_GET['response'] == 'failed_email') {
+                                            //         echo "<p class='text-danger'>Email không đúng !</p>";
+                                            //     }
 
+                                            //     if ($_GET['response'] == 'failed_password') {
+                                            //         echo "<p class='text-danger'>Sai mật khẩu !</p>";
+                                            //     }
+                                            // }
+                                        ?>
                                         <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                                             <button type="submit" class="btn btn-success btn-lg">Đăng nhập</button>
                                         </div>
@@ -56,7 +66,41 @@
 
 </html>
 
+<?php
+    session_start();
+    $email      = $_POST['email'];
+    $pass       = $_POST['pass'];
+  
+    // QUY TRÌNH 4 (3) bước
+    // Bước 01:
+    include('config/db_conect.php');
 
+    // Bước 02: Thực hiện các truy vấn
+    //  Kiểm tra Email này đã tồn tại chưa?
+    $sql = "SELECT * FROM sinhvien WHERE email_sv='$email'";
+    $result = mysqli_query($conn,$sql);
+
+    if(mysqli_num_rows($result) > 0){
+        $row=mysqli_fetch_assoc($result);
+        $pass_saved = $row['pass_sv'];
+        $status=$row['status_sv'];
+
+        if(password_verify($pass,$pass_saved )and $status==1){
+            // Nếu khớp nhau > Tức là Đăng nhập thành công > Chuyển vào trang index
+            $_SESSION['login_ok']= $email;
+            header("Location:index.php");
+        }else{
+            // $response = 'failed_password';
+            // header("Location:login.php?response=$response");
+        } 
+       
+    }else{
+        // $response = 'failed_email';
+        // header("Location:login.php?response=$response");
+    }
+    
+
+?>
 
 
 

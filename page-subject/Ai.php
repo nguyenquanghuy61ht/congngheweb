@@ -6,13 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/thu.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <title>AI</title>
 </head>
 
 <body>
+    <?php
+    include("header_lesson.php")
+    ?>
     <div class="wrapper ">
         <div class="container shadow-sm   pt-3">
             <div class="row ">
@@ -70,10 +73,9 @@
                         <p class="m-0"><b>Giáo trình:</b></p>
                         <p class="m-0" style="text-indent: 20px;">C++ toàn tập (Phạm Văn Tùng dịch), NXB Khoa học tự nhiên và công nghệ, 2013</p>
                         <p class="m-0"><b> Tài liệu tham khảo:</b></p>
-                        <p class="m-0" style="text-indent: 20px;">1- Đinh Mạnh Tường, Trí tuệ nhân tạo, NXB Khoa học Kỹ thuật, 2002</p>
-                        <p class="m-0" style="text-indent: 20px;"> 2- Nguyễn Thanh Thuỷ, Trí tuệ nhân tạo: Các phương pháp giải quyết vấn đề và kĩ thuật xử lý
-                                tri thức, NXB Giáo dục, 1996</p>
-                        <p class="m-0" style="text-indent: 20px;"> 1. Stuart Russell and Peter Norvig, Artificial Intelligence: A Modern Approach, 2nd edition;</p>
+                        <p class="m-0" style="text-indent: 20px;"><a href='https://cuuduongthancong.com/sjdt/tri-tue-nhan-tao/dinh-manh-tuong/dh-cong-nghe-ha-noi'> 1- Đinh Mạnh Tường, Trí tuệ nhân tạo, NXB Khoa học Kỹ thuật, 2002 </a></p>
+                        <p class="m-0" style="text-indent: 20px;"> <a href='https://fit.lqdtu.edu.vn/files/FileMonHoc/1.%20TTNT.pdf'> 2- Trí Tuệ Nhân Tạo , TS-Ngô Hữu PHúc ,Đại Học Thủy Lợi  </a></p>
+                        <p class="m-0" style="text-indent: 20px;"> <a href='https://vn.got-it.ai/blog/tong-hop-tai-lieu-nhap-mon-tri-tue-nhan-tao-hay-nhat-nam-2021'> 3-Tài Liệu Cơ Bản Trí Tuệ Nhân Tạo   </a></p>
 
 
                     </div><br>
@@ -120,7 +122,7 @@
             </div>
         </div>
     </div>
-    
+    <?php include "../partials/footer.php" ?>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/myscript.js"></script>

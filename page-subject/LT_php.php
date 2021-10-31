@@ -6,12 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <title>PHP</title>
 </head>
 
 <body>
+    <?php
+    include("header_lesson.php")
+    ?>
     <div class="wrapper ">
         <div class="container shadow-sm bg-light pt-3">
             <div class="row ">
@@ -69,10 +72,10 @@
                         <p class="m-0"><b>Giáo trình:</b></p>
                         <p class="m-0" style="text-indent: 20px;">C++ toàn tập (Phạm Văn Tùng dịch), NXB Khoa học tự nhiên và công nghệ, 2013</p>
                         <p class="m-0"><b> Tài liệu tham khảo:</b></p>
-                        <p class="m-0" style="text-indent: 20px;">https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxhZ3Vjb245MTB8Z3g6NTkxMzljZDJlNWNlNTIwOA</p>
-                        <p class="m-0" style="text-indent: 20px;"> https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxhZ3Vjb245MTB8Z3g6NDkzZWUzNWI2YTkyMDUxYg</p>
-                        <p class="m-0" style="text-indent: 20px;"> 3, A. Ford and T. Teorey, Practical Debugging in C++, Prentice Hall, 2002</p>
-
+                        <p class="m-0" style="text-indent: 20px;"><a href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxhZ3Vjb245MTB8Z3g6NDkzZWUzNWI2YTkyMDUxYg'>PHP 7 Program Bluepriints</a></p>
+                        <p class="m-0" style="text-indent: 20px;"> <a href='https://drive.google.com/drive/folders/11eKzSctUiiVsDk9BmevL-3XyyJoNoGlP'>link google dirve chứa ajax , javascript</a></p>
+                        <p class="m-0" style="text-indent: 20px;"> <a href='https://drive.google.com/drive/folders/1CxIhO99G_KptEEetBxhJiE1-GRv2iDHG'>link google drive chứa php,css,javascript</a></p>
+                        
 
                     </div><br>
                     <div class="table-subject">
@@ -118,7 +121,7 @@
             </div>
         </div>
     </div>
-
+    <?php include "../partials/footer.php" ?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/myscript.js"></script>

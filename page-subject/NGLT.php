@@ -6,12 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
     <title>C++</title>
 </head>
 
 <body>
+    <?php
+    include("header_lesson.php")
+    ?>
+
     <div class="wrapper ">
         <div class="container shadow-sm bg-light pt-3">
             <div class="row ">
@@ -69,9 +74,9 @@
                         <p class="m-0"><b>Giáo trình:</b></p>
                         <p class="m-0" style="text-indent: 20px;">C++ toàn tập (Phạm Văn Tùng dịch), NXB Khoa học tự nhiên và công nghệ, 2013</p>
                         <p class="m-0"><b> Tài liệu tham khảo:</b></p>
-                        <p class="m-0" style="text-indent: 20px;">1, W. Savitch, Absolute C++, Addison Wesley, 2003 (tải về)</p>
-                        <p class="m-0" style="text-indent: 20px;"> 2, Phạm Văn Ất, Lê Trường Thông, Giáo trình C++ và Lập trình hướng đối tượng, NXB Bách Khoa Hà Nội, 2018</p>
-                        <p class="m-0" style="text-indent: 20px;"> 3, A. Ford and T. Teorey, Practical Debugging in C++, Prentice Hall, 2002</p>
+                        <p class="m-0" style="text-indent: 20px;"><a href='https://tailieu.vn/doc/giao-trinh-ngon-ngu-lap-trinh-c-ths-tieu-kim-cuong-10748.html'> Ngôn Ngũ Lập Trình Ths-Tieu-Kim-Cuong </a></p>
+                        <p class="m-0" style="text-indent: 20px;"><a href='https://tailieu.vn/doc/giao-trinh-ngon-ngu-lap-trinh-visual-basic-6-0-5775.html'> Ngôn Ngũ Lập Trình Visual-Bassic </a></p>
+                        <p class="m-0" style="text-indent: 20px;"> <a href='https://sites.google.com/a/wru.vn/anhtuanly/teaching-courses/nnlt-k61'> Ngôn Ngũ Lập Trình Lý Anh Tuấn </a></p>
 
 
                     </div><br>
@@ -118,7 +123,7 @@
             </div>
         </div>
     </div>
-
+    <?php include "../partials/footer.php" ?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/myscript.js"></script>

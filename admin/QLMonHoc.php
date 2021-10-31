@@ -34,18 +34,18 @@
       $result = (mysqli_query($conn, $sql1));
       // Bước 3 trả về két quả 
       if (mysqli_num_rows($result) > 0) {
-        
+
         $i = 1;
         while ($row = mysqli_fetch_assoc($result)) {
       ?>
           <tr>
             <th scope="row"><?php echo $i; ?></th>
-            <td><img class="img-thumbnail" width="50px" height="80px" src="<?php echo '../'.$row['avatar_mh'];  ?>" alt=""></td>
+            <td><img class="img-thumbnail" width="50px" height="80px" src="<?php echo '../' . $row['avatar_mh'];  ?>" alt=""></td>
             <td><?php echo $row['tenmh'];  ?></td>
             <td><?php echo $row['bomon'];   ?></td>
             <td><?php echo $row['thoiluong'];  ?></td>
             <td><?php echo $row['giaotrinh'];   ?></td>
-            
+
           </tr>
       <?php
 
@@ -72,21 +72,39 @@
         <th scope="col">STT</th>
         <th scope="col">Ảnh</th>
         <th scope="col">Tên tài liệu</th>
+        <th scope="col">Môn học</th>
+        <th scope="col">tài liệu pdf</th>
         <th scope="col">sửa</th>
         <th scope="col">xóa</th>
 
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>1</td>
-        <td>img</td>
-        <td>Công nghệ web</td>
-        <td></td>
-        <td></td>
+      <?php
+      include('../config/db_conect.php');
+      $sql = "select id_tl,avatar_tl,ten_tl,tenmh,link_tailieu from tailieu tl,monhoc mh where tl.mamh=mh.mamh";
+      $result = mysqli_query($conn, $sql);
+      if (mysqli_num_rows($result) > 0) {
+        $i = 1;
+        while ($row = mysqli_fetch_assoc($result)) {
+      ?>
+          <tr>
+            <th scope="row"> <?php echo $i; ?></th>
+            <td class="img-fluid">
+              <img style="width: 70px;height:60px" src="<?php echo 'admin/'.$row['avatar_tl'] ?>" alt="img">
+            </td>
+            <td> <?php echo $row['ten_tl'] ?> </td>
+            <td> <?php echo $row['tenmh'] ?> </td>
+            <td> <?php echo 'admin/'.$row['link_tailieu'] ?> </td>
+            <td><a href="edit_tailieu.php?manv=<?php echo $row['id_tl']; ?>"><i class="fas fa-edit"></i></a></td>
+            <td><a href="#" class="btn-tailieu"><i class="far fa-trash-alt text-danger"></i></a></td>
+          </tr>
+      <?php
+          $i++;
+        }
+      }
 
-      </tr>
+      ?>
 
     </tbody>
   </table>

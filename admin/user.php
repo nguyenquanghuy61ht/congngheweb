@@ -18,6 +18,7 @@
 <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
         <a href="processer_admin/page_lesson.php"><button type="button" class="btn btn-primary mt-3 ">Thêm bài giảng</button></a>
+        <a href="processer_admin/chat.php"><button type="button" class="btn btn-primary mt-3 ">chat </button></a>
         <table class="table table-bordered mt-3">
             <thead class="thead-dark">
                 <tr>

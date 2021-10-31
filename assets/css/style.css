@@ -13,7 +13,7 @@ body {
 
 }
 
-.img-infomation{width: 150px;}
+.img-infomation{width: 210px;}
 .card-trantion:hover .card-img-top {
 
 transition-duration: .3s;

@@ -1,3 +1,6 @@
+<?php
+include('login_check.php')
+?>
 <div class="col-md-3 col-sm-3 border-end">
     <img src="https://scontent.fhan5-4.fna.fbcdn.net/v/t1.6435-9/55575857_414330829376366_5304029021351182336_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=174925&_nc_ohc=_NRrdao0JMIAX9NdqZT&_nc_ht=scontent.fhan5-4.fna&oh=6bee102226c97ccf6d127b2625b27ca6&oe=61A1FE3C" class="img-thumbnail  img-infomation" alt="user">
 </div>

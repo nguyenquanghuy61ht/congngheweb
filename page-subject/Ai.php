@@ -1,3 +1,6 @@
+<?php
+include('../login_check.php')
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -74,8 +77,8 @@
                         <p class="m-0" style="text-indent: 20px;">C++ toàn tập (Phạm Văn Tùng dịch), NXB Khoa học tự nhiên và công nghệ, 2013</p>
                         <p class="m-0"><b> Tài liệu tham khảo:</b></p>
                         <p class="m-0" style="text-indent: 20px;"><a href='https://cuuduongthancong.com/sjdt/tri-tue-nhan-tao/dinh-manh-tuong/dh-cong-nghe-ha-noi'> 1- Đinh Mạnh Tường, Trí tuệ nhân tạo, NXB Khoa học Kỹ thuật, 2002 </a></p>
-                        <p class="m-0" style="text-indent: 20px;"> <a href='https://fit.lqdtu.edu.vn/files/FileMonHoc/1.%20TTNT.pdf'> 2- Trí Tuệ Nhân Tạo , TS-Ngô Hữu PHúc ,Đại Học Thủy Lợi  </a></p>
-                        <p class="m-0" style="text-indent: 20px;"> <a href='https://vn.got-it.ai/blog/tong-hop-tai-lieu-nhap-mon-tri-tue-nhan-tao-hay-nhat-nam-2021'> 3-Tài Liệu Cơ Bản Trí Tuệ Nhân Tạo   </a></p>
+                        <p class="m-0" style="text-indent: 20px;"> <a href='https://fit.lqdtu.edu.vn/files/FileMonHoc/1.%20TTNT.pdf'> 2- Trí Tuệ Nhân Tạo , TS-Ngô Hữu PHúc ,Đại Học Thủy Lợi </a></p>
+                        <p class="m-0" style="text-indent: 20px;"> <a href='https://vn.got-it.ai/blog/tong-hop-tai-lieu-nhap-mon-tri-tue-nhan-tao-hay-nhat-nam-2021'> 3-Tài Liệu Cơ Bản Trí Tuệ Nhân Tạo </a></p>
 
 
                     </div><br>
@@ -123,11 +126,11 @@
         </div>
     </div>
     <?php include "../partials/footer.php" ?>
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/myscript.js"></script>
     <script type="text/javascript" src="assets/js/home.js"></script>
- 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 

@@ -1,3 +1,6 @@
+<?php
+include('login_check.php')
+?>
 <h3 class="mb-3 text-primary">Tài liệu tham khảo</h3>
 <div class="col-md-12 border-bottom mb-3">
     <ol class="list-group">
@@ -11,10 +14,10 @@
         ?>
                 <li class="list-group-item d-flex justify-content-between align-items-start">
                     <div class="d-flex">
-                        <img class="img-thumbnail" style="margin-right:7px" width=70px height=100px src="<?php echo 'admin/'.substr($row['avatar_tl'],3) ?>" alt="">
+                        <img class="img-thumbnail" style="margin-right:7px" width=70px height=100px src="<?php echo 'admin/' . substr($row['avatar_tl'], 3) ?>" alt="">
                         <b class="m-auto "><?php echo $row['ten_tl'] ?> </b>
                     </div>
-                    <a href="<?php echo 'admin/' . substr($row['link_tailieu'],3) ?>" class="badge bg-success ">Tải Xuống</a>
+                    <a href="<?php echo 'admin/' . substr($row['link_tailieu'], 3) ?>" class="badge bg-success ">Tải Xuống</a>
                 </li>
         <?php
             }

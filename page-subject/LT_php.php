@@ -1,3 +1,7 @@
+<?php
+include('../login_check.php')
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -75,7 +79,7 @@
                         <p class="m-0" style="text-indent: 20px;"><a href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxhZ3Vjb245MTB8Z3g6NDkzZWUzNWI2YTkyMDUxYg'>PHP 7 Program Bluepriints</a></p>
                         <p class="m-0" style="text-indent: 20px;"> <a href='https://drive.google.com/drive/folders/11eKzSctUiiVsDk9BmevL-3XyyJoNoGlP'>link google dirve chứa ajax , javascript</a></p>
                         <p class="m-0" style="text-indent: 20px;"> <a href='https://drive.google.com/drive/folders/1CxIhO99G_KptEEetBxhJiE1-GRv2iDHG'>link google drive chứa php,css,javascript</a></p>
-                        
+
 
                     </div><br>
                     <div class="table-subject">

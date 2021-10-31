@@ -1,3 +1,6 @@
+<?php
+include('login_check.php')
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -86,7 +89,7 @@
                 </div>
                 <div class="col-md-10 col-sm-12  ">
                     <div class="row " id="tab-dieuhuong">
-                        <?php include('Monhoc.php')?>
+                        <?php include('Monhoc.php') ?>
 
 
                     </div>

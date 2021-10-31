@@ -61,9 +61,22 @@ session_start()
                                             <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
                                                 <select name="lop" class="browser-default custom-select" aria-label=".form-select-lg example">
-                                                    <option selected>61HT</option>
-                                                    <option value="1">61PM1</option>
-                                                    <option value="2">61PM2</option>
+                                                    <?php
+
+                                                    $conn = mysqli_connect('localhost', 'root', '', 'db_btl');
+                                                    if (!$conn) {
+                                                        die("Không thể kết nối");
+                                                    }
+                                                    $sql_lop = 'SELECT tenlop,malop from lop;';
+                                                    $result = mysqli_query($conn, $sql_lop);
+                                                    if (mysqli_num_rows($result) > 0) {
+                                                        while ($row = mysqli_fetch_assoc($result)) {
+
+                                                            echo "<option value=" . $row['malop'] . ">" . $row['tenlop'] . "</option>";
+                                                        }
+                                                    }
+
+                                                    ?>
                                                 </select>
                                             </div>
                                         </div>

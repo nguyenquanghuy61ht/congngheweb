@@ -94,31 +94,54 @@
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-xs-12">
-                    <div class="first">
-                        <h4>My Skills</h4>
-                       
-                    </div>
-                </div>
+                <div class="color-md-12">
+                         <!-- Footer -->
+                        <footer class="page-footer font-small special-color-dark pt-4">
 
-                <div class="col-md-4 col-xs-12">
-                    <div class="second">
-                        <h4> Navigate</h4>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            
-                        </ul>
-                    </div>
-                </div>
+                        <!-- Footer Elements -->
+                        <div class="container">
 
-                <div class="col-md-4 col-xs-12">
-                    <div class="third">
-                        <h4> Contact</h4>
-                        <ul>
-                            <li>Andreea Mihaela Bunget </li>
-                           
+                        <!-- Social buttons -->
+                        <ul class="list-unstyled list-inline text-center">
+                            <li class="list-inline-item">
+                            <a class="btn-floating btn-fb mx-1">
+                                <i class="fab fa-facebook-f"> </i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                            <a class="btn-floating btn-tw mx-1">
+                                <i class="fab fa-twitter"> </i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                            <a class="btn-floating btn-gplus mx-1">
+                                <i class="fab fa-google-plus-g"> </i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                            <a class="btn-floating btn-li mx-1">
+                                <i class="fab fa-linkedin-in"> </i>
+                            </a>
+                            </li>
+                            <li class="list-inline-item">
+                            <a class="btn-floating btn-dribbble mx-1">
+                                <i class="fab fa-dribbble"> </i>
+                            </a>
+                            </li>
                         </ul>
-                    </div>
+                        <!-- Social buttons -->
+
+                        </div>
+                        <!-- Footer Elements -->
+
+                        <!-- Copyright -->
+                        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                        <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+                        </div>
+                        <!-- Copyright -->
+
+                        </footer>
+                        <!-- Footer -->
                 </div>
             </div>
         </div>

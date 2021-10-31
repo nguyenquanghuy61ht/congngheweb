@@ -33,30 +33,33 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>1</td>
-                    <td>Buổi 1</td>
-                    <td>Giới thiệu về C++</td>
-                    <td>Bài 1</td>
-                    <td>Bài tập 1</td>
+            <?php
+                include("../config/db_conect.php");
+                $sql="SELECT * From baigiang";
+                $result=(mysqli_query($conn,$sql));
+                // Bước 3 trả về két quả 
+                if(mysqli_num_rows($result)>0){
+                    $i=1;
+                    
+                    while($row=mysqli_fetch_assoc($result)){
+            ?>          
+                        <tr>
+                            <th scope="row"><?php echo $i; ?></th>
+                            <td><?php echo $row['ngay'];  ?></td>
+                            <td><?php echo $row['ten_bg'];   ?></td>
+                            <td><?php echo $row['slide'];  ?></td>
+                            <td><?php echo $row['bai_tap'];   ?></td>
+                            <td><?php echo $row['ghichu'];  ?></td>
+                            
+                        </tr>
+            <?php 
+                        
+                        $i++;
+                        
+                    }
+                }
 
-                    <td></td>
-                    <td></td>
-
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>1</td>
-                    <td>Buổi 1</td>
-                    <td>Giới thiệu về C++</td>
-                    <td>Bài 1</td>
-                    <td>Bài tập 1</td>
-
-                    <td></td>
-                    <td></td>
-
-                </tr>
+            ?>
 
             </tbody>
         </table>
@@ -77,27 +80,33 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>1</td>
-                    <td>Buổi 1</td>
-                    <td>Giới thiệu về C++</td>
-                    <td>Bài 1</td>
-                    <td>Bài tập 1</td>
-
-
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>1</td>
-                    <td>Buổi 1</td>
-                    <td>Giới thiệu về C++</td>
-                    <td>Bài 1</td>
-                    <td>Bài tập 1</td>
-
+            <?php
+                
+                $sql="SELECT * From baigiang where mamh=13";
+                $result=(mysqli_query($conn,$sql));
+                // Bước 3 trả về két quả 
+                if(mysqli_num_rows($result)>0){
+                    $i=1;
                     
+                    while($row=mysqli_fetch_assoc($result)){
+            ?>          
+                        <tr>
+                            <th scope="row"><?php echo $i; ?></th>
+                            <td><?php echo $row['ngay'];  ?></td>
+                            <td><?php echo $row['ten_bg'];   ?></td>
+                            <td><?php echo $row['slide'];  ?></td>
+                            <td><?php echo $row['bai_tap'];   ?></td>
+                            <td><?php echo $row['ghichu'];  ?></td>
+                            
+                        </tr>
+            <?php 
+                        
+                        $i++;
+                        
+                    }
+                }
 
-                </tr>
+            ?>
 
             </tbody>
         </table>
@@ -117,26 +126,33 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>1</td>
-                    <td>Buổi 1</td>
-                    <td>Giới thiệu về C++</td>
-                    <td>Bài 1</td>
-                    <td>Bài tập 1</td>
-
-
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>1</td>
-                    <td>Buổi 1</td>
-                    <td>Giới thiệu về C++</td>
-                    <td>Bài 1</td>
-                    <td>Bài tập 1</td>
-
+            <?php
+                
+                $sql="SELECT * From baigiang where mamh=14";
+                $result=(mysqli_query($conn,$sql));
+                // Bước 3 trả về két quả 
+                if(mysqli_num_rows($result)>0){
+                    $i=1;
                     
-                </tr>
+                    while($row=mysqli_fetch_assoc($result)){
+            ?>          
+                        <tr>
+                            <th scope="row"><?php echo $i; ?></th>
+                            <td><?php echo $row['ngay'];  ?></td>
+                            <td><?php echo $row['ten_bg'];   ?></td>
+                            <td><?php echo $row['slide'];  ?></td>
+                            <td><?php echo $row['bai_tap'];   ?></td>
+                            <td><?php echo $row['ghichu'];  ?></td>
+                            
+                        </tr>
+            <?php 
+                        
+                        $i++;
+                        
+                    }
+                }
+
+            ?>
 
             </tbody>
         </table>
@@ -156,28 +172,33 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>1</td>
-                    <td>Buổi 1</td>
-                    <td>Giới thiệu về C++</td>
-                    <td>Bài 1</td>
-                    <td>Bài tập 1</td>
+            <?php
+                
+                $sql="SELECT * From baigiang where mamh=15";
+                $result=(mysqli_query($conn,$sql));
+                // Bước 3 trả về két quả 
+                if(mysqli_num_rows($result)>0){
+                    $i=1;
+                    
+                    while($row=mysqli_fetch_assoc($result)){
+            ?>          
+                        <tr>
+                            <th scope="row"><?php echo $i; ?></th>
+                            <td><?php echo $row['ngay'];  ?></td>
+                            <td><?php echo $row['ten_bg'];   ?></td>
+                            <td><?php echo $row['slide'];  ?></td>
+                            <td><?php echo $row['bai_tap'];   ?></td>
+                            <td><?php echo $row['ghichu'];  ?></td>
+                            
+                        </tr>
+            <?php 
+                        
+                        $i++;
+                        
+                    }
+                }
 
-                   
-
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>1</td>
-                    <td>Buổi 1</td>
-                    <td>Giới thiệu về C++</td>
-                    <td>Bài 1</td>
-                    <td>Bài tập 1</td>
-
-                   
-
-                </tr>
+            ?>
 
             </tbody>
         </table>
@@ -197,28 +218,33 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>1</td>
-                    <td>Buổi 1</td>
-                    <td>Giới thiệu về C++</td>
-                    <td>Bài 1</td>
-                    <td>Bài tập 1</td>
+            <?php
+                
+                $sql="SELECT * From baigiang where mamh=16";
+                $result=(mysqli_query($conn,$sql));
+                // Bước 3 trả về két quả 
+                if(mysqli_num_rows($result)>0){
+                    $i=1;
+                    
+                    while($row=mysqli_fetch_assoc($result)){
+            ?>          
+                        <tr>
+                            <th scope="row"><?php echo $i; ?></th>
+                            <td><?php echo $row['ngay'];  ?></td>
+                            <td><?php echo $row['ten_bg'];   ?></td>
+                            <td><?php echo $row['slide'];  ?></td>
+                            <td><?php echo $row['bai_tap'];   ?></td>
+                            <td><?php echo $row['ghichu'];  ?></td>
+                            
+                        </tr>
+            <?php 
+                        
+                        $i++;
+                        
+                    }
+                }
 
-                   
-
-                </tr>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>1</td>
-                    <td>Buổi 1</td>
-                    <td>Giới thiệu về C++</td>
-                    <td>Bài 1</td>
-                    <td>Bài tập 1</td>
-
-                 
-
-                </tr>
+            ?>
 
             </tbody>
         </table>

@@ -30,7 +30,7 @@
     <tbody>
       <?php
       include("../config/db_conect.php");
-      $sql1 = "SELECT avatar_mh, tenmh, bomon, thoiluong, giaotrinh From monhoc";
+      $sql1 = "SELECT mamh,avatar_mh, tenmh, bomon, thoiluong, giaotrinh From monhoc";
       $result = (mysqli_query($conn, $sql1));
       // Bước 3 trả về két quả 
       if (mysqli_num_rows($result) > 0) {
@@ -45,7 +45,8 @@
             <td><?php echo $row['bomon'];   ?></td>
             <td><?php echo $row['thoiluong'];  ?></td>
             <td><?php echo $row['giaotrinh'];   ?></td>
-
+            <td><a href="../admin/processer_admin/edit_monhoc.php?mamh=<?php echo $row['mamh']; ?>"><i class="fas fa-edit"></i></a></td>
+            <td><a href="#" class="btn-monhoc"><i class="far fa-trash-alt text-danger"></i></a></td>
           </tr>
       <?php
 
@@ -96,7 +97,7 @@
             <td> <?php echo $row['ten_tl'] ?> </td>
             <td> <?php echo $row['tenmh'] ?> </td>
             <td> <?php echo 'admin/'.$row['link_tailieu'] ?> </td>
-            <td><a href="edit_tailieu.php?manv=<?php echo $row['id_tl']; ?>"><i class="fas fa-edit"></i></a></td>
+            <td><a href="../admin/processer_admin/edit_tailieu.php?id_tl=<?php echo $row['id_tl']; ?>"><i class="fas fa-edit"></i></a></td>
             <td><a href="#" class="btn-tailieu"><i class="far fa-trash-alt text-danger"></i></a></td>
           </tr>
       <?php

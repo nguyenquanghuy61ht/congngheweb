@@ -36,14 +36,14 @@
 </head>
 
 <body class="animsition">
-    <div class="page-wrapper">
+    <div class="page-wrapper pb-0">
         <!-- HEADER MOBILE-->
         <header class="header-mobile d-block d-lg-none">
             <div class="header-mobile__bar">
                 <div class="container-fluid">
                     <div class="header-mobile-inner">
                         <a class="logo" href="index.html">
-                            <img src="images/icon/logo.png" alt="Hocmai" />
+                            <img src="https://i.pinimg.com/736x/34/d6/f4/34d6f424bedf3dbc00ad054aec65a28b.jpg" alt="Hocmai" />
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">
@@ -61,7 +61,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <i class="#"></i>Tables</a>
+                                <i class="#"></i>Bảng</a>
                         </li>
                         <li>
                             <a href="#">
@@ -82,7 +82,7 @@
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
                 <a href="#">
-                    <img src="images/icon/logo.png" alt="Cool Admin" />
+                    <img src="" alt="Cool Admin" />
                 </a>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
@@ -134,15 +134,15 @@
                                         <span class="quantity">3</span>
                                         <div class="notifi-dropdown js-dropdown">
                                             <div class="notifi__title">
-                                                <p>You have 3 Notifications</p>
+                                                <p>Nộp bài đi các em ai </p>
                                             </div>
                                             <div class="notifi__item">
                                                 <div class="bg-c1 img-cir img-40">
                                                     <i class="zmdi zmdi-email-open"></i>
                                                 </div>
                                                 <div class="content">
-                                                    <p>You got a email notification</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
+                                                    <p>em xin phép cho em xin nghỉ đi tiêm vacxin</p>
+                                                    <span class="date">April 12, 2021 06:50</span>
                                                 </div>
                                             </div>
                                             <div class="notifi__item">
@@ -150,8 +150,8 @@
                                                     <i class="zmdi zmdi-account-box"></i>
                                                 </div>
                                                 <div class="content">
-                                                    <p>Your account has been blocked</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
+                                                    <p>cho em xin nghỉ em bị đau bụng ạ </p>
+                                                    <span class="date">April 12, 20121 06:50</span>
                                                 </div>
                                             </div>
                                             <div class="notifi__item">
@@ -159,12 +159,12 @@
                                                     <i class="zmdi zmdi-file-text"></i>
                                                 </div>
                                                 <div class="content">
-                                                    <p>You got a new file</p>
-                                                    <span class="date">April 12, 2018 06:50</span>
+                                                    <p>cho em xin phép nghỉ nay chị họ của thằng bạn con em họ dưới quê của em cưới ạ </p>
+                                                    <span class="date">April 12, 2021 06:50</span>
                                                 </div>
                                             </div>
                                             <div class="notifi__footer">
-                                                <a href="#">All notifications</a>
+                                                <a href="#">tất cả thông báo </a>
                                             </div>
                                         </div>
                                     </div>
@@ -172,10 +172,10 @@
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <div class="image">
-                                            <img src="images/icon/avatar-01.jpg" alt="John Doe" />
+                                            <img src="https://i.pinimg.com/736x/34/d6/f4/34d6f424bedf3dbc00ad054aec65a28b.jpg" alt="John Doe" />
                                         </div>
                                         <div class="content">
-                                            <a class="js-acc-btn" href="#">Tên giáo viên</a>
+                                            <a class="js-acc-btn" href="#">Lò Thị Huy </a>
                                         </div>
                                         <div class="account-dropdown js-dropdown">
 
@@ -202,99 +202,98 @@
             <!-- MAIN CONTENT-->
             <div class="main-content">
                 <div class="section__content section__content--p30">
-                    <div class="container-fluid">
+                    <div class="container-fluid ">
 
                         <div class="row m-t-25 wrapp_content">
-                            <div class="col-sm-6 col-lg-3">
-                                <div class="overview-item overview-item--c2">
-                                    <div class="overview__inner">
-                                        <div class="overview-box clearfix">
-                                            <div class="icon">
-                                                <i class="zmdi zmdi-shopping-cart"></i>
-                                            </div>
-                                            <div class="text">
-                                                <h2>388,688</h2>
-                                                <span>items solid</span>
-                                            </div>
-                                        </div>
-                                        <div class="overview-chart">
-                                            <canvas id="widgetChart2"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <div class="overview-item overview-item--c3">
-                                    <div class="overview__inner">
-                                        <div class="overview-box clearfix">
-                                            <div class="icon">
-                                                <i class="zmdi zmdi-calendar-note"></i>
-                                            </div>
-                                            <div class="text">
-                                                <h2>1,086</h2>
-                                                <span>this week</span>
-                                            </div>
-                                        </div>
-                                        <div class="overview-chart">
-                                            <canvas id="widgetChart3"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 col-lg-3">
-                                <div class="overview-item overview-item--c4">
-                                    <div class="overview__inner">
-                                        <div class="overview-box clearfix">
-                                            <div class="icon">
-                                                <i class="zmdi zmdi-money"></i>
-                                            </div>
-                                            <div class="text">
-                                                <h2>$1,060,386</h2>
-                                                <span>total earnings</span>
-                                            </div>
-                                        </div>
-                                        <div class="overview-chart">
-                                            <canvas id="widgetChart4"></canvas>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php include('dashboard.php') ?>
                         </div>
 
 
-                        <div class="row m-t-40">
-                            <div class="col-md-12">
-                                <div class="copyright">
-                                    <p>Copyright © 2021 Tất cả quyền được bảo lưu</p>
-                                </div>
+                        <div class="row m-t-80 ">
+                            <div class="col-md-12 p-0">
+
+                                <head>
+                                    <meta charset="utf-8" />
+                                    <title></title>
+                                    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+                                    <link href="StyleSheet.css" rel="stylesheet" />
+                                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+                                </head>
+
+                                <body>
+
+
+                                    <footer class="bg-light text-center text-white">
+                                        <!-- Grid container -->
+                                        <div class="container p-4 pb-0">
+                                            <!-- Section: Social media -->
+                                            <section class="mb-4">
+                                                <!-- Facebook -->
+                                                <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998;" href="https://www.facebook.com/huy.huyt.7" role="button"><i class="fab fa-facebook-f"></i></a>
+
+                                                <!-- Twitter -->
+                                                <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="https://www.facebook.com/daoquyenminh" role="button"><i class="fab fa-twitter"></i></a>
+
+                                                <!-- Google -->
+                                                <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="https://www.facebook.com/profile.php?id=100014535375433" role="button"><i class="fab fa-google"></i></a>
+
+                                                <!-- Instagram -->
+                                                <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+                                                <!-- Linkedin -->
+                                                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                                                <!-- Github -->
+                                                <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;" href="#!" role="button"><i class="fab fa-github"></i></a>
+                                            </section>
+                                            <!-- Section: Social media -->
+                                        </div>
+                                        <!-- Grid container -->
+
+                                        <!-- Copyright -->
+                                        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                                            © 2020 Copyright:
+                                            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                                        </div>
+                                        <!-- Copyright -->
+                                    </footer>
+
+
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- END MAIN CONTENT-->
-            <!-- END PAGE CONTAINER-->
-        </div>
-
-    </div>
 
 
-    <!-- Jquery JS-->
-    <script src="vendor/jquery-3.2.1.min.js"></script>
-    <!-- Bootstrap JS-->
-    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
-    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
-    <!-- Vendor JS       -->
-    <script src="vendor/slick/slick.min.js">
-    </script>
-    <script src="vendor/wow/wow.min.js"></script>
-    <script src="vendor/animsition/animsition.min.js"></script>
-    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
-    </script>
 
-    <!-- Main JS-->
-    <script src="js/main.js"></script>
-    <script src="js/page-ajax.js"></script>
+</body>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- END MAIN CONTENT-->
+<!-- END PAGE CONTAINER-->
+</div>
+
+</div>
+
+
+<!-- Jquery JS-->
+<script src="vendor/jquery-3.2.1.min.js"></script>
+<!-- Bootstrap JS-->
+<script src="vendor/bootstrap-4.1/popper.min.js"></script>
+<script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+<!-- Vendor JS       -->
+<script src="vendor/slick/slick.min.js">
+</script>
+<script src="vendor/wow/wow.min.js"></script>
+<script src="vendor/animsition/animsition.min.js"></script>
+<script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+</script>
+
+<!-- Main JS-->
+<script src="js/main.js"></script>
+<script src="js/page-ajax.js"></script>
 
 </body>
 

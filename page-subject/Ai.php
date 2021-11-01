@@ -1,3 +1,6 @@
+<?php
+include('../login_check.php')
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,12 +9,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/thu.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
     <title>AI</title>
 </head>
 
 <body>
+    <?php
+    include("header_lesson.php")
+    ?>
     <div class="wrapper ">
         <div class="container shadow-sm   pt-3">
             <div class="row ">
@@ -61,18 +68,23 @@
                 <div class="col-md-9">
                     <div class="box-info">
                         <p><a href='../index.php'>Các khóa học</a> ></p>
-                        <h1 style="color: #8DA1AD;">Trí tuệ nhân tạo</h1>
-                        <p><b>Mã môn:</b> CSE280</p>
+                        <?php
+                        include('../config/db_conect.php');
+                        $sql_info_sub = "SELECT * from monhoc where mamh=15";
+                        $res = mysqli_query($conn, $sql_info_sub);
+                        $row = mysqli_fetch_assoc($res);
+                        ?>
+                        <h1 style="color: #8DA1AD;"><?php echo $row['tenmh'] ?></h1>
+                        <p><b>Mã môn:</b> CSE_<?php echo $row['mamh'] ?></p>
 
-                        <p><b>Thời lượng:</b> 45 tiết lý thuyết, 15x2 tiết bài tập (4TC)</p>
+                        <p><b>Thời lượng:</b> <?php echo $row['thoiluong'] ?></p>
 
                         <p class="m-0"><b>Giáo trình:</b></p>
-                        <p class="m-0" style="text-indent: 20px;">C++ toàn tập (Phạm Văn Tùng dịch), NXB Khoa học tự nhiên và công nghệ, 2013</p>
+                        <p class="m-0" style="text-indent: 20px;"><?php $row['giaotrinh'] ?></p>
                         <p class="m-0"><b> Tài liệu tham khảo:</b></p>
-                        <p class="m-0" style="text-indent: 20px;">1- Đinh Mạnh Tường, Trí tuệ nhân tạo, NXB Khoa học Kỹ thuật, 2002</p>
-                        <p class="m-0" style="text-indent: 20px;"> 2- Nguyễn Thanh Thuỷ, Trí tuệ nhân tạo: Các phương pháp giải quyết vấn đề và kĩ thuật xử lý
-                                tri thức, NXB Giáo dục, 1996</p>
-                        <p class="m-0" style="text-indent: 20px;"> 1. Stuart Russell and Peter Norvig, Artificial Intelligence: A Modern Approach, 2nd edition;</p>
+                        <p class="m-0" style="text-indent: 20px;"><a href='https://cuuduongthancong.com/sjdt/tri-tue-nhan-tao/dinh-manh-tuong/dh-cong-nghe-ha-noi'> 1- Đinh Mạnh Tường, Trí tuệ nhân tạo, NXB Khoa học Kỹ thuật, 2002 </a></p>
+                        <p class="m-0" style="text-indent: 20px;"> <a href='https://fit.lqdtu.edu.vn/files/FileMonHoc/1.%20TTNT.pdf'> 2- Trí Tuệ Nhân Tạo , TS-Ngô Hữu PHúc ,Đại Học Thủy Lợi </a></p>
+                        <p class="m-0" style="text-indent: 20px;"> <a href='https://vn.got-it.ai/blog/tong-hop-tai-lieu-nhap-mon-tri-tue-nhan-tao-hay-nhat-nam-2021'> 3-Tài Liệu Cơ Bản Trí Tuệ Nhân Tạo </a></p>
 
 
                     </div><br>
@@ -90,25 +102,33 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>1</td>
-                                    <td>Buổi 1</td>
-                                    <td>Giới thiệu về C++</td>
-                                    <td>Bài 1</td>
-                                    <td>Bài tập 1</td>
 
-                                </tr>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>1</td>
-                                    <td>Buổi 1</td>
-                                    <td>Giới thiệu về C++</td>
-                                    <td>Bài 1</td>
-                                    <td>Bài tập 1</td>
+                                <?php
 
-                                </tr>
+                                $sql = "SELECT * From baigiang where mamh=15";
+                                $result = (mysqli_query($conn, $sql));
+                                // Bước 3 trả về két quả 
+                                if (mysqli_num_rows($result) > 0) {
+                                    $i = 1;
 
+                                    while ($row = mysqli_fetch_assoc($result)) {
+                                ?>
+                                        <tr>
+                                            <th scope="row"><?php echo $i; ?></th>
+                                            <td><?php echo $row['ngay'];  ?></td>
+                                            <td><?php echo $row['ten_bg'];   ?></td>
+                                            <td><a href="<?php echo '../admin/' . substr($row['slide'], 3);  ?>" class="text-danger"><?php echo substr($row['slide'], 16);  ?></a></td>
+                                            <td><a href="<?php echo '../admin/' . substr($row['bai_tap'], 3);   ?>" class="text-danger"><?php echo substr($row['bai_tap'], 16);   ?></a></td>
+                                            <td><?php echo $row['ghichu'];  ?></td>
+
+                                        </tr>
+                                <?php
+
+                                        $i++;
+                                    }
+                                }
+
+                                ?>
                             </tbody>
                         </table>
 
@@ -119,11 +139,12 @@
             </div>
         </div>
     </div>
-
+    <?php include "../partials/footer.php" ?>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/myscript.js"></script>
     <script type="text/javascript" src="assets/js/home.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 

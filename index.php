@@ -1,3 +1,6 @@
+<?php
+include('login_check.php')
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,11 +12,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Học Mãi Mãi </title>
+    <title>Học Mãi</title>
+
 </head>
 
 <body>
-    <div class="warpper" >
+    <div class="warpper">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 p-0">
@@ -33,13 +37,14 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Về Chúng Tôi</a>
+                                        `
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Liên Hê</a>
                                     </li>
 
                                     <li class="nav-item  nav-logout1">
-                                        <a class="nav-link" href="#" tabindex="-1">Đăng Xuất</a>
+                                        <a class="nav-link" href="logout.php" tabindex="-1">Đăng Xuất</a>
                                     </li>
                                 </ul>
                                 <form class="d-flex ">
@@ -56,7 +61,7 @@
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                                        <li><a class="dropdown-item" href="logout.php">Đăng xuất</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -84,58 +89,15 @@
                 </div>
                 <div class="col-md-10 col-sm-12  ">
                     <div class="row " id="tab-dieuhuong">
-                        <div class="col-md-3 col-sm-6  mb-3  ">
-                            <div class="card  card-trantion  ">
-                                <img src="https://phanmemcntt.com/wp-content/uploads/2020/08/download-dev-c-5.9.2-moi-nhat.png" class="card-img-top  m-auto mt-3 " alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Ngôn ngữ lập trình</h5>
-                                    <p class="card-text  m-0"><b>Bộ môn:</b> hệ thống thông tin. </p>
-                                    <p class="card-text">Trường đại học thủy lợi </p>
-                                    <a href="page-subject/NGLT.php" class="btn btn-primary">Vào học</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6  mb-3 ">
-                            <div class="card  card-trantion">
-                                <img src="https://v1study.com/public/images/article/1547524099_php-laravel.png" class="card-img-top m-auto mt-3" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Công nghệ web</h5>
-                                    <p class="card-text  m-0"><b>Bộ môn:</b> hệ thống thông tin.</p>
-                                    <p class="card-text">Trường đại học thủy lợi </p>
-                                    <a href="page-subject/LT_php.php" class="btn btn-primary">vào học</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6  mb-3 ">
-                            <div class="card  card-trantion">
-                                <img src="https://cinnamon.is/en/wp-content/themes/Cinnamon-2017-en/images/ai.png" style="padding-top:38px" class="card-img-top card-img-top m-auto   " alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Trí tuệ nhân tạo</h5>
-                                    <p class="card-text m-0"><b>Bộ môn:</b> Hệ thống thông tin.</p>
-                                    <p class="card-text">Trường đại học thủy lợi </p>
-                                    <a href="page-subject/Ai.php" class="btn btn-primary">Vào học</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6  mb-3 ">
-                            <div class="card  card-trantion">
-                                <img src="https://cdn.tgdd.vn/hoi-dap/804907/he-dieu-hanh-la-gi%20(3).jpg" style="padding-top:90px" class="card-img-top card-img-top m-auto" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Hệ Điều Hành </h5>
-                                    <p class="card-text m-0"><b>Bộ môn:</b> Hệ thống thông tin.</p>
-                                    <p class="card-text">Trường đại học thủy lợi </p>
-                                    <a href="page-subject/Ai.php" class="btn btn-primary">Vào học</a>
-                                </div>
-                            </div>
-                        </div>
+                        <?php include('Monhoc.php') ?>
 
 
                     </div>
                 </div>
             </div>
         </div>
-    
-        <?php include"./partials/footer.php" ?>
+
+        <?php include "./partials/footer.php" ?>
 
 
     </div>
@@ -145,6 +107,7 @@
     <script type="text/javascript" src="assets/js/home.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+</body>
 </body>
 
 </html>

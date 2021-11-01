@@ -1,7 +1,6 @@
 <?php
 include('../login_check.php')
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +11,6 @@ include('../login_check.php')
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="../assets/css/style.css">
-
     <title>C++</title>
 </head>
 
@@ -20,7 +18,6 @@ include('../login_check.php')
     <?php
     include("header_lesson.php")
     ?>
-
     <div class="wrapper ">
         <div class="container shadow-sm bg-light pt-3">
             <div class="row ">
@@ -72,21 +69,21 @@ include('../login_check.php')
                         <p><a href='../index.php'>Các khóa học</a> ></p>
                         <?php
                         include('../config/db_conect.php');
-                        $sql_info_sub = "SELECT * from monhoc where mamh=13";
+                        $sql_info_sub = "SELECT * from monhoc where mamh=16";
                         $res = mysqli_query($conn, $sql_info_sub);
                         $row = mysqli_fetch_assoc($res);
                         ?>
                         <h1 style="color: #8DA1AD;"><?php echo $row['tenmh'] ?></h1>
-                        <p><b>Mã môn:</b> CSE_<?php echo $row['mamh'] ?></p>
+                        <p><b>Mã môn:</b>CSE_<?php echo $row['mamh'] ?></p>
 
                         <p><b>Thời lượng:</b> <?php echo $row['thoiluong'] ?></p>
 
                         <p class="m-0"><b>Giáo trình:</b></p>
                         <p class="m-0" style="text-indent: 20px;">C++ toàn tập (Phạm Văn Tùng dịch), NXB Khoa học tự nhiên và công nghệ, 2013</p>
                         <p class="m-0"><b> Tài liệu tham khảo:</b></p>
-                        <p class="m-0" style="text-indent: 20px;"><a href='https://tailieu.vn/doc/giao-trinh-ngon-ngu-lap-trinh-c-ths-tieu-kim-cuong-10748.html'> Ngôn Ngũ Lập Trình Ths-Tieu-Kim-Cuong </a></p>
-                        <p class="m-0" style="text-indent: 20px;"><a href='https://tailieu.vn/doc/giao-trinh-ngon-ngu-lap-trinh-visual-basic-6-0-5775.html'> Ngôn Ngũ Lập Trình Visual-Bassic </a></p>
-                        <p class="m-0" style="text-indent: 20px;"> <a href='https://sites.google.com/a/wru.vn/anhtuanly/teaching-courses/nnlt-k61'> Ngôn Ngũ Lập Trình Lý Anh Tuấn </a></p>
+                        <p class="m-0" style="text-indent: 20px;">1, W. Savitch, Absolute C++, Addison Wesley, 2003 (tải về)</p>
+                        <p class="m-0" style="text-indent: 20px;"> 2, Phạm Văn Ất, Lê Trường Thông, Giáo trình C++ và Lập trình hướng đối tượng, NXB Bách Khoa Hà Nội, 2018</p>
+                        <p class="m-0" style="text-indent: 20px;"> 3, A. Ford and T. Teorey, Practical Debugging in C++, Prentice Hall, 2002</p>
 
 
                     </div><br>
@@ -106,7 +103,7 @@ include('../login_check.php')
                             <tbody>
                                 <?php
 
-                                $sql = "SELECT * From baigiang where mamh=13";
+                                $sql = "SELECT * From baigiang where mamh=16";
                                 $result = (mysqli_query($conn, $sql));
                                 // Bước 3 trả về két quả 
                                 if (mysqli_num_rows($result) > 0) {

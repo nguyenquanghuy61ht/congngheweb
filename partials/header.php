@@ -1,3 +1,8 @@
+<?php
+if (!isset($_SESSION['login_ok'])) {
+    header("Location:http://localhost:7855/BTL/login.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,4 +15,3 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Học Mãi</title>
-</head>

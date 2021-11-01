@@ -44,7 +44,7 @@ include('login_check.php')
                                     </li>
 
                                     <li class="nav-item  nav-logout1">
-                                        <a class="nav-link" href="#" tabindex="-1">Đăng Xuất</a>
+                                        <a class="nav-link" href="logout.php" tabindex="-1">Đăng Xuất</a>
                                     </li>
                                 </ul>
                                 <form class="d-flex ">
@@ -61,7 +61,7 @@ include('login_check.php')
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                                        <li><a class="dropdown-item" href="logout.php">Đăng xuất</a></li>
                                     </ul>
                                 </div>
                             </div>

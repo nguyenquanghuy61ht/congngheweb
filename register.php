@@ -9,7 +9,7 @@ session_start()
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>register</title>
+    <title>Đăng ký</title>
 </head>
 
 <body>
@@ -21,7 +21,7 @@ session_start()
                         <div class="card-body p-md-5">
                             <div class="row justify-content-center">
                                 <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-                                    <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Đăng ký</p>
+                                    <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4"><b>Đăng ký</b></p>
                                     <?php
                                     if (isset($_SESSION['check_empty'])) {
                                         echo $_SESSION['check_empty'];
@@ -108,7 +108,7 @@ session_start()
                                             <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
                                                 <input type="password" id="pass2" name="password2" class="form-control" placeholder="Nhập lại mật khẩu" />
-
+                                                <span id='message'></span>
                                             </div>
                                         </div>
 
@@ -119,7 +119,7 @@ session_start()
                                     </form>
                                 </div>
                                 <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2 d-flex justify-content-center">
-                                    <img src="assets/images/logo_TLU.png" class="img-fluid " alt="Sample image">
+                                    <img src="https://agentpekka.com/wp-content/uploads/2019/02/AP_Justyna_Stasik_Increment_Documentation04_2x.jpg" class="img-fluid rounded" alt="Sample image">
                                 </div>
                             </div>
                         </div>
@@ -128,6 +128,8 @@ session_start()
             </div>
         </div>
     </section>
+    
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 

@@ -44,8 +44,13 @@ if (isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Login</title>
+=======
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Đăng nhập</title>
+>>>>>>> cd4997dcef328ed1c54d0a12933a93f982a4f41c
 </head>
 
 <body>
@@ -91,7 +96,7 @@ if (isset($_POST['submit'])) {
                                     </form>
                                 </div>
                                 <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2  d-flex justify-content-center ">
-                                    <img src="assets/images/logo_TLU.png" class="img-fluid " alt="Sample image">
+                                    <img src="https://agentpekka.com/wp-content/uploads/2018/08/AP_Justyna_Stasik_TDF_02_2x.jpg" class="img-fluid rounded" alt="Sample image">
                                 </div>
                             </div>
                         </div>
@@ -100,8 +105,13 @@ if (isset($_POST['submit'])) {
             </div>
         </div>
     </section>
+<<<<<<< HEAD
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+=======
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+>>>>>>> cd4997dcef328ed1c54d0a12933a93f982a4f41c
 
 </body>
 

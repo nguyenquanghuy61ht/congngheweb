@@ -13,9 +13,9 @@ if (mysqli_num_rows($result) > 0) {
                 <img src="<?php echo './' . $row['avatar_mh'] ?>" class=" card-img-top m-auto mt-3" alt="...">
                 <div class="card-body">
                     <h5 class="card-title"><?php echo $row['tenmh'] ?></h5>
-                    <p class="card-text  m-0"><b>Bộ môn:</b><?php echo $row['bomon'] ?></p>
-                    <p class="card-text">Trường đại học thủy lợi </p>
-                    <a href="<?php echo $row['page_link'] ?>" class="btn btn-primary">vào học</a>
+                    <p class="card-text  m-0"><b>Bộ Môn:</b><?php echo $row['bomon'] ?></p>
+                    <p class="card-text">Trường Đại Học Thủy Lợi  </p>
+                    <a href="<?php echo $row['page_link'] ?>" class="btn btn-primary">Vào Học</a>
                 </div>
             </div>
         </div>

@@ -12,7 +12,7 @@ include('login_check.php')
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Học Mãi</title>
+    <title>Học Mãi Mãi </title>
 
 </head>
 
@@ -74,16 +74,16 @@ include('login_check.php')
             <div class="row">
                 <div class="col-md-2 col-sm-12 col-xs-12 mb-3 text-center  ">
                     <ul class="list-group shadow-sm list-responsive  ">
-                        <li class="list-group-item  bg-info  disabled" aria-current="true">Danh sách</li>
-                        <li class="list-group-item cur-point active subject">Môn học</li>
-                        <li class="list-group-item cur-point info-person">Thông tin</li>
-                        <li class="list-group-item cur-point document ">Tài liệu</li>
-                        <li class="list-group-item cur-point">And a fifth one</li>
+                        <li class="list-group-item  bg-info  disabled" aria-current="true">Danh Sách</li>
+                        <li class="list-group-item cur-point active subject">Môn Học</li>
+                        <li class="list-group-item cur-point info-person">Thông Tin</li>
+                        <li class="list-group-item cur-point document ">Tài Liệu</li>
+                        <li class="list-group-item cur-point">Chúng Mày Thích Gì HaHa</li>
                     </ul>
                     <div class="  btn-group-responsive">
-                        <p class="btn btn-primary btn_smart   active subject" aria-current="page">Môn học</p>
-                        <p class="btn btn-primary btn_smart  info-person">Thông tin</p>
-                        <p class="btn btn-primary btn_smart document ">Tài liệu </p>
+                        <p class="btn btn-primary btn_smart   active subject" aria-current="page">Môn Học</p>
+                        <p class="btn btn-primary btn_smart  info-person">Thông Tin</p>
+                        <p class="btn btn-primary btn_smart document ">Tài Liệu </p>
                         <p class="btn btn-primary btn_smart ">Link</p>
                     </div>
                 </div>

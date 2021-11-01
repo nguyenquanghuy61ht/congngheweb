@@ -44,13 +44,13 @@ if (isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Login</title>
-=======
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Đăng nhập</title>
->>>>>>> cd4997dcef328ed1c54d0a12933a93f982a4f41c
+    <title>Đăng Nhập</title>
+
 </head>
 
 <body>
@@ -62,7 +62,7 @@ if (isset($_POST['submit'])) {
                         <div class="card-body p-md-5">
                             <div class="row justify-content-center">
                                 <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-                                    <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Đăng nhập</p>
+                                    <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Đăng Nhập</p>
                                     <form class="mx-1 mx-md-4 " method="post" action="">
                                         <div class="d-flex flex-row align-items-center mb-4">
                                              <?php
@@ -92,7 +92,7 @@ if (isset($_POST['submit'])) {
                                         <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                                             <button type="submit" name="submit" class="btn btn-success btn-lg">Đăng nhập</button>
                                         </div>
-                                        <p class="text-center text-muted mt-5 mb-0">Bạn chưa có tài khoản? <a href="register.php" class="fw-bold text-danger"><u>Đăng ký</u></a></p>
+                                        <p class="text-center text-muted mt-5 mb-0">Bạn Chua Có Tài Khoản ? <a href="register.php" class="fw-bold text-danger"><u>Đăng ký</u></a></p>
                                     </form>
                                 </div>
                                 <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2  d-flex justify-content-center ">
@@ -105,13 +105,13 @@ if (isset($_POST['submit'])) {
             </div>
         </div>
     </section>
-<<<<<<< HEAD
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-=======
+
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
->>>>>>> cd4997dcef328ed1c54d0a12933a93f982a4f41c
+
 
 </body>
 

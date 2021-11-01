@@ -68,10 +68,16 @@ include('../login_check.php')
                 <div class="col-md-9">
                     <div class="box-info">
                         <p><a href='../index.php'>Các khóa học</a> ></p>
-                        <h1 style="color: #8DA1AD;">Công nghệ web</h1>
-                        <p><b>Mã môn:</b> CSE280</p>
+                        <?php
+                        include('../config/db_conect.php');
+                        $sql_info_sub = "SELECT * from monhoc where mamh=14";
+                        $res = mysqli_query($conn, $sql_info_sub);
+                        $row = mysqli_fetch_assoc($res);
+                        ?>
+                        <h1 style="color: #8DA1AD;"><?php echo $row['tenmh'] ?></h1>
+                        <p><b>Mã môn:</b> CSE_<?php echo $row['mamh']?></p>
 
-                        <p><b>Thời lượng:</b> 45 tiết lý thuyết, 15x2 tiết bài tập (4TC)</p>
+                        <p><b>Thời lượng:</b> <?php echo $row['thoiluong'] ?></p>
 
                         <p class="m-0"><b>Giáo trình:</b></p>
                         <p class="m-0" style="text-indent: 20px;">C++ toàn tập (Phạm Văn Tùng dịch), NXB Khoa học tự nhiên và công nghệ, 2013</p>
@@ -96,24 +102,32 @@ include('../login_check.php')
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>1</td>
-                                    <td>Buổi 1</td>
-                                    <td>Giới thiệu về C++</td>
-                                    <td>Bài 1</td>
-                                    <td>Bài tập 1</td>
+                                <?php
 
-                                </tr>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>1</td>
-                                    <td>Buổi 1</td>
-                                    <td>Giới thiệu về C++</td>
-                                    <td>Bài 1</td>
-                                    <td>Bài tập 1</td>
+                                $sql = "SELECT * From baigiang where mamh=14";
+                                $result = (mysqli_query($conn, $sql));
+                                // Bước 3 trả về két quả 
+                                if (mysqli_num_rows($result) > 0) {
+                                    $i = 1;
 
-                                </tr>
+                                    while ($row = mysqli_fetch_assoc($result)) {
+                                ?>
+                                        <tr>
+                                            <th scope="row"><?php echo $i; ?></th>
+                                            <td><?php echo $row['ngay'];  ?></td>
+                                            <td><?php echo $row['ten_bg'];   ?></td>
+                                            <td><a href="<?php echo '../admin/' . substr($row['slide'], 3);  ?>" class="text-danger"><?php echo substr($row['slide'], 16);  ?></a></td>
+                                            <td><a href="<?php echo '../admin/' . substr($row['bai_tap'], 3);   ?>" class="text-danger"><?php echo substr($row['bai_tap'], 16);   ?></a></td>
+                                            <td><?php echo $row['ghichu'];  ?></td>
+
+                                        </tr>
+                                <?php
+
+                                        $i++;
+                                    }
+                                }
+
+                                ?>
 
                             </tbody>
                         </table>

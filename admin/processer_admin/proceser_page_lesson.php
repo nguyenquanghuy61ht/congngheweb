@@ -11,7 +11,7 @@
         $_SESSION['error-fomat1'] = "<p class='text-danger'>Xin lỗi, chỉ chấp nhận file là PDF.</p>";
     } else {
 
-        if (move_uploaded_file($_FILES["fileToUpload_pdf"]["tmp_name"], $target_file)) {
+        if (move_uploaded_file($_FILES["fileToUpload_document"]["tmp_name"],$target_file_slide)) {
             $_SESSION['up-file-success1'] = '<p class=" text-success"> ảnh đã được tải lên thành công</p>';
         }
     }
@@ -19,7 +19,7 @@
         $_SESSION['error-fomat2'] = "<p class='text-danger'>Xin lỗi, chỉ chấp nhận file là PDF.</p>";
     } else {
 
-        if (move_uploaded_file($_FILES["fileToUpload_pdf"]["tmp_name"], $target_file)) {
+        if (move_uploaded_file($_FILES["fileToUpload_Exercise"]["tmp_name"],$target_file_exercise)) {
             $_SESSION['up-file-success2'] = '<p class=" text-success"> ảnh đã được tải lên thành công</p>';
         }
     }
@@ -37,21 +37,21 @@
                                         <strong>Vui lòng nhập tất cả các trường!</strong> 
                                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                     </div>';
-        header('Location:http://localhost:/BTL/admin/processer_admin/page_add_lesson.php');
+        header('Location:http://localhost:7855/BTL/admin/processer_admin/page_add_lesson.php');
     } else {
         if ($target_file_slide == "../slide_lesson/" || $target_file_exercise == "../slide_lesson/") {
             $_SESSION['file_empty'] = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
                                         <strong>Vui lòng nhập file!</strong> 
                                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                     </div>';
-            header('Location:http://localhost:/BTL/admin/processer_admin/page_add_lesson.php');
+            header('Location:http://localhost:7855/BTL/admin/processer_admin/page_add_lesson.php');
         } else {
             if ($slideFileType != "pdf"  || $exerciseFileType != "pdf") {
                 $_SESSION['type_file'] = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
                                         <strong>Chỉ chấp nhận file  pdf</strong> 
                                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                     </div>';
-                header('Location:http://localhost:/BTL/admin/processer_admin/page_add_lesson.php');
+                header('Location:http://localhost:7855/BTL/admin/processer_admin/page_add_lesson.php');
             } else {
                 $sql_insert = "INSERT INTO baigiang (ngay,ten_bg,slide, bai_tap,ghichu,mamh)
             VALUES (' $day', '$baigiang', '$target_file_slide', '$target_file_exercise','$ghichu',$monhoc);";
@@ -61,7 +61,7 @@
                                         <strong>Thêm thành công</strong> 
                                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                     </div>';
-                    header('Location:http://localhost:/BTL/admin/processer_admin/page_add_lesson.php');
+                    header('Location:http://localhost:7855/BTL/admin/processer_admin/page_add_lesson.php');
                 } else {
                     echo 'chen that bai';
                 }

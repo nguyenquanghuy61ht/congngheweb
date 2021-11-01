@@ -34,7 +34,7 @@ if(isset($_POST["submit"])){
         if(mysqli_num_rows($result_1) > 0)
         {
              $_SESSION['email_error'] ='<div class="alert alert-danger alert-dismissible fade show" role="alert">
-                                            <strong>Email already exists.</strong> 
+                                            <strong>Email đã tồn tại.</strong> 
                                             <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="outline:none">
                                                 <span aria-hidden="true">&times</span>
                                             </button>
@@ -96,7 +96,7 @@ if(isset($_POST["submit"])){
 
             if($result_2>0){
                  $_SESSION['success'] ='<div class="alert alert-success alert-dismissible fade show" role="alert">
-                                            <strong>Register Success! Please check your gmail to activate your account.</strong> 
+                                            <strong>Đăng ký thành công ! vui lòng kiểm tra email để kích hoạt.</strong> 
                                             <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="outline:none">
                                                 <span aria-hidden="true">&times</span>
                                             </button>
@@ -118,7 +118,7 @@ if(isset($_POST["submit"])){
     }
     else{
             $_SESSION['password2_error'] ='<div class="alert alert-danger alert-dismissible fade show" role="alert">
-                                    <strong>password incorrect</strong> 
+                                    <strong>Mật khẩu không giống nhau , vui lòng nhập lại !</strong> 
                                     <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="outline:none">
                                         <span aria-hidden="true">&times</span>
                                     </button>

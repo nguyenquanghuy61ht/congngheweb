@@ -6,7 +6,7 @@
 
 <section class="container">
   <div class="col-md-6">
-    <h5 class="text-success">Tải file điểm</h5>
+    <h5 class="text-success">Tải file Điểm </h5>
     <div class="input-group mb-5 mt-1">
       <div class="input-group-prepend">
         <span class="input-group-text">Upload</span>

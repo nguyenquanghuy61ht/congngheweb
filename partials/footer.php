@@ -9,7 +9,7 @@ if (!isset($_SESSION['login_ok'])) {
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
-                        <h3 class="f-title f_600 t_color f_size_18">Liên hệ</h3>
+                        <h3 class="f-title f_600 t_color f_size_18">Liên Hệ</h3>
                         <p>Điền email phía dưới để nhận thông báo khi có môn học mới !</p>
                         <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
                             <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">

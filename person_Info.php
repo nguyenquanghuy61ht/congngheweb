@@ -14,15 +14,15 @@ include('login_check.php')
 <div class="col-md-5 col-sm-5">
     <br>
     <br>
-    <p class="m-0"> - Tin đại cương</p>
+    <p class="m-0"> - Tin Đại Cương</p>
 
-    <p class="m-0">- Tin học văn phòng</p>
+    <p class="m-0">- Tin Học Văn Phòng</p>
 
-    <p class="m-0">- Toán Rời rạc</p>
+    <p class="m-0">- Toán Rời Rạc</p>
 
-    <p class="m-0"> - Xử lý ảnh</p>
+    <p class="m-0"> - Xử Lý Anh</p>
 
-    <p class="m-0">- Khai phá dữ liệu.</p>
+    <p class="m-0">- Khai Phá Dữ Liệu.</p>
 
-    <p class="m-0"> - Tin sinh học.</p>
+    <p class="m-0"> - Tin Sinh Học .</p>
 </div>

@@ -81,9 +81,9 @@ include('../login_check.php')
                         <p class="m-0"><b>Giáo trình:</b></p>
                         <p class="m-0" style="text-indent: 20px;">C++ toàn tập (Phạm Văn Tùng dịch), NXB Khoa học tự nhiên và công nghệ, 2013</p>
                         <p class="m-0"><b> Tài liệu tham khảo:</b></p>
-                        <p class="m-0" style="text-indent: 20px;">1, W. Savitch, Absolute C++, Addison Wesley, 2003 (tải về)</p>
-                        <p class="m-0" style="text-indent: 20px;"> 2, Phạm Văn Ất, Lê Trường Thông, Giáo trình C++ và Lập trình hướng đối tượng, NXB Bách Khoa Hà Nội, 2018</p>
-                        <p class="m-0" style="text-indent: 20px;"> 3, A. Ford and T. Teorey, Practical Debugging in C++, Prentice Hall, 2002</p>
+                        <p class="m-0" style="text-indent: 20px;"><a href='https://tailieu.vn/doc/tai-lieu-ve-he-dieu-hanh-886815.html'>tài liệu hệ điều hành </a></p>
+                        <p class="m-0" style="text-indent: 20px;"> <a href='https://tailieu.vn/doc/tai-lieu-ve-he-dieu-hanh-886815.html'>tài liệu hệ điều hành </a></p>
+                        <p class="m-0" style="text-indent: 20px;"><a href='https://tailieu.vn/doc/tai-lieu-ve-he-dieu-hanh-886815.html'>tài liệu hệ điều hành </a></p>
 
 
                     </div><br>

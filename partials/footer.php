@@ -33,8 +33,8 @@ if (!isset($_SESSION['login_ok'])) {
                         <h3 class="f-title f_600 t_color f_size_18">Trợ Giúp</h3>
                         <ul class="list-unstyled f_list">
                             <li><a href="#">Các câu hỏi thường gặp</a></li>
-                            <li><a href="#">Chính sách và bảo mật</a></li>
-                            <li><a href="#">Quyền riêng tư</a></li>
+                            <li><a href="#">Y Kiến Cá Nhân </a></li>
+                            <li><a href="#">Quyền Cá Nhân </a></li>
                         </ul>
                     </div>
                 </div>
@@ -42,8 +42,8 @@ if (!isset($_SESSION['login_ok'])) {
                     <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
                         <h3 class="f-title f_600 t_color f_size_18">Giải Pháp Nhóm</h3>
                         <div class="f_social_icon">
-                            <a href="#" class="fab fa-facebook"></a>
-                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="https://www.facebook.com/huy.huyt.7" class="fab fa-facebook"></a>
+                            <a href="https://www.facebook.com/daoquyenminh" class="fab fa-twitter"></a>
                         </div>
                     </div>
                 </div>

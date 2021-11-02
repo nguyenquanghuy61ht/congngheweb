@@ -15,53 +15,52 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="container">
-		<div class="panel panel-primary">
-			<div class="panel-heading">
-				<h2 class="text-center">Add Student</h2>
-			</div>
-			<div class="panel-body">
-				<form method="post">
-				<div class="form-group">
-					  <label for="usr">Name:</label>
-					  <input type="number" name="id" value="<?=$id?>" style="display: none;">
-					  <input required="true" type="text" class="form-control" id="id" name="id" value="<?=$s_id?>">
-					</div>
-					<div class="form-group">
-					  <label for="usr">Name:</label>
-					  <input type="number" name="id" value="<?=$id?>" style="display: none;">
-					  <input required="true" type="text" class="form-control" id="Name" name="Name" value="<?=$s_Name?>">
-					</div>
-					<div class="form-group">
-					  <label for="birthday">Age:</label>
-					  <input type="number" class="form-control" id="Age" name="age" value="<?=$s_Age?>">
-					</div>
-					<div class="form-group">
-					  <label for="address">bgrp:</label>
-					  <input type="text" class="form-control" id="address" name="pgrp" value="<?=$s_pgrp?>">
-					</div>
-					<div class="form-group">
-					  <label for="address">bpnty:</label>
-					  <input type="text" class="form-control" id="address" name="bpnty" value="<?=$s_bpnty?>">
-					</div>
-					<div class="form-group">
-					  <label for="address">sex:</label>
-					  <input type="text" class="form-control" id="address" name="sex" value="<?=$s_sex?>">
-					</div>
-					<div class="form-group">
-					  <label for="address">sex:</label>
-					  <input type="text" class="form-control" id="address" name="date" value="<?=$s_date?>">
-					</div>
-					<div class="form-group">
-					  <label for="address">sex:</label>
-					  <input type="text" class="form-control" id="address" name="phno" value="<?=$s_date?>">
-					</div>
-					
-					
-					<button class="btn btn-success">Save</button>
-				</form>
-			</div>
+<div class="container  m-l-6">
+		<div class="row">
+            <div class="col-md-10 ">
+                <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h2 class="text-center ">Sửa </h2>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                    <label for="usr">STT:</label>
+                    <input required="true" type="text" class="form-control" id="usr">
+                    </div>
+                    <div class="form-group">
+                    <label for="email">Anh :</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupFileAddon01">Tải Lên </span>
+                        </div>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="inputGroupFile01"
+                            aria-describedby="inputGroupFileAddon01">
+                            <label class="custom-file-label" for="inputGroupFile01">Chọn File </label>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                    <label for="birthday">Tên tài liệu  :</label>
+                    <input type="true" class="form-control" id="birthday">
+                    </div>
+                    <div class="form-group">
+                    <label for="pwd">Môn HỌC:</label>
+                    <input required="true" type="password" class="form-control" id="pwd">
+                    </div>
+                    <div class="form-group">
+                    <label for="confirmation_pwd">tài lệu bdf  :</label>
+                    <input required="true" type="password" class="form-control" id="confirmation_pwd">
+                    </div>
+                    <div class="form-group">
+                    <label for="address">Giao Trình :</label>
+                    <input type="text" class="form-control" id="address">
+                    </div>
+                    <button class="btn btn-success">Sửa </button>
+                </div>
 		</div>
+            </div>
+        </div>
 	</div>
 </body>
 </html>

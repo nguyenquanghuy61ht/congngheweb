@@ -18,7 +18,7 @@ include('login_check.php')
 
 <body>
     <div class="warpper">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12 p-0">
                     <nav class="navbar navbar-expand-lg navbar-light bgroud-orange fw-bolder fs-6 ">
@@ -36,11 +36,11 @@ include('login_check.php')
                                         <a class="nav-link text-dark " aria-current="page" href="http://localhost:7855/BTL/index.php"> Trang chủ</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark" href="#">Về Chúng Tôi</a>
+                                        <a class="nav-link text-dark" href="./aboutus.php">Về Chúng Tôi</a>
                                         
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark" href="#">Liên hệ</a>
+                                        <a class="nav-link text-dark" href="./contact.php">Liên hệ</a>
                                     </li>
 
                                     <li class="nav-item  nav-logout1">
@@ -63,7 +63,11 @@ include('login_check.php')
                                         <a class="text-danger" href=""><?php echo $row['tensv'] ?></a>
                                     </div>
                                     <ul class="dropdown-menu  " style=" min-width: 6rem;" aria-labelledby="dropdownUser1"> 
+<<<<<<< HEAD
                                         <li><a class="dropdown-item" href="acout_sv.php">Tài khoản</a></li>
+=======
+                                        <li><a class="dropdown-item" href="private.php">Trang Cá Nhân</a></li>
+>>>>>>> 3f9cdf27733d44140c746a8870dd38756af6d499
 
                                         <li>
                                             <hr class="dropdown-divider">

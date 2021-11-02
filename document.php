@@ -1,7 +1,7 @@
 <?php
 include('login_check.php')
 ?>
-<h3 class="mb-3 text-primary">Tài liệu tham khảo</h3>
+<h3 class="mb-3 text-primary">Tài Liệu Tham Khảo </h3>
 <div class="col-md-12 border-bottom mb-3">
     <ol class="list-group">
         <?php

@@ -1,4 +1,7 @@
-<div class="col-md-12">
+<?php include('./header_admin.php') ?>
+
+
+<section class="col-md-12">
     <!-- Nav tabs -->
     <ul class="nav nav-tabs">
         <li class="nav-item">
@@ -251,4 +254,9 @@
             </table>
         </div>
     </div>
-</div>
+</section>
+
+
+
+<?php include('./footer_admin.php') ?>
+

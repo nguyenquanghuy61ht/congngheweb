@@ -8,6 +8,7 @@ if (isset($_POST['submit'])) {
     //2. SQL to check whether the user with username and password exists or not
     // Bước 02: Xử lý truy vấn
     $sql = "SELECT * FROM sinhvien WHERE email_sv='$email'";
+    $sql2 = "SELECT tensv FROM sinhvien";
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) > 0) {
@@ -16,6 +17,7 @@ if (isset($_POST['submit'])) {
         $pass = $row['pass_sv'];
         $status = $row['status_sv'];
         if (password_verify($password,$pass) and $status == 1) {
+
             $_SESSION['login_ok'] = $email;
             header('Location:http://localhost:7855/BTL');
         } else {

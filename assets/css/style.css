@@ -4,10 +4,10 @@ body {
     font-weight: 400;
     line-height: 1.42857143;
     color: #333;
-    background-color: #fff;
+    background-color: #eee;
 }
 .logo-img{width: 70px;height: 100%;}
-.bgroud-orange{ background: linear-gradient(to bottom, #0675AB 0%, #BCDEE2 100%);}
+.bgroud-orange{ background-color: darkturquoise;}
 .warpper{ background: linear-gradient( bottom, #ffffff 3%, #ffffff 89%to);}
 .cur-point{cursor: pointer ;
 
@@ -23,7 +23,10 @@ transform: translateY(-8px);
 }
 .card-trantion:hover{box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);}
 
-
+a{
+    
+    text-decoration: none;
+}
 
 
 

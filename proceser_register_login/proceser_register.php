@@ -42,7 +42,7 @@ if(isset($_POST["submit"])){
 
                   header('Location:http://localhost:7855/BTL/register.php');
         }else{
-            $sql_lop_gv="select malop,magv from lop where tenlop='$lop'";
+            $sql_lop_gv="select malop,magv from lop where malop='$lop'";
             $result = mysqli_query($conn, $sql_lop_gv);
             $row=mysqli_fetch_assoc($result);
             $pass_hash = password_hash($password1,PASSWORD_DEFAULT);

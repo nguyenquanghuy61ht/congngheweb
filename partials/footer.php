@@ -3,8 +3,8 @@ if (!isset($_SESSION['login_ok'])) {
     header("Location:http://localhost:7855/BTL/login.php");
 }
 ?>
-<footer class="new_footer_area bg_color" style="margin-top: 17%;">
-    <div class="new_footer_top">
+<footer class="new_footer_area bg_color" style="margin-top: 9%;">
+    <div class="new_footer_top border-top border-success"">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
@@ -14,8 +14,7 @@ if (!isset($_SESSION['login_ok'])) {
                         <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
                             <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
                             <button class="btn btn_get btn_get_two" type="submit">Đăng ký</button>
-                            <p class="mchimp-errmessage" style="display: none;"></p>
-                            <p class="mchimp-sucmessage" style="display: none;"></p>
+                            
                         </form>
                     </div>
                 </div>
@@ -23,9 +22,6 @@ if (!isset($_SESSION['login_ok'])) {
                     <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
                         <h3 class="f-title f_600 t_color f_size_18">Tải Xuống</h3>
                         <ul class="list-unstyled f_list">
-                            <li><a href="#">Công Ty</a></li>
-                            <li><a href="#">Ứng Dụng Android</a></li>
-                            <li><a href="#">Ứng Dụng IOS</a></li>
                             <li><a href="#">Máy Tính</a></li>
                             <li><a href="#">Dự án</a></li>
                             <li><a href="#">Nhiệm Vụ</a></li>
@@ -38,9 +34,6 @@ if (!isset($_SESSION['login_ok'])) {
                         <ul class="list-unstyled f_list">
                             <li><a href="#">Các câu hỏi thường gặp</a></li>
                             <li><a href="#">Chính sách và bảo mật</a></li>
-                            <li><a href="#">Báo cáo</a></li>
-                            <li><a href="#">Tài Liệu</a></li>
-                            <li><a href="#">Chính sách hỗ trợ</a></li>
                             <li><a href="#">Quyền riêng tư</a></li>
                         </ul>
                     </div>
@@ -51,8 +44,6 @@ if (!isset($_SESSION['login_ok'])) {
                         <div class="f_social_icon">
                             <a href="#" class="fab fa-facebook"></a>
                             <a href="#" class="fab fa-twitter"></a>
-                            <a href="#" class="fab fa-linkedin"></a>
-                            <a href="#" class="fab fa-pinterest"></a>
                         </div>
                     </div>
                 </div>
@@ -74,3 +65,10 @@ if (!isset($_SESSION['login_ok'])) {
         </div>
     </div>
 </footer>
+<style>
+    a{
+    
+    text-decoration: none;
+    }
+
+</style>

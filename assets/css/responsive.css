@@ -82,7 +82,7 @@ body {
   font-size: 14px;
   font-weight: 300;
   line-height: 20px;
-  color: #7f88a6;
+  color: #355bd8;
   padding: 27px 0px;
 }
 .new_footer_top .company_widget p {
@@ -98,12 +98,12 @@ body {
 }
 .btn_get_two:hover {
   background: transparent;
-  color: #5e2ced;
+  color: #4a8c8a;
 }
 .btn_get:hover {
   color: #fff;
-  background: #6754e2;
-  border-color: #6754e2;
+  background: #3edcaa;
+ 
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -118,7 +118,7 @@ button:focus {
 }
 
 .new_footer_top .f_widget.about-widget .f_list li a:hover {
-  color: #5e2ced;
+  color: #49d671;
 }
 .new_footer_top .f_widget.about-widget .f_list li {
   margin-bottom: 11px;
@@ -170,8 +170,8 @@ button:focus {
 .btn_get_two {
   -webkit-box-shadow: none;
   box-shadow: none;
-  background: #5e2ced;
-  border-color: #5e2ced;
+  background: darkturquoise;
+  
   color: #fff;
 }
 

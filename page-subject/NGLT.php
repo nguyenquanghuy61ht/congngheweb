@@ -13,7 +13,7 @@ include('../login_check.php')
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 
-    <title>C++</title>
+    <title>Ngôn ngữ lập trình</title>
 </head>
 
 <body>

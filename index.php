@@ -53,11 +53,19 @@ include('login_check.php')
 
                                 </form>
                                 <div class="dropdown text-end mr-4 drop-logout">
+<<<<<<< HEAD
+                                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="https://pdp.edu.vn/wp-content/uploads/2021/01/hinh-anh-girl-xinh-toc-ngan-de-thuong.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+                                    </a>
+                                    <ul class="dropdown-menu  " style=" min-width: 6rem;" aria-labelledby="dropdownUser1">
+                                        <li><a class="dropdown-item" href="private.php">Trang Cá Nhân</a></li>
+=======
                                     <div href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                                         <a class="text-dark" href="">Tên user</a>
                                     </div>
                                     <ul class="dropdown-menu  " style=" min-width: 6rem;" aria-labelledby="dropdownUser1"> 
                                         <li><a class="dropdown-item" href="#">Trang Cá Nhân</a></li>
+>>>>>>> a5bdd72382473182c9828336abee69a23c55b7c5
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>

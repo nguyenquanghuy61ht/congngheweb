@@ -18,8 +18,8 @@ include('../login_check.php')
     <?php
     include("header_lesson.php")
     ?>
-    <div class="wrapper ">
-        <div class="container shadow-sm bg-light pt-3">
+    <div class="wrapper mt-4 ">
+        <div class="container  bg-light pt-3">
             <div class="row ">
                 <div class="col-md-3">
                     <h5 style="color: #8DA1AD;">Home</h5>

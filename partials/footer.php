@@ -3,7 +3,7 @@ if (!isset($_SESSION['login_ok'])) {
     header("Location:http://localhost:7855/BTL/login.php");
 }
 ?>
-<footer class="new_footer_area bg_color" style="margin-top: 9%;">
+<footer class="new_footer_area bg_color" style="margin-top: 5%;">
     <div class="new_footer_top border-top border-success"">
         <div class="container">
             <div class="row">

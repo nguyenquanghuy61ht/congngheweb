@@ -57,7 +57,7 @@ include('login_check.php')
                                         <img src="https://pdp.edu.vn/wp-content/uploads/2021/01/hinh-anh-girl-xinh-toc-ngan-de-thuong.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
                                     </a>
                                     <ul class="dropdown-menu  " style=" min-width: 6rem;" aria-labelledby="dropdownUser1">
-                                        <li><a class="dropdown-item" href="#">Trang Cá Nhân</a></li>
+                                        <li><a class="dropdown-item" href="private.php">Trang Cá Nhân</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>

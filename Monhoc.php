@@ -10,7 +10,7 @@ if (mysqli_num_rows($result) > 0) {
 ?>
         <div class="col-md-3 col-sm-6  mb-3 ">
             <div class="card  card-trantion" style="   border-radius:15px;">
-                <img src="<?php echo './' . $row['avatar_mh'] ?>" class=" card-img-top m-auto mt-3" alt="...">
+                <img src="<?php echo 'admin' . substr($row['avatar_mh'],2) ?>" class=" card-img-top m-auto mt-3" alt="...">
                 <div class="card-body">
                     <h5 class="card-title"><?php echo $row['tenmh'] ?></h5>
 

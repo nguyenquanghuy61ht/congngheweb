@@ -89,7 +89,7 @@ if (isset($_POST['submit'])) {
                     <div class="box-info show">
                         <p><a href='../index.php'>Các khóa học</a> ></p>
                         <?php
-                    
+
                         $sql_info_sub = "SELECT * from monhoc where mamh=14";
                         $res = mysqli_query($conn, $sql_info_sub);
                         $row = mysqli_fetch_assoc($res);
@@ -100,7 +100,7 @@ if (isset($_POST['submit'])) {
                         <p><b>Thời lượng:</b> <?php echo $row['thoiluong'] ?></p>
 
                         <p class="m-0"><b>Giáo trình:</b></p>
-                        <p class="m-0" style="text-indent: 20px;">C++ toàn tập (Phạm Văn Tùng dịch), NXB Khoa học tự nhiên và công nghệ, 2013</p>
+                        <p class="m-0" style="text-indent: 20px;"><?php echo $row['giaotrinh'] ?></p>
                         <p class="m-0"><b> Tài liệu tham khảo:</b></p>
                         <p class="m-0" style="text-indent: 20px;"><a href='https://docs.google.com/viewer?a=v&pid=sites&srcid=ZGVmYXVsdGRvbWFpbnxhZ3Vjb245MTB8Z3g6NDkzZWUzNWI2YTkyMDUxYg'>PHP 7 Program Bluepriints</a></p>
                         <p class="m-0" style="text-indent: 20px;"> <a href='https://drive.google.com/drive/folders/11eKzSctUiiVsDk9BmevL-3XyyJoNoGlP'>link google dirve chứa ajax , javascript</a></p>

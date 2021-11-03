@@ -1,11 +1,6 @@
 <?php include('./header_admin.php') ?>
 
-
-
-
-
 <section class="container">
-<<<<<<< HEAD
   <div class="col-md-6 mb-4">
     <h5 class="text-success mb-4">Tải lên file điểm </h5>
     <div class="  bg-light rounded p-1">
@@ -43,7 +38,7 @@
         ?>
             <tr>
               <th scope="row"><?php echo $i; ?></th>
-              <td><img class="img-thumbnail" width="50px" height="80px" src="<?php echo '../' . $row['avatar_mh'];  ?>" alt=""></td>
+              <td><img class="img-thumbnail" width="50px" height="80px" src="<?php echo substr( $row['avatar_mh'],3);  ?>" alt=""></td>
               <td><?php echo $row['tenmh'];  ?></td>
               <td><?php echo $row['bomon'];   ?></td>
               <td><?php echo $row['thoiluong'];  ?></td>

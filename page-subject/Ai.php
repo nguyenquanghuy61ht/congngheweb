@@ -100,7 +100,7 @@ if (isset($_POST['submit'])) {
                         <p><b>Thời lượng:</b> <?php echo $row['thoiluong'] ?></p>
 
                         <p class="m-0"><b>Giáo trình:</b></p>
-                        <p class="m-0" style="text-indent: 20px;"><?php $row['giaotrinh'] ?></p>
+                        <p class="m-0" style="text-indent: 20px;"><?php echo $row['giaotrinh'] ?></p>
                         <p class="m-0"><b> Tài liệu tham khảo:</b></p>
                         <p class="m-0" style="text-indent: 20px;"><a href='https://cuuduongthancong.com/sjdt/tri-tue-nhan-tao/dinh-manh-tuong/dh-cong-nghe-ha-noi'> 1- Đinh Mạnh Tường, Trí tuệ nhân tạo, NXB Khoa học Kỹ thuật, 2002 </a></p>
                         <p class="m-0" style="text-indent: 20px;"> <a href='https://fit.lqdtu.edu.vn/files/FileMonHoc/1.%20TTNT.pdf'> 2- Trí Tuệ Nhân Tạo , TS-Ngô Hữu PHúc ,Đại Học Thủy Lợi </a></p>

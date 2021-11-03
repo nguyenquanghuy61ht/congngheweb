@@ -102,7 +102,7 @@ if (isset($_POST['submit'])) {
                         <p><b>Thời lượng:</b> <?php echo $row['thoiluong'] ?></p>
 
                         <p class="m-0"><b>Giáo trình:</b></p>
-                        <p class="m-0" style="text-indent: 20px;">C++ toàn tập (Phạm Văn Tùng dịch), NXB Khoa học tự nhiên và công nghệ, 2013</p>
+                        <p class="m-0" style="text-indent: 20px;"><?php echo $row['giaotrinh'] ?></p>
                         <p class="m-0"><b> Tài liệu tham khảo:</b></p>
                         <p class="m-0" style="text-indent: 20px;"><a href='https://tailieu.vn/doc/giao-trinh-ngon-ngu-lap-trinh-c-ths-tieu-kim-cuong-10748.html'> Ngôn Ngũ Lập Trình Ths-Tieu-Kim-Cuong </a></p>
                         <p class="m-0" style="text-indent: 20px;"><a href='https://tailieu.vn/doc/giao-trinh-ngon-ngu-lap-trinh-visual-basic-6-0-5775.html'> Ngôn Ngũ Lập Trình Visual-Bassic </a></p>

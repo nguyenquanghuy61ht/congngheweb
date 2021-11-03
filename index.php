@@ -94,7 +94,7 @@ include('login_check.php')
                         <p class="btn btn-primary btn_smart   active subject" aria-current="page">Môn Học</p>
                         <p class="btn btn-primary btn_smart  info-person">Thông Tin</p>
                         <p class="btn btn-primary btn_smart document ">Tài Liệu </p>
-                        <p class="btn btn-primary btn_smart ">Link</p>
+
                     </div>
                 </div>
                 <div class="col-md-10 col-sm-12  ">

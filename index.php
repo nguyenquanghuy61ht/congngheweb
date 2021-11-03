@@ -18,7 +18,7 @@ include('login_check.php')
 
 <body>
     <div class="warpper">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 p-0">
                     <nav class="navbar navbar-expand-lg navbar-light bgroud-orange fw-bolder fs-6 ">
@@ -36,11 +36,11 @@ include('login_check.php')
                                         <a class="nav-link text-dark " aria-current="page" href="http://localhost:7855/BTL/index.php"> Trang chủ</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark" href="./aboutus.php">Về Chúng Tôi</a>
+                                        <a class="nav-link text-dark" href="aboutus.php">Về Chúng Tôi</a>
 
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark" href="./contact.php">Liên hệ</a>
+                                        <a class="nav-link text-dark" href="contact.php">Liên hệ</a>
                                     </li>
 
                                     <li class="nav-item  nav-logout1">

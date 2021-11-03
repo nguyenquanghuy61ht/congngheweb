@@ -7,6 +7,7 @@
     display: none;
   }
 .card-trantion img{width:160px;height:160px}
+.card-trantion{height: 380px;}
 }
 
 @media screen and (min-width: 740px) and (max-width: 1023px) {

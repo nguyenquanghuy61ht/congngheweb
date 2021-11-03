@@ -37,7 +37,7 @@ include('login_check.php')
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link text-dark" href="./aboutus.php">Về Chúng Tôi</a>
-                                        
+
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link text-dark" href="./contact.php">Liên hệ</a>
@@ -54,20 +54,19 @@ include('login_check.php')
                                 </form>
                                 <div class="dropdown text-end mr-4 drop-logout">
                                     <?php
-                                        include("config/db_conect.php");
-                                        $sql="SELECT tensv from sinhvien where email_sv='$_SESSION[login_ok]'";
-                                        $res=mysqli_query($conn,$sql);
-                                        $row=mysqli_fetch_assoc($res);
+                                    include("config/db_conect.php");
+                                    $sql = "SELECT tensv from sinhvien where email_sv='$_SESSION[login_ok]'";
+                                    $res = mysqli_query($conn, $sql);
+                                    $row = mysqli_fetch_assoc($res);
                                     ?>
                                     <div href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
                                         <a class="text-danger" href=""><?php echo $row['tensv'] ?></a>
                                     </div>
-                                    <ul class="dropdown-menu  " style=" min-width: 6rem;" aria-labelledby="dropdownUser1"> 
-<<<<<<< HEAD
+                                    <ul class="dropdown-menu  " style=" min-width: 6rem;" aria-labelledby="dropdownUser1">
+
                                         <li><a class="dropdown-item" href="acout_sv.php">Tài khoản</a></li>
-=======
-                                        <li><a class="dropdown-item" href="private.php">Trang Cá Nhân</a></li>
->>>>>>> 3f9cdf27733d44140c746a8870dd38756af6d499
+                                        <li><a class="dropdown-item" href="change_pass_sv.php">Đổi mật khẩu</a></li>
+
 
                                         <li>
                                             <hr class="dropdown-divider">

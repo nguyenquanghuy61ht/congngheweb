@@ -1,5 +1,54 @@
 <?php
-include('login_check.php')
+include('login_check.php');
+?>
+<?php
+include("config/db_conect.php");
+if (isset($_POST["submit"])) {
+    $password_old = $_POST['pass_old'];
+    $password1 = $_POST['pass_new1'];
+    $password_new = password_hash($password1, PASSWORD_DEFAULT);
+    $password_new2 = $_POST['pass_new2'];
+    $sql_checkpass = "SELECT pass_sv from sinhvien where email_sv='$_SESSION[login_ok]'";
+    $result = mysqli_query($conn, $sql_checkpass);
+    $row = mysqli_fetch_assoc($result);
+    $pass_db = $row['pass_sv'];
+    if (empty($password_old) || empty($password1) || empty($password_new2)) {
+        $_SESSION['empty_pass'] = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                            <strong>Vui lòng nhập tất cả các trường</strong> 
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>';
+    } else {
+        if (password_verify($password_old, $pass_db)) {
+            if ($password1 == $password_new2) {
+                $sql_password = "UPDATE sinhvien SET pass_sv='$password_new' where  email_sv='$_SESSION[login_ok]' ";
+                $res = mysqli_query($conn, $sql_password);
+                if ($res == true) {
+
+                    $_SESSION['change_pass'] = '<div class="alert alert-success alert-dismissible fade show" role="alert">
+                                                    <strong>Thay đổi mật khẩu thành công</strong> 
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                            </div>';
+                } else {
+                    $_SESSION['change_pass'] = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                                    <strong>thay đổi mật khẩu thất bại</strong> 
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                            </div>';
+                }
+            } else {
+                $_SESSION['pass_incorect'] = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                                    <strong>Mật khẩu không đúng</strong> 
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                            </div>';
+            }
+        } else {
+            $_SESSION['pass_false'] = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                                    <strong>Sai mật khẩu</strong> 
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                            </div>';
+        }
+    }
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,7 +103,7 @@ include('login_check.php')
                                 </form>
                                 <div class="dropdown text-end mr-4 drop-logout">
                                     <?php
-                                    include("config/db_conect.php");
+
                                     $sql = "SELECT tensv,email_sv,sodt_sv,pass_sv,registration_date_sv,tenlop from sinhvien,lop where email_sv='$_SESSION[login_ok]' and sinhvien.malop=lop.malop";
                                     $res = mysqli_query($conn, $sql);
                                     $row = mysqli_fetch_assoc($res);
@@ -77,44 +126,63 @@ include('login_check.php')
                 </div>
             </div>
         </div>
-        <div class="container mt-4  " style="margin:auto ;width:50%">
+        <div class="container mt-5 " style="margin:auto ;width:50%">
             <div class="row ">
                 <div class="col-md-12">
-                    <form class="row g-3">
-                        <div class="col-md-12">
-                            <label for="inputEmail4" class="form-label">Họ và tên</label>
-                            <input type="email" class="form-control " disabled="disabled" id="inputEmail4" value="<?php echo $row['tensv'] ?>">
-                        </div>
-                        <div class="col-12">
-                            <label for="inputAddress" class="form-label">Số điện thoại</label>
-                            <input type="tel" class="form-control " disabled="disabled" id="inputAddress" value="<?php echo $row['sodt_sv'] ?>">
-                        </div>
-                        <div class="col-12">
-                            <label for="inputAddress2" class="form-label">Lớp</label>
-                            <input type="text" class="form-control " disabled="disabled" id="inputAddress2" value="<?php echo $row['tenlop'] ?>">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="inputCity" class="form-label">Email</label>
-                            <input type="email" class="form-control" disabled="disabled" id="inputCity" value="<?php echo $row['email_sv'] ?>">
-                        </div>
-                        <div class="col-md-6">
-                            <label for="inputState" class="form-label">Mật khẩu</label>
-                            <input type="password" class="form-control" disabled="disabled" id="password" value="<?php echo substr($row['pass_sv'], 50) ?>">
-                        </div>
-                        <div class="col-12">
-                            <label for="inputAddress2" class="form-label">Ngày đăng kí</label>
-                            <input type="text" class="form-control" disabled="disabled" id="inputAddress2" value="<?php echo $row['registration_date_sv'] ?>">
-                        </div>
+                    <div class="col-md-12">
+                        <?php
+                        if (isset( $_SESSION['empty_pass'] )) {
+                            echo   $_SESSION['empty_pass'] ;
+                            unset( $_SESSION['empty_pass'] );
+                        }
+                        if (isset($_SESSION['change_pass'])) {
+                            echo  $_SESSION['change_pass'];
+                            unset($_SESSION['change_pass']);
+                        }
 
+                        if (isset($_SESSION['pass_incorect'])) {
+                            echo   $_SESSION['pass_incorect'];
+                            unset($_SESSION['pass_incorect']);
+                        }
+                        if (isset($_SESSION['pass_false'])) {
+                            echo   $_SESSION['pass_false'];
+                            unset($_SESSION['pass_false']);
+                        }
+
+
+                        ?>
+                    </div>
+                    <form class="row g-3" method="POST" action="">
+                        <div class="col-12 text-center">
+                            <h4 class=" text-danger">Đổi mật khẩu</h4>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="inputEmail4" class="form-label">Nhập mật khẩu hện tại</label>
+                            <input type="password" class="form-control " id="pass_old" name="pass_old" ">
+                        </div>
+                        <div class=" col-md-12">
+                            <label for="inputEmail4" class="form-label">Nhập mật khẩu mới</label>
+                            <input type="password" class="form-control " id="pass_new1" name="pass_new1" ">
+                        </div>
+                         <div class=" col-md-12">
+                            <label for="inputEmail4" class="form-label">Nhập lại mật khẩu </label>
+                            <input type="password" class="form-control " id="pass_new2" name="pass_new2" ">
+                        </div>
+                             <div class=" col-3 mt-4">
+                            <a href="index.php"><button type="button" class="btn btn-danger">Quay lại</button></a>
+
+                        </div>
+                        <div class=" col-3 mt-4">
+                            <button type="submit" name="submit" class="btn btn-primary">Xác nhận </button>
+                        </div>
 
                     </form>
-                    <div class="col-12 mt-3">
-                        <a href="edit_info_sv.php"><button class="btn btn-primary">Cập nhật thông tin</button> </a>
-                    </div>
+
 
                 </div>
             </div>
         </div>
+
 
 
         <?php include "./partials/footer.php" ?>

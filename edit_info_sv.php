@@ -1,5 +1,29 @@
 <?php
-include('login_check.php')
+include('login_check.php');
+?>
+<?php
+include("config/db_conect.php");
+if (isset($_POST['submit'])) {
+    $name = $_POST['tensv'];
+    $phone = $_POST['phone'];
+    if (empty($name) || empty($phone)) {
+        $_SESSION['rong'] = '<div class="alert alert-warning alert-dismissible fade show" role="alert">
+                            <strong>Vui lòng nhập tất cả các trường!</strong> 
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>';
+    } else {
+        $sql_update = "UPDATE sinhvien
+            SET tensv = '$name', sodt_sv = '$phone'
+            WHERE email_sv='$_SESSION[login_ok]';";
+        if (mysqli_query($conn, $sql_update) == true) {
+            $_SESSION['update_sv_succ'] = '<div class="alert alert-success alert-dismissible fade show" role="alert">
+                                                    <strong>cập nhật thông tin thành công</strong> 
+                                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                            </div>';
+        }
+    }
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,7 +78,7 @@ include('login_check.php')
                                 </form>
                                 <div class="dropdown text-end mr-4 drop-logout">
                                     <?php
-                                    include("config/db_conect.php");
+
                                     $sql = "SELECT tensv,email_sv,sodt_sv,pass_sv,registration_date_sv,tenlop from sinhvien,lop where email_sv='$_SESSION[login_ok]' and sinhvien.malop=lop.malop";
                                     $res = mysqli_query($conn, $sql);
                                     $row = mysqli_fetch_assoc($res);
@@ -77,24 +101,24 @@ include('login_check.php')
                 </div>
             </div>
         </div>
-        <div class="container mt-5  " style="margin:25% ">
+        <div class="container mt-5  " style="margin:auto ;width:50%">
             <div class="row ">
-                <div class="col-md-6">
+                <div class="col-md-12">
+                    <div class="col-md-12">
+                        <?php
+                        if (isset($_SESSION['rong'])) {
+                            echo $_SESSION['rong'];
+                            unset($_SESSION['rong']);
+                        }
+
+                        if (isset($_SESSION['update_sv_succ'])) {
+                            echo  $_SESSION['update_sv_succ'];
+                            unset($_SESSION['update_sv_succ']);
+                        }
+
+                        ?>
+                    </div>
                     <form class="row g-3" method="POST" action="">
-                        <div class="col-md-12">
-                            <?php
-                                if (isset($_SESSION['rong'])) {
-                                    echo $_SESSION['rong'];
-                                    unset($_SESSION['rong']);
-                                }
-                                 
-                                if (isset( $_SESSION['update_sv_succ'])) {
-                                    echo  $_SESSION['update_sv_succ'];
-                                    unset( $_SESSION['update_sv_succ']);
-                                }
-                        
-                            ?>
-                        </div>
                         <div class="col-md-12">
                             <label for="inputEmail4" class="form-label">Họ và tên</label>
                             <input type="text" class="form-control " id="inputEmail4" name="tensv" value="<?php echo $row['tensv'] ?>">
@@ -103,10 +127,16 @@ include('login_check.php')
                             <label for="inputAddress" class="form-label">Số điện thoại</label>
                             <input type="tel" class="form-control " id="inputAddress" name="phone" value="<?php echo $row['sodt_sv'] ?>">
                         </div>
+                        <div class="col-3 mt-4">
+                            <a href="acout_sv.php"><button type="button" class="btn btn-danger">Quay lại</button></a>
 
-                        <div class="col-12 mt-3">
+                        </div>
+
+                        <div class="col-3 mt-4">
                             <button type="submit" name="submit" class="btn btn-primary">Cập nhật </button>
                         </div>
+
+
                     </form>
 
 
@@ -130,27 +160,3 @@ include('login_check.php')
 </body>
 
 </html>
-<?php
-if (isset($_POST['submit'])) {
-    $name = $_POST['tensv'];
-    $phone = $_POST['phone'];
-    if (empty($name) || empty($phone)) {
-        $_SESSION['rong'] = '<div class="alert alert-warning alert-dismissible fade show" role="alert">
-                            <strong>Vui lòng nhập tất cả các trường!</strong> 
-                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                            </div>';
-    } else {
-        $sql_update = "UPDATE sinhvien
-            SET tensv = '$name', sodt_sv = '$phone'
-            WHERE email_sv='$_SESSION[login_ok]';";
-        if (mysqli_query($conn, $sql_update) == true) {
-            $_SESSION['update_sv_succ'] = '<div class="alert alert-success alert-dismissible fade show" role="alert">
-                                                    <strong>cập nhật thành công</strong> 
-                                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                                            </div>';
-
-        }
-    }
-}
-
-?>

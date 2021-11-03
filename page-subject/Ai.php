@@ -1,6 +1,25 @@
 <?php
 include('../login_check.php')
 ?>
+<?php
+include('../config/db_conect.php');
+$sql_masv = "SELECT masv from sinhvien where email_sv='$_SESSION[login_ok]'";
+$res = mysqli_query($conn, $sql_masv);
+$row = mysqli_fetch_assoc($res);
+$masv = $row['masv'];
+if (isset($_POST['submit'])) {
+    $content = $_POST['content'];
+    if (empty($content)) {
+        $_SESSION['rong_com'] = '<p class="text-danger">chưa nhập nôi dung</p>';
+    } else {
+        $sql_comment = "INSERT INTO comment (content,masv,mamh)
+            VALUES ('$content', $masv,15)";
+        if (mysqli_query($conn, $sql_comment) == true) {
+            $_SESSION['com_succ'] = '<p class="text-success">Thành công</p>';
+        }
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -70,7 +89,7 @@ include('../login_check.php')
                     <div class="box-info show  ">
                         <p><a href='../index.php'>Các khóa học</a> ></p>
                         <?php
-                        include('../config/db_conect.php');
+
                         $sql_info_sub = "SELECT * from monhoc where mamh=15";
                         $res = mysqli_query($conn, $sql_info_sub);
                         $row = mysqli_fetch_assoc($res);
@@ -155,6 +174,66 @@ include('../login_check.php')
                 </div>
 
             </div>
+        </div>
+        <div class="container mt-1 border-top border-dark">
+            <div class="row">
+                <form action="" method="POST">
+                    <div class="col-md-12">
+                        <h4>Bình luận</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="content"></textarea>
+                            <label for="floatingTextarea2">Comments</label>
+                        </div>
+                    </div>
+                    <div class="co-md-12">
+                        <button type="submit" name="submit" class="btn btn-primary">Bình luận</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <h5 class="text-info"><u>Nội dung</u></h5>
+                </div>
+                <div class="col-md-12">
+                    <?php
+                    if (isset($_SESSION['rong_com'])) {
+                        echo  $_SESSION['rong_com'];
+                        unset($_SESSION['rong_com']);
+                    }
+                    if (isset($_SESSION['com_succ'])) {
+                        echo  $_SESSION['com_succ'];
+                        unset($_SESSION['com_succ']);
+                    }
+                    ?>
+                </div>
+            </div>
+            <?php
+            $sql_select = "SELECT tensv,content,date_com from comment,sinhvien where mamh=15  and comment.masv=sinhvien.masv ";
+            $res = mysqli_query($conn, $sql_select);
+            if (mysqli_num_rows($res) > 0) {
+                while ($row = mysqli_fetch_assoc($res)) {
+
+            ?>
+                    <div class="row mt-3 mb-3">
+                        <div class="col-md-12">
+                            <p class="text-danger"><?php echo $row['tensv'] ?></p>
+                        </div>
+                        <div class="col-md-4 rounded-3  border shadow mb-3" style="background-color:#E8F1FB;margin-left:3%;word-wrap:break-word">
+                            <p class="m-0" style="padding:4px 6px"><?php echo $row['content'] ?></p>
+                        </div>
+                        <div class="col-md-12" style="margin-left:2%">
+                            <p class="m-0"><b>Ngày: <?php echo $row['date_com'] ?></b></p>
+                        </div>
+                    </div>
+            <?php
+                }
+            }
+            ?>
+
+
         </div>
     </div>
     <?php include "../partials/footer.php" ?>

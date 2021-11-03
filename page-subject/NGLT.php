@@ -12,13 +12,10 @@ include('../login_check.php')
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="../assets/css/style.css">
-<<<<<<< HEAD
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>C++</title>
-=======
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Ngôn ngữ lập trình</title>
->>>>>>> a5bdd72382473182c9828336abee69a23c55b7c5
+
 </head>
 
 <body>
@@ -39,8 +36,8 @@ include('../login_check.php')
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Ngôn ngữ lập trình K61
+                                <div class="accordion-body accordion-body1">
+                                    <a href="#">Ngôn ngữ lập trình K61</a>
                                 </div>
                             </div>
                         </div>
@@ -52,8 +49,8 @@ include('../login_check.php')
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    Chi tiết
+                                <div class="accordion-body accordion-body1">
+                                    <a href="#">Chi tiết</a>
                                 </div>
                             </div>
                         </div>
@@ -72,8 +69,8 @@ include('../login_check.php')
                     </div>
 
                 </div>
-                <div class="col-md-9">
-                    <div class="box-info">
+                <div class="col-md-9 position-relative">
+                    <div class="box-info show">
                         <p><a href='../index.php'>Các khóa học</a> ></p>
                         <?php
                         include('../config/db_conect.php');
@@ -95,7 +92,7 @@ include('../login_check.php')
 
 
                     </div><br>
-                    <div class="table-subject">
+                    <div class="table-subject show">
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
@@ -141,6 +138,24 @@ include('../login_check.php')
 
                     </div>
 
+                    <div class=" position-absolute top-0 start-0 end-0 bottom-0 about-page hide mb-4">
+                        <h3 style="margin-left:10% ;color:#8DA1AD">Thông báo</h3>
+                        <div class="rounded-3  border border-info mb-3 " style="padding:4px 6px ; width: 50%;margin-left:10%">
+                            <p class="m-0">Đây là thông báo</p>
+                            <a href="#">
+                                <p class="m-0">LINK</p>
+                            </a>
+                            <p class="m-0">Ngày 22/4/2021</p>
+                        </div>
+                        <div class="rounded-3  border border-info mb-3 " style="padding:4px 6px ; width: 50%;margin-left:10%">
+                            <p class="m-0">Đây là thông báo</p>
+                            <a href="#">
+                                <p class="m-0">LINK</p>
+                            </a>
+                            <p class="m-0">Ngày 22/4/2021</p>
+                        </div>
+                    </div>
+
 
                 </div>
             </div>
@@ -151,6 +166,8 @@ include('../login_check.php')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/myscript.js"></script>
     <script type="text/javascript" src="assets/js/home.js"></script>
+    <script type="text/javascript" src="../assets/js/lesson.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 

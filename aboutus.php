@@ -16,9 +16,7 @@ include('login_check.php')
 
 </head>
 <body>
-    <?php
-    include("./page-subject/header_lesson.php")
-    ?>
+    <?php include "./page-subject/header_lesson.php" ?>
      <div class="container">
          <div class="row">
              <div class="col-md-12">

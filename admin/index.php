@@ -1,18 +1,17 @@
 <?php include('header_admin.php') ?>
 
-<section class="main-content" style="height:500px;">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9">
-                <h5 class="text-success">Trang chủ admin</h5>
+
+    <div class="container" >
+        <div class="row" >
+            <div class="col-md-12 img-fluid"  >           
+            <p>
+            <img src="https://mplab-solutions.com/wp-content/uploads/2016/01/services.jpg" style="width:100%;" class="img-rounded"  alt="Cinque Terre">
+            
+            </p>
             </div>
         </div>
-        <div class="row">
-            
-        </div>
-
     </div>
 
-</section>
+
 
 <?php include('./footer_admin.php') ?>

@@ -3,11 +3,95 @@
 <section class="container">
   <div class="col-md-6 mb-4">
     <h5 class="text-success mb-4">Tải lên file điểm </h5>
-    <div class="  bg-light rounded p-1">
-      <input type="file" class="custom-file-input" id="inputGroupFile01">
-      <label class="custom-file-label" for="inputGroupFile01">Nhập File Excel </label>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 rounded p-3 " style="background-color:#d1e7dd;">
+          <form id="form_update" method="POST" action="" enctype="multipart/form-data">
+            <div class="form-group row mb-3">
+              <div class="col-sm-7 img-fluid box ">
+                <div class="mt-3">
+                  <input id='empty_res' class="form-control" type="file" id="fileToUpload_document" name="fileToUpload_document">
+                </div>
+              </div>
+            </div>
+            <div class="form-group row mb-3">
+              <label for="inputPassword3" class="col-md-2 col-form-label">Môn học</label>
+              <div class="col-md-5">
+                <select name="sltmh" class="form-select  mb-3">
+                  <?php
+                  $conn = mysqli_connect('localhost', 'root', '', 'db_btl');
+                  if (!$conn) {
+                    die("Không thể kết nối");
+                  }
+                  $sql_monhoc = 'SELECT tenmh,mamh from monhoc;';
+                  $result = mysqli_query($conn, $sql_monhoc);
+                  if (mysqli_num_rows($result) > 0) {
+                    while ($row = mysqli_fetch_assoc($result)) {
+
+                      echo "<option value=" . $row['mamh'] . ">" . $row['tenmh'] . "</option>";
+                    }
+                  }
+                  ?>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row mb-3">
+              <label for="inputPassword3" class="col-md-2 col-form-label">Lớp</label>
+              <div class="col-md-5">
+                <select name="sltmh" class="form-select  mb-3">
+                  <?php
+                  $sql_lop = 'SELECT tenlop,malop from lop;';
+                  $result = mysqli_query($conn, $sql_lop);
+                  if (mysqli_num_rows($result) > 0) {
+                    while ($row = mysqli_fetch_assoc($result)) {
+
+                      echo "<option value=" . $row['malop'] . ">" . $row['tenlop'] . "</option>";
+                    }
+                  }
+                  ?>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <button type="submit" name="submit" class="btn btn-primary">Thêm</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
+
+
+
+
+
+
   </div>
+  </form>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <div class="col-md-12">
     <h5 class="text-success">Quản lý môn học</h5>
@@ -38,7 +122,7 @@
         ?>
             <tr>
               <th scope="row"><?php echo $i; ?></th>
-              <td><img class="img-thumbnail" width="50px" height="80px" src="<?php echo substr( $row['avatar_mh'],3);  ?>" alt=""></td>
+              <td><img class="img-thumbnail" width="50px" height="80px" src="<?php echo substr($row['avatar_mh'], 3);  ?>" alt=""></td>
               <td><?php echo $row['tenmh'];  ?></td>
               <td><?php echo $row['bomon'];   ?></td>
               <td><?php echo $row['thoiluong'];  ?></td>

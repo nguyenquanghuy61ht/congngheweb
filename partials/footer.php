@@ -32,7 +32,7 @@ if (!isset($_SESSION['login_ok'])) {
                     <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
                         <h3 class="f-title f_600 t_color f_size_18">Trợ Giúp</h3>
                         <ul class="list-unstyled f_list">
-                            <li><a href="#">Các câu hỏi thường gặp</a></li>
+                            <li><a href="question.php">Các câu hỏi thường gặp</a></li>
                             <li><a href="#">Y Kiến Cá Nhân </a></li>
                             <li><a href="#">Quyền Cá Nhân </a></li>
                         </ul>

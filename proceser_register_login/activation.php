@@ -18,7 +18,7 @@ session_start()
                         <h4 class="alert-heading">Thông báo!</h4>
                         <strong>Chúc mừng!</strong> Tài khoản của bạn đã được kích hoạt thành công.
                         <hr>
-                        <p class="mb-0 "><a href="Login_TLU.php" class="text-danger">Bấm vào đây để đăng nhâp.</a></p>
+                        <p class="mb-0 "><a href="login.php" class="text-danger">Bấm vào đây để đăng nhâp.</a></p>
                     </div>
                   
                      <div class=" text-center">

@@ -5,7 +5,6 @@
 
 
 <section class="container">
-<<<<<<< HEAD
   <div class="col-md-6 mb-4">
     <h5 class="text-success mb-4">Tải lên file điểm </h5>
     <div class="  bg-light rounded p-1">

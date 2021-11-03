@@ -24,4 +24,32 @@ $(document).ready(function (e) {
       },
     });
   });
+
+  //xu ly edit tailieu
+   $("#form_update_tailieu").on("submit", function (e) {
+     e.preventDefault();
+     $.ajax({
+       url: "http://localhost:7855/BTL/admin/processer_admin/ajax_upload_monhoc.php",
+       type: "POST",
+       data: new FormData(this),
+       contentType: false,
+       cache: false,
+       processData: false,
+       beforeSend: function () {
+         //$("#preview").fadeOut();
+         $("#err").fadeOut();
+       },
+       success: function (data) {
+         // var el = document.getElementById("preview");
+         //el.src=data;
+         $("#preview1").attr("src", data);
+         $("#empty_res").val("");
+         $("#empty_res_pdf").val("");
+         alert("Cập nhật tài liều thành công");
+       },
+       error: function (e) {
+         $("#err").html(e).fadeIn();
+       },
+     });
+   });
 })

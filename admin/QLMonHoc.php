@@ -21,7 +21,7 @@
           <th scope="col">Thời lượng</th>
           <th scope="col">Giáo trình</th>
           <th scope="col">sửa</th>
-          <th scope="col">xóa</th>
+        
 
         </tr>
       </thead>
@@ -44,7 +44,6 @@
               <td><?php echo $row['thoiluong'];  ?></td>
               <td><?php echo $row['giaotrinh'];   ?></td>
               <td><a href="../admin/processer_admin/edit_monhoc.php?mamh=<?php echo $row['mamh']; ?>"><i class="fas fa-edit"></i></a></td>
-              <td><a href="#" class="btn-monhoc"><i class="far fa-trash-alt text-danger"></i></a></td>
             </tr>
         <?php
 

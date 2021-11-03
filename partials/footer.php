@@ -33,7 +33,7 @@ if (!isset($_SESSION['login_ok'])) {
                         <h3 class="f-title f_600 t_color f_size_18">Trợ Giúp</h3>
                         <ul class="list-unstyled f_list">
                             <li><a href="question.php">Các câu hỏi thường gặp</a></li>
-                            <li><a href="#">Y Kiến Cá Nhân </a></li>
+                            <li><a href="personal_opinion.php">Y Kiến Cá Nhân </a></li>
                             <li><a href="#">Quyền Cá Nhân </a></li>
                         </ul>
                     </div>

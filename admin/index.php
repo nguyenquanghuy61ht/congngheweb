@@ -1,6 +1,6 @@
 <?php include('header_admin.php') ?>
 
-<section class="main-content">
+<section class="main-content" style="height:500px;">
     <div class="container">
         <div class="row">
             <div class="col-md-9">

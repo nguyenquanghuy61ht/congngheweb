@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../assets/css/responsive.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="http://localhost:7855/BTL/assets/css/responsive.css">
+    <link rel="stylesheet" href="http://localhost:7855/BTL/assets/css/style.css">
     <title>Học Mãi Mãi </title>
 
 </head>
 
 <body>
-    <div class="warpper">
+    <div class="warpper mb-5">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12 p-0">
@@ -34,15 +33,13 @@
                                         <a class="nav-link text-dark " aria-current="page" href="http://localhost:7855/BTL/index.php"> Trang chủ</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark" href="#">Về Chúng Tôi</a>
-
+                                        <a class="nav-link active text-dark" aria-current="page" href="http://localhost:7855/BTL/admin/QLMonHoc.php">Quản lý môn học</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark" href="#">Liên hệ</a>
+                                        <a class="nav-link text-dark" href="http://localhost:7855/BTL/admin/user.php">Quản lý Bài Giảng</a>
                                     </li>
-
-                                    <li class="nav-item  nav-logout1">
-                                        <a class="nav-link text-dark" href="logout.php" tabindex="-1">Đăng Xuất</a>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="http://localhost:7855/BTL/admin/QLsinhvien.php">Quản lý học sinh</a>
                                     </li>
                                 </ul>
                                 <form class="d-flex ">
@@ -59,31 +56,12 @@
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="logout.php">Đăng xuất</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:7855/BTL/login.php">Đăng xuất</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </nav>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row ">
-                <div class="col-md-12">
-                    <ul class="nav justify-content-center fw-bold ">
-
-                        <li class="nav-item">
-                            <a class="nav-link active text-dark" aria-current="page" href="manage-admin.php">Quản lý môn học</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="">Quản lý Giáo Bài Giảng</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="QLsinhvien.php">Quản lý sinh viên</a>
-                        </li>
-
-                    </ul>
                 </div>
             </div>
         </div>

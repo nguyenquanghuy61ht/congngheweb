@@ -1,15 +1,15 @@
 <?php include('header_admin.php') ?>
 
-<section class="main-content">
-    <div class="container">
+<div class="main-content" style="height:500px" >
+    <div class="container text-center">
         <div class="row">
-            <div class="col-md-9">
-                <h5 class="text-success">Thông tin sinh viên</h5>
+            <div class="col-md-12 text-center">
+                <h5 class="text-danger">Thông tin sinh viên</h5>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-9">
-                <table class="table table-bordered mt-3 ">
+            <div class="col-md-12">
+                <table class="table table-success table-hover mt-3">
                     <thead class="thead-dark ">
                         <tr>
                             <th scope="col">STT</th>
@@ -51,6 +51,6 @@
 
     </div>
 
-</section>
+</div>
 
 <?php include('./footer_admin.php') ?>

@@ -5,22 +5,17 @@
 
 
 <section class="container">
-  <div class="col-md-6">
-    <h5 class="text-success">Tải file điểm</h5>
-    <div class="input-group mb-5 mt-1">
-      <div class="input-group-prepend">
-        <span class="input-group-text">Upload</span>
-      </div>
-      <div class="custom-file">
-        <input type="file" class="custom-file-input" id="inputGroupFile01">
-        <label class="custom-file-label" for="inputGroupFile01">Chọn file</label>
-      </div>
+  <div class="col-md-6 mb-4">
+    <h5 class="text-success mb-4">Tải lên file điểm </h5>
+    <div class="  bg-light rounded p-1">
+      <input type="file" class="custom-file-input" id="inputGroupFile01">
+      <label class="custom-file-label" for="inputGroupFile01">Nhập File Excel </label>
     </div>
   </div>
 
   <div class="col-md-12">
     <h5 class="text-success">Quản lý môn học</h5>
-    <table class="table table-bordered boder-primary mt-3">
+    <table class="table table-success table-hover mt-3">
       <thead class="thead-dark">
         <tr>
           <th scope="col">STT</th>
@@ -66,7 +61,7 @@
     </table>
   </div>
   <div class="col-md-12">
-    <h5 class="text-success mt-5">Quản lý tài liệu</h5>
+    <h5 class="text-success mt-5">Tài liệu tham khảo</h5>
   </div>
   <div class="col-md-12">
     <a href="processer_admin/page_add_document.php"><button type="button" class="btn btn-primary mt-3 ">Thêm tài liệu</button></a>
@@ -74,7 +69,7 @@
 
   </div>
   <div class="col-md-12">
-    <table class="table table-bordered boder-primary mt-3">
+    <table class="table table-success table-hover mt-3">
       <thead class="thead-dark">
         <tr>
           <th scope="col">STT</th>

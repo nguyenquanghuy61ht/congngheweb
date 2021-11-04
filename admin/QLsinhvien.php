@@ -38,7 +38,13 @@
                                     <td><?php echo $row['sodt_sv'] ?></td>
                                     <td><?php echo $row['email_sv'] ?></td>
                                     <td><?php echo $row['registration_date_sv'] ?></td>
-                                    <td><?php echo $row['status_sv'] ?></td>
+                                    <td ><?php
+                                     if($row['status_sv']==1){
+                                        echo "<p class='text-success m-0'>Đã kích hoạt</p>";
+                                    }else{
+                                        echo "<p class='text-danger m-0'>Chưa kích hoạt</p>";
+                                    }
+                                     ?></td>
                                 </tr>
                         <?php
                             }

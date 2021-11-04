@@ -158,20 +158,27 @@ if (isset($_POST['submit'])) {
 
                     <div class=" position-absolute top-0 start-0 end-0 bottom-0 about-page hide mb-4">
                         <h3 style="margin-left:10% ;color:#8DA1AD">Thông báo</h3>
-                        <div class="rounded-3  border border-info mb-3 " style="padding:4px 6px ; width: 50%;margin-left:10%">
-                            <p class="m-0">Đây là thông báo</p>
-                            <a href="#">
-                                <p class="m-0">LINK</p>
-                            </a>
-                            <p class="m-0">Ngày 22/4/2021</p>
-                        </div>
-                        <div class="rounded-3  border border-info mb-3 " style="padding:4px 6px ; width: 50%;margin-left:10%">
-                            <p class="m-0">Đây là thông báo</p>
-                            <a href="#">
-                                <p class="m-0">LINK</p>
-                            </a>
-                            <p class="m-0">Ngày 22/4/2021</p>
-                        </div>
+                        <?php
+                        $sql_mes = "SELECT noi_dung,link,date_mes From thongbao where  mamh=13";
+                        $result = mysqli_query($conn, $sql_mes);
+                        if (mysqli_num_rows($result) > 0) {
+                            while ($row_mes = mysqli_fetch_assoc($result)) {
+
+
+                        ?>
+                                <div class="rounded-3  border border-info mb-3 " style="word-wrap:break-word;padding:4px 6px ; width: 50%;margin-left:10%">
+                                    <p class="m-0"><?php echo $row_mes['noi_dung'] ?></p>
+                                    <a href="#">
+                                        <p class="m-0"><a href="<?php echo $row_mes['link'] ?>"><u><?php echo $row_mes['link'] ?></u></a></p>
+                                    </a>
+                                    <p class="m-0"><b>Ngày: </b><?php echo $row_mes['date_mes'] ?></p>
+                                </div>
+                        <?php
+                            }
+                        }
+
+                        ?>
+
                     </div>
 
 

@@ -1,19 +1,21 @@
+<?php session_start(); ?>
 <?php include('./header_admin.php') ?>
-
 <section class="container">
   <div class="col-md-6 mb-4">
     <h5 class="text-success mb-4">Tải lên file điểm </h5>
     <div class="container">
       <div class="row">
         <div class="col-md-12 rounded p-3 " style="background-color:#d1e7dd;">
-          <form id="form_update" method="POST" action="" enctype="multipart/form-data">
+          <form method="POST" action="processer_admin/proceser_up_diem.php">
+     
             <div class="form-group row mb-3">
               <div class="col-sm-7 img-fluid box ">
                 <div class="mt-3">
-                  <input id='empty_res' class="form-control" type="file" id="fileToUpload_document" name="fileToUpload_document">
+                  <input id='empty_res' class="form-control" type="file"  name="fileToUpload_diem" >
                 </div>
               </div>
             </div>
+
             <div class="form-group row mb-3">
               <label for="inputPassword3" class="col-md-2 col-form-label">Môn học</label>
               <div class="col-md-5">
@@ -38,7 +40,7 @@
             <div class="form-group row mb-3">
               <label for="inputPassword3" class="col-md-2 col-form-label">Lớp</label>
               <div class="col-md-5">
-                <select name="sltmh" class="form-select  mb-3">
+                <select name="sltlop" class="form-select  mb-3">
                   <?php
                   $sql_lop = 'SELECT tenlop,malop from lop;';
                   $result = mysqli_query($conn, $sql_lop);
@@ -54,44 +56,14 @@
             </div>
             <div class="form-group row">
               <div class="col-sm-10">
-                <button type="submit" name="submit" class="btn btn-primary">Thêm</button>
+                <button type="submit" name="submit" class="btn btn-primary">Tải lên</button>
               </div>
             </div>
           </form>
         </div>
       </div>
     </div>
-
-
-
-
-
-
   </div>
-  </form>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   <div class="col-md-12">
     <h5 class="text-success">Quản lý môn học</h5>
@@ -105,7 +77,7 @@
           <th scope="col">Thời lượng</th>
           <th scope="col">Giáo trình</th>
           <th scope="col">sửa</th>
-        
+
 
         </tr>
       </thead>
@@ -192,8 +164,5 @@
     </table>
   </div>
 </section>
-
-
-
 
 <?php include('./footer_admin.php') ?>

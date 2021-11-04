@@ -29,7 +29,7 @@ $(document).ready(function (e) {
    $("#form_update_tailieu").on("submit", function (e) {
      e.preventDefault();
      $.ajax({
-       url: "http://localhost:7855/BTL/admin/processer_admin/ajax_upload_monhoc.php",
+       url: "http://localhost:7855/BTL/admin/processer_admin/ajax_upload_tailieu.php",
        type: "POST",
        data: new FormData(this),
        contentType: false,

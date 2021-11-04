@@ -145,7 +145,7 @@ if (isset($_POST['submit'])) {
     </section>
 
 
-    <footer class="new_footer_area bg_color" style="margin-top: 5%;">
+    <footer class="new_footer_area bg_color">
         <div class="new_footer_top border-top border-success"">
         <div class=" container">
             <div class="row">

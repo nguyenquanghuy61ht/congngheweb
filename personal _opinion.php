@@ -159,3 +159,129 @@
 </div>
 </body>
 </html>
+<div class="container-fluid product">
+			<!-- SẢN PHẨM BÁN CHẠY -->
+			<div class="row title">
+				<span>SẢN PHẨM BÁN CHẠY</span>
+				<span><a href="">Xem tất cả</a></span>
+			</div>
+
+			<div class="col-lg-3">
+				<div class="card">
+					<img class="card-img-top" src="https://hatgiongdalat.com/asset/upload/image/hat-giong-bap-cai-chiu-nhiet_(1).jpg?v=20190410" alt="Card image">
+					<div class="card-body">
+						<a href="#">Bắp cải (Rau sạch) </a>
+						<p><span>5.000đ</span> <span><del>10.000đ</del></span></p>
+					</div>
+				</div>
+				<div class="sale">-40%</div>
+				<div class="buy_hover">
+					<a href=""><i title="Xem" class="far fa-eye"></i></a>
+					<a href=""><i title="Mua" class="fas fa-shopping-bag"></i></a>
+				</div>
+			</div>
+
+			<div class="col-lg-3">
+				<div class="card">
+					<img class="card-img-top" src="https://hatgiongdalat.com/asset/upload/image/hat-giong-bap-cai-chiu-nhiet_(1).jpg?v=20190410" alt="Card image">
+					<div class="card-body">
+						<a href="#">Bắp cải (Rau sạch) </a>
+						<p><span>5.000đ</span> <span><del>10.000đ</del></span></p>
+					</div>
+				</div>
+				<div class="sale">-40%</div>
+				<div class="buy_hover">
+					<a href=""><i title="Xem" class="far fa-eye"></i></a>
+					<a href=""><i title="Mua" class="fas fa-shopping-bag"></i></a>
+				</div>
+			</div>
+
+			<div class="col-lg-3">
+				<div class="card">
+					<img class="card-img-top" src="https://hatgiongdalat.com/asset/upload/image/hat-giong-bap-cai-chiu-nhiet_(1).jpg?v=20190410" alt="Card image">
+					<div class="card-body">
+						<a href="#">Bắp cải (Rau sạch) </a>
+						<p><span>5.000đ</span> <span><del>10.000đ</del></span></p>
+					</div>
+				</div>
+				<div class="sale">-40%</div>
+				<div class="buy_hover">
+					<a href=""><i title="Xem" class="far fa-eye"></i></a>
+					<a href=""><i title="Mua" class="fas fa-shopping-bag"></i></a>
+				</div>
+			</div>
+
+			<div class="col-lg-3">
+				<div class="card">
+					<img class="card-img-top" src="https://hatgiongdalat.com/asset/upload/image/hat-giong-bap-cai-chiu-nhiet_(1).jpg?v=20190410" alt="Card image">
+					<div class="card-body">
+						<a href="#">Bắp cải (Rau sạch) </a>
+						<p><span>5.000đ</span> <span><del>10.000đ</del></span></p>
+					</div>
+				</div>
+				<div class="sale">-40%</div>
+				<div class="buy_hover">
+					<a href=""><i title="Xem" class="far fa-eye"></i></a>
+					<a href=""><i title="Mua" class="fas fa-shopping-bag"></i></a>
+				</div>
+			</div>
+
+			<div class="col-lg-3">
+				<div class="card">
+					<img class="card-img-top" src="https://hatgiongdalat.com/asset/upload/image/hat-giong-bap-cai-chiu-nhiet_(1).jpg?v=20190410" alt="Card image">
+					<div class="card-body">
+						<a href="#">Bắp cải (Rau sạch) </a>
+						<p><span>5.000đ</span> <span><del>10.000đ</del></span></p>
+					</div>
+				</div>
+				<div class="sale">-40%</div>
+				<div class="buy_hover">
+					<a href=""><i title="Xem" class="far fa-eye"></i></a>
+					<a href=""><i title="Mua" class="fas fa-shopping-bag"></i></a>
+				</div>
+			</div>
+
+			<div class="col-lg-3">
+				<div class="card">
+					<img class="card-img-top" src="https://hatgiongdalat.com/asset/upload/image/hat-giong-bap-cai-chiu-nhiet_(1).jpg?v=20190410" alt="Card image">
+					<div class="card-body">
+						<a href="#">Bắp cải (Rau sạch) </a>
+						<p><span>5.000đ</span> <span><del>10.000đ</del></span></p>
+					</div>
+				</div>
+				<div class="sale">-40%</div>
+				<div class="buy_hover">
+					<a href=""><i title="Xem" class="far fa-eye"></i></a>
+					<a href=""><i title="Mua" class="fas fa-shopping-bag"></i></a>
+				</div>
+			</div>
+
+			<div class="col-lg-3">
+				<div class="card">
+					<img class="card-img-top" src="https://hatgiongdalat.com/asset/upload/image/hat-giong-bap-cai-chiu-nhiet_(1).jpg?v=20190410" alt="Card image">
+					<div class="card-body">
+						<a href="#">Bắp cải (Rau sạch) </a>
+						<p><span>5.000đ</span> <span><del>10.000đ</del></span></p>
+					</div>
+				</div>
+				<div class="sale">-40%</div>
+				<div class="buy_hover">
+					<a href=""><i title="Xem" class="far fa-eye"></i></a>
+					<a href=""><i title="Mua" class="fas fa-shopping-bag"></i></a>
+				</div>
+			</div>
+
+			<div class="col-lg-3">
+				<div class="card">
+					<img class="card-img-top" src="https://hatgiongdalat.com/asset/upload/image/hat-giong-bap-cai-chiu-nhiet_(1).jpg?v=20190410" alt="Card image">
+					<div class="card-body">
+						<a href="#">Bắp cải (Rau sạch) </a>
+						<p><span>5.000đ</span> <span><del>10.000đ</del></span></p>
+					</div>
+				</div>
+				<div class="sale">-40%</div>
+				<div class="buy_hover">
+					<a href=""><i title="Xem" class="far fa-eye"></i></a>
+					<a href=""><i title="Mua" class="fas fa-shopping-bag"></i></a>
+				</div>
+			</div>

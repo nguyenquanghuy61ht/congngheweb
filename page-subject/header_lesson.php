@@ -17,15 +17,15 @@
                                     <a class="nav-link text-dark " aria-current="page" href="http://localhost:7855/BTL/index.php"> Trang chủ</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" href="#">Về Chúng Tôi</a>
+                                    <a class="nav-link text-dark" href="../aboutus.php">Về Chúng Tôi</a>
 
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark" href="#">Liên hệ</a>
+                                    <a class="nav-link text-dark" href="../contact.php">Liên hệ</a>
                                 </li>
 
                                 <li class="nav-item  nav-logout1">
-                                    <a class="nav-link text-dark" href="logout.php" tabindex="-1">Đăng Xuất</a>
+                                    <a class="nav-link text-dark" href="../logout.php" tabindex="-1">Đăng Xuất</a>
                                 </li>
                             </ul>
                             <form class="d-flex ">
@@ -44,11 +44,15 @@
                                     <a class="text-danger" href=""><?php echo $row['tensv'] ?></a>
                                 </div>
                                 <ul class="dropdown-menu  " style=" min-width: 6rem;" aria-labelledby="dropdownUser1">
-                                    <li><a class="dropdown-item" href="#">Trang Cá Nhân</a></li>
+
+                                    <li><a class="dropdown-item" href="../acout_sv.php">Tài khoản</a></li>
+                                    <li><a class="dropdown-item" href="../change_pass_sv.php">Đổi mật khẩu</a></li>
+
+
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="logout.php">Đăng xuất</a></li>
+                                    <li><a class="dropdown-item" href="../logout.php">Đăng xuất</a></li>
                                 </ul>
                             </div>
                         </div>

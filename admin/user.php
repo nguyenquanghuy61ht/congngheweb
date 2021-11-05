@@ -1,3 +1,4 @@
+<?php include('login_check_2.php') ?>
 <?php include('./header_admin.php') ?>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <div class="container position-relative">
@@ -15,7 +16,7 @@
                 if (mysqli_num_rows($result1) > 0) {
                     while ($row1 = mysqli_fetch_assoc($result1)) {
                 ?>
-                        <button  class=" hidebt bg-cache" >Hủy</button>
+                        <button class=" hidebt bg-cache">Hủy</button>
                         <a href="processer_admin/processer_delete_baigiang.php?id_baigiang=<?php echo $row1['id_baigiang']; ?>" class="btn_ok hidebt"><button type="button" class="btn btn-danger">Xác nhận</button></a>
                 <?php
                     }
@@ -24,7 +25,7 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row" >
         <section class="col-md-12">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs">
@@ -49,7 +50,7 @@
             <div class="tab-content">
                 <div class="tab-pane container active" id="home">
                     <a href="processer_admin/page_add_lesson.php"><button type="button" class="btn btn-primary mt-3 ">Thêm bài giảng</button></a>
-                    <table class="table table-bordered mt-3">
+                    <table class="table table-bordered mt-3 ">
                         <thead class="thead-dark">
                             <tr>
                                 <th scope="col">STT</th>

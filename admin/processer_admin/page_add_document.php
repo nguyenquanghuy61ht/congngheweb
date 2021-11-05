@@ -1,11 +1,11 @@
-<?php session_start()?>
+<?php include('../login_check_2.php') ?>
 <?php include('../header_admin.php') ?>
-    
+
 
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-12">
-            <form  method="POST" action="proceser_add_document.php" enctype="multipart/form-data">
+            <form method="POST" action="proceser_add_document.php" enctype="multipart/form-data">
                 <div class="form-group row mb-3">
                     <div class="col-sm-7 img-fluid box ">
 
@@ -72,9 +72,7 @@
                             if (mysqli_num_rows($result) > 0) {
                                 while ($row = mysqli_fetch_assoc($result)) {
 
-                            echo "<option value=" . $row['mamh'] . ">" . $row['tenmh'] . "</option>";
-
-                            
+                                    echo "<option value=" . $row['mamh'] . ">" . $row['tenmh'] . "</option>";
                                 }
                             }
 
@@ -97,4 +95,3 @@
 
 
 <?php include('../footer_admin.php') ?>
-    

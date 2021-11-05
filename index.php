@@ -88,7 +88,7 @@ include('login_check.php')
                         <li class="list-group-item cur-point active subject">Môn Học</li>
                         <li class="list-group-item cur-point info-person">Thông Tin</li>
                         <li class="list-group-item cur-point document ">Tài Liệu</li>
-                        <li class="list-group-item cur-point">Chúng Mày Thích Gì HaHa</li>
+                        <li class="list-group-item cur-point">Liên hệ</li>
                     </ul>
                     <div class="  btn-group-responsive">
                         <p class="btn btn-primary btn_smart   active subject" aria-current="page">Môn Học</p>

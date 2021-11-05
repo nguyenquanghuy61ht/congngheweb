@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
         if (password_verify($password, $pass) and $status == 1) {
 
             $_SESSION['login_ok_gv'] = $email;
-            header('Location:http://localhost:7855/BTL/admin/QLmonhoc.php');
+            header('Location:http://localhost:7855/BTL/admin/index.php');
         } else {
             $_SESSION['check_password'] = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
                                             <strong>mật khẩu không đúng hoặc tài khoản chưa kích hoạt!</strong> vui lòng kiểm tra và thử lại.

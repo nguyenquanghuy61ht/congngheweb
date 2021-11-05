@@ -1,3 +1,4 @@
+<?php include('../login_check_2.php') ?>
 <?php include("../header_admin.php") ?>
 <div class="container mt-5">
     <div class="row">
@@ -23,9 +24,9 @@
                                     <input id='empty_res' class="form-control" type="file" id="fileToUpload" name="fileToUpload">
 
                                 </div>
-                                
+
                             </div>
-                       
+
                         </div>
                         <div class="form-group row mb-3">
                             <label for="inputEmail3" class="col-sm-2 col-form-label">Tên môn học</label>

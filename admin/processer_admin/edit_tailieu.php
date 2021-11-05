@@ -1,8 +1,9 @@
+<?php include('../login_check_2.php') ?>
 <?php include("../header_admin.php") ?>
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-12">
-            <form id="form_update_tailieu" method="POST"  enctype="multipart/form-data">
+            <form id="form_update_tailieu" method="POST" enctype="multipart/form-data">
                 <?php
                 $id = $_GET['id_tl'];
                 $conn = mysqli_connect('localhost', 'root', '', 'db_btl');
@@ -20,7 +21,7 @@
 
                                 <img id="preview1" src="<?php echo  $row['avatar_tl'] ?>" alt="avatar" style='width:100px' class="img-thumbnail">
                                 <div class="mt-3">
-                                    <input id='empty_res' class="form-control" type="file"  name="fileToUpload_img">
+                                    <input id='empty_res' class="form-control" type="file" name="fileToUpload_img">
 
                                 </div>
 
@@ -39,11 +40,11 @@
                             <div class="col-sm-3">
                                 <select name="slttl" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
                                     <?php
-                                 
+
                                     $sql = "SELECT * from monhoc";
                                     $result = mysqli_query($conn, $sql);
                                     while ($row1 = mysqli_fetch_assoc($result)) {
-                                        if ( $row1['mamh']==$row['mamh'] ) {
+                                        if ($row1['mamh'] == $row['mamh']) {
                                             echo "<option value=" . $row1['mamh'] . " selected>" . $row1['tenmh'] . "</option>";
                                         } else {
                                             echo "<option value=" . $row1['mamh'] . " >" . $row1['tenmh'] . "</option>";
@@ -61,7 +62,7 @@
                             <label for="inputPassword3" class="col-sm-2 col-form-label">tài liệu </label>
                             <div class="col-sm-5 img-fluid box ">
                                 <div class="mt-3">
-                                    <input id='empty_res_pdf' class="form-control" type="file"  name="fileToUpload_pdf">
+                                    <input id='empty_res_pdf' class="form-control" type="file" name="fileToUpload_pdf">
                                 </div>
                             </div>
                         </div>
@@ -87,7 +88,7 @@
                 ?>
 
             </form>
-           
+
         </div>
     </div>
 </div>

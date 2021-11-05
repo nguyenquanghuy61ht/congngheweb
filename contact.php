@@ -10,10 +10,8 @@ include("partials/header.php")
         <p>Chúc Tất Cả Các Bạn Hạnh Phúc</p>
     </div>
     <div class="row">
-        <div class="column">
-            <img src="https://footballshoes.vn/image/catalog/tin-tuc/tin-tuc/Messi_PSG/messi-tai-psg.jpg" style="width:100%">
-        </div>
-        <div class="column">
+     
+        <div class="column m-auto">
             <form action="/action_page.php">
                 <label for="fname">Họ và Tên Đệm </label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name..">

@@ -20,7 +20,7 @@
                     <div class="container">
                         <h2>Nguyễn Quang Huy</h2>
                         <p class="title">CEO & Founder</p>
-                        <p> 1 thiên tài là từ ngữ có thể diễn tả về anh ấy .</p>
+                      
                         <p>jane@example.com</p>
                         <p><button class="button">Liên Hệ </button></p>
                     </div>
@@ -33,7 +33,7 @@
                     <div class="container">
                         <h2>Đào Minh Quyền </h2>
                         <p class="title">CTO</p>
-                        <p>1 supper man là từ ngữ có thể diễn tả về anh ta </p>
+                     
                         <p>mike@example.com</p>
                         <p><button class="button">Liên Hệ</button></p>
                     </div>
@@ -46,7 +46,7 @@
                     <div class="container">
                         <h2>Nguyễn Văn Phúc</h2>
                         <p class="title">Guar</p>
-                        <p>là Bố của hai bạn trên ạ </p>
+                     
                         <p>john@example.com</p>
                         <p><button class="button">Liên Hệ</button></p>
                     </div>

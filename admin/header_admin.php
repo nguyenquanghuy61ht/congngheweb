@@ -1,5 +1,3 @@
-<?php include('../login_check_2.php') ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +11,7 @@
     <link rel="stylesheet" href="http://localhost:7855/BTL/assets/css/style.css">
     <link rel="stylesheet" href="http://localhost:7855/BTL/admin/css/delete.css">
 
-    <title>Học Mãi Mãi </title>
+    <title>Admin</title>
 
 </head>
 
@@ -34,13 +32,14 @@
                             <div class="collapse navbar-collapse" id="navbarScroll">
                                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark " aria-current="page" href="http://localhost:7855/BTL/admin/QLMonHoc.php"> Trang chủ</a>
+                                        <a class="nav-link text-dark " aria-current="page" href="http://localhost:7855/BTL/admin/index.php"> Admin</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link text-dark" href="http://localhost:7855/BTL/admin/user.php">Quản lý Bài Giảng</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link active text-dark" aria-current="page" href="http://localhost:7855/BTL/admin/QLMonHoc.php">Quản lý môn học</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link text-dark" href="http://localhost:7855/BTL/admin/user.php">Quản lý Bài Giảng</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link text-dark" href="http://localhost:7855/BTL/admin/QLsinhvien.php">Quản lý học sinh</a>
@@ -53,18 +52,21 @@
                                 </form>
                                 <div class="dropdown text-end mr-4 drop-logout">
                                     <?php
-                                    include("../config/db_conect.php");
-                                    
+                                    $conn = mysqli_connect('localhost', 'root', '', 'db_btl');
+                                    if (!$conn) {
+                                        die("Không thể kết nối");
+                                    }
+                                    $sql = "SELECT tengv from giaovien where email_gv='$_SESSION[login_ok_gv]'";
+                                    $res = mysqli_query($conn, $sql);
+                                    $row = mysqli_fetch_assoc($res);
                                     ?>
                                     <div href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                                      
+                                        <a class="text-danger" href=""><?php echo $row['tengv'] ?></a>
                                     </div>
 
                                     <ul class="dropdown-menu  " style=" min-width: 6rem;" aria-labelledby="dropdownUser1">
-                                        <li><a class="dropdown-item" href="#">Trang Cá Nhân</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
+
+                                     
                                         <li><a class="dropdown-item" href="http://localhost:7855/BTL/logout.php">Đăng xuất</a></li>
                                     </ul>
                                 </div>

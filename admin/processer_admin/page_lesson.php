@@ -1,3 +1,4 @@
+<?php include('../login_check_2.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +14,7 @@
 
 <body>
     <div class="nut">
-        <button class=" btn btn-warning pd-left " ><a href="http://localhost/congngheweb/admin/#" > trở về </a></button> 
+        <button class=" btn btn-warning pd-left "><a href="http://localhost/congngheweb/admin/#"> trở về </a></button>
     </div>
     <div class="container mt-5">
         <div class="row">
@@ -79,69 +80,70 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
+
 <head>
     <meta charset="utf-8" />
     <title></title>
-   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link href="StyleSheet.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
 
-  
+
     <!-- footer -->
     <div class="footer">
         <div class="container">
             <div class="row">
                 <div class="color-md-12">
-                         <!-- Footer -->
-                        <footer class="page-footer font-small special-color-dark pt-4">
+                    <!-- Footer -->
+                    <footer class="page-footer font-small special-color-dark pt-4">
 
                         <!-- Footer Elements -->
                         <div class="container">
 
-                        <!-- Social buttons -->
-                        <ul class="list-unstyled list-inline text-center">
-                            <li class="list-inline-item">
-                            <a class="btn-floating btn-fb mx-1">
-                                <i class="fab fa-facebook-f"> </i>
-                            </a>
-                            </li>
-                            <li class="list-inline-item">
-                            <a class="btn-floating btn-tw mx-1">
-                                <i class="fab fa-twitter"> </i>
-                            </a>
-                            </li>
-                            <li class="list-inline-item">
-                            <a class="btn-floating btn-gplus mx-1">
-                                <i class="fab fa-google-plus-g"> </i>
-                            </a>
-                            </li>
-                            <li class="list-inline-item">
-                            <a class="btn-floating btn-li mx-1">
-                                <i class="fab fa-linkedin-in"> </i>
-                            </a>
-                            </li>
-                            <li class="list-inline-item">
-                            <a class="btn-floating btn-dribbble mx-1">
-                                <i class="fab fa-dribbble"> </i>
-                            </a>
-                            </li>
-                        </ul>
-                        <!-- Social buttons -->
+                            <!-- Social buttons -->
+                            <ul class="list-unstyled list-inline text-center">
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-fb mx-1">
+                                        <i class="fab fa-facebook-f"> </i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-tw mx-1">
+                                        <i class="fab fa-twitter"> </i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-gplus mx-1">
+                                        <i class="fab fa-google-plus-g"> </i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-li mx-1">
+                                        <i class="fab fa-linkedin-in"> </i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-dribbble mx-1">
+                                        <i class="fab fa-dribbble"> </i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- Social buttons -->
 
                         </div>
                         <!-- Footer Elements -->
 
                         <!-- Copyright -->
                         <div class="footer-copyright text-center py-3">© 2020 Copyright:
-                        <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+                            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
                         </div>
                         <!-- Copyright -->
 
-                        </footer>
-                        <!-- Footer -->
+                    </footer>
+                    <!-- Footer -->
                 </div>
             </div>
         </div>
@@ -153,16 +155,17 @@
                         <a href="https://codepen.io/AndreeaBunget" target="_blank"> <i class="fab fa-codepen fa-2x margin"></i></a>
                         <a href="https://github.com/WebDeveloperCodeRep" target="_blank"> <i class="fab fa-github fa-2x margin"></i></a>
                         <a href="https://www.linkedin.com/in/andreea-mihaela-bunget-a4248812b/" target="_blank"> <i class="fab fa-linkedin fa-2x margin"></i></a>
-                        <a href="https://www.youtube.com/channel/UCX674BUbomzBCakbb75lhfA?view_as=subscriber" target="_blank"><i class="fab fa-youtube fa-2x margin" ></i></a>
+                        <a href="https://www.youtube.com/channel/UCX674BUbomzBCakbb75lhfA?view_as=subscriber" target="_blank"><i class="fab fa-youtube fa-2x margin"></i></a>
 
                     </div>
 
                 </div>
             </div>
-            </div>
+        </div>
     </div>
-   
+
 
 
 </body>
+
 </html>

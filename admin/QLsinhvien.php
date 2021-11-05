@@ -1,6 +1,7 @@
+<?php include('login_check_2.php') ?>
 <?php include('header_admin.php') ?>
 
-<div class="main-content" style="height:500px" >
+<div class="main-content" style="height:500px">
     <div class="container text-center">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -19,7 +20,7 @@
                             <th scope="col">email</th>
                             <th scope="col">Ngày đăng ký</th>
                             <th scope="col">Trạng thái</th>
-                            
+
                         </tr>
                     </thead>
                     <tbody>
@@ -38,13 +39,13 @@
                                     <td><?php echo $row['sodt_sv'] ?></td>
                                     <td><?php echo $row['email_sv'] ?></td>
                                     <td><?php echo $row['registration_date_sv'] ?></td>
-                                    <td ><?php
-                                     if($row['status_sv']==1){
-                                        echo "<p class='text-success m-0'>Đã kích hoạt</p>";
-                                    }else{
-                                        echo "<p class='text-danger m-0'>Chưa kích hoạt</p>";
-                                    }
-                                     ?></td>
+                                    <td><?php
+                                        if ($row['status_sv'] == 1) {
+                                            echo "<p class='text-success m-0'>Đã kích hoạt</p>";
+                                        } else {
+                                            echo "<p class='text-danger m-0'>Chưa kích hoạt</p>";
+                                        }
+                                        ?></td>
                                 </tr>
                         <?php
                             }

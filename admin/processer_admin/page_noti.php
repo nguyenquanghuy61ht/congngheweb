@@ -1,5 +1,5 @@
-<?php session_start()?>
-<?php include('../header_admin.php') 
+<?php include('../login_check_2.php') ?>
+<?php include('../header_admin.php')
 ?>
 <div class="container ">
     <div class="row " class="boder boder-primary">
@@ -8,10 +8,10 @@
                 <div class="form-outline">
                     <h1 class="text-warning m-2">Viết thông báo cho sinh viên</h1>
                     <?php
-               
-                    if (isset( $_SESSION['emty_mes'])) {
+
+                    if (isset($_SESSION['emty_mes'])) {
                         echo  $_SESSION['emty_mes'];
-                        unset( $_SESSION['emty_mes']);
+                        unset($_SESSION['emty_mes']);
                     }
                     if (isset($_SESSION['succ'])) {
                         echo $_SESSION['succ'];
@@ -55,7 +55,7 @@
                 </div>
                 <div class="input-group">
 
-                 <button type="submit" name="submit"  class="btn btn-warning mt-3 ">Thêm thông báo </button>
+                    <button type="submit" name="submit" class="btn btn-warning mt-3 ">Thêm thông báo </button>
                 </div>
 
             </form>

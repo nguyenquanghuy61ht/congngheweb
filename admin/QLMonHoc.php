@@ -1,4 +1,4 @@
-
+<?php include('login_check_2.php') ?>
 <?php include('./header_admin.php') ?>
 <section class="container">
   <div class="col-md-6 mb-4">
@@ -9,15 +9,15 @@
 
           <form method="POST" action="processer_admin/proceser_up_diem.php" enctype="multipart/form-data">
             <?php
-             
-            if (isset( $_SESSION['success_diem'])) {
+
+            if (isset($_SESSION['success_diem'])) {
               echo  $_SESSION['success_diem'];
-              unset( $_SESSION['success_diem']);
+              unset($_SESSION['success_diem']);
             }
-              if (isset($_SESSION['empty_file'])) {
-                echo  $_SESSION['empty_file'];
-                unset($_SESSION['empty_file']);
-              }
+            if (isset($_SESSION['empty_file'])) {
+              echo  $_SESSION['empty_file'];
+              unset($_SESSION['empty_file']);
+            }
             ?>
             <div class="form-group row mb-3">
               <div class="col-sm-7 img-fluid box ">

@@ -1,3 +1,5 @@
+<?php include('../login_check_2.php') ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,7 +32,7 @@
                             <div class="collapse navbar-collapse" id="navbarScroll">
                                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll " style="--bs-scroll-height: 100px;">
                                     <li class="nav-item">
-                                        <a class="nav-link text-dark " aria-current="page" href="http://localhost:7855/BTL/index.php"> Trang chủ</a>
+                                        <a class="nav-link text-dark " aria-current="page" href="http://localhost:7855/BTL/admin/QLMonHoc.php"> Trang chủ</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link active text-dark" aria-current="page" href="http://localhost:7855/BTL/admin/QLMonHoc.php">Quản lý môn học</a>
@@ -48,15 +50,20 @@
 
                                 </form>
                                 <div class="dropdown text-end mr-4 drop-logout">
+                                    <?php
+                                    include("../config/db_conect.php");
+                                    
+                                    ?>
                                     <div href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <a class="text-dark" href="">Tên Giáo Viên</a>
+                                      
                                     </div>
+
                                     <ul class="dropdown-menu  " style=" min-width: 6rem;" aria-labelledby="dropdownUser1">
                                         <li><a class="dropdown-item" href="#">Trang Cá Nhân</a></li>
                                         <li>
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item" href="http://localhost:7855/BTL/login.php">Đăng xuất</a></li>
+                                        <li><a class="dropdown-item" href="http://localhost:7855/BTL/logout.php">Đăng xuất</a></li>
                                     </ul>
                                 </div>
                             </div>

@@ -9,7 +9,6 @@ require 'phpmailer/SMTP.php';
 session_start();
 if(isset($_POST["submit"])){
     $name=$_POST['name'];
-    $lop=$_POST['lop'];
     $sodt = $_POST['sdt'];
     $email=$_POST['email'];
     $password1=$_POST['password1'];
@@ -25,11 +24,11 @@ if(isset($_POST["submit"])){
                                             </button>
                                         </div>';    
 
-                  header('Location:http://localhost:7855/BTL/register.php');          
+                  header('Location:http://localhost:7855/BTL/register_gv.php');          
     }else{
     if( $password1==$password2){
         include('../config/db_conect.php');
-        $sql_check_email="select * from sinhvien where email_sv='$email'";
+        $sql_check_email="SELECT * from giaovien where email_gv='$email'";
         $result_1=mysqli_query($conn,$sql_check_email);
         if(mysqli_num_rows($result_1) > 0)
         {
@@ -42,11 +41,9 @@ if(isset($_POST["submit"])){
 
                   header('Location:http://localhost:7855/BTL/register.php');
         }else{
-            $sql_lop_gv="select malop,magv from lop where malop='$lop'";
-            $result = mysqli_query($conn, $sql_lop_gv);
-            $row=mysqli_fetch_assoc($result);
+           
             $pass_hash = password_hash($password1,PASSWORD_DEFAULT);
-            $sql_insert="INSERT INTO sinhvien(tensv,sodt_sv, email_sv, pass_sv,malop,magv,code_sv) VALUES ('$name','$sodt','$email','$pass_hash',$row[malop],$row[magv],'$code')";
+            $sql_insert="INSERT INTO giaovien(tengv,sodt_gv, email_gv, pass_gv,code_gv) VALUES ('$name','$sodt','$email','$pass_hash','$code')";
             $result_2 = mysqli_query($conn,$sql_insert);  //Đối với lệnh INSERT, nếu CHÈN THÀNH CÔNG, nó trả về số NGUYÊN
            
     

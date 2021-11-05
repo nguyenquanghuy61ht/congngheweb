@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+
 <?php include('./header_admin.php') ?>
 <section class="container">
   <div class="col-md-6 mb-4">

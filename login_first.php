@@ -54,11 +54,11 @@
                             <div class="row justify-content-center">
                                 <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1 text-center">
                                     <p class="text-center text-success h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Bạn là giáo viên hay học sinh ?</p>
-                                    <a href="./login_gv.php"><div class="bg-danger m-1 p-2 col-md-12  rounded">Giáo Viên</div></a>
-                                    <a href="./login.php"><div class="bg-info m-1 p-2 col-md-12  rounded">Học Sinh</div></a>
+                                    <a href="./login_gv.php"><div class="bg-danger m-1 p-2 col-md-12  rounded"><b class="text-dark">Giáo Viên</b></div></a>
+                                    <a href="./login.php"><div class="bg-info m-1 p-2 col-md-12  rounded"><b class="text-dark">Học sinh</b></div></a>
                                 </div>
                                 <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2  d-flex justify-content-center ">
-                                    <img src="https://agentpekka.com/wp-content/uploads/2018/08/AP_Justyna_Stasik_TDF_02_2x.jpg" class="img-fluid rounded" alt="Sample image">
+                                    <img src="https://cdn.dribbble.com/users/721524/screenshots/14840628/media/10e08e8773b9b32c0835281300e1b600.png" class="img-fluid rounded" alt="Sample image">
                                 </div>
                             </div>
                         </div>

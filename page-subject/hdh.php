@@ -77,7 +77,19 @@ if (isset($_POST['submit'])) {
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    61HT
+                                    <?php
+                                    $sql_diem = "SELECT file_diem,lop.tenlop from diem,lop where diem.malop=lop.malop and diem.mamh=16 ";
+                                    $res_diem = mysqli_query($conn, $sql_diem);
+                                    if (mysqli_num_rows($res_diem) > 0) {
+                                        while ($row_diem = mysqli_fetch_assoc($res_diem)) {
+                                    ?>
+                                            <a href="<?php echo 'http://localhost:7855/BTL/admin' . substr($row_diem['file_diem'], 2) ?>"><?php echo $row_diem['tenlop'] ?></a>
+                                    <?php
+
+
+                                        }
+                                    }
+                                    ?>
                                 </div>
                             </div>
                         </div>

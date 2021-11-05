@@ -18,7 +18,7 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-12">
-                <form id="form_update" enctype="multipart/form-data">
+                <form id="form_update_lesson" enctype="multipart/form-data">
                     <div class="form-group row mb-3">
                         <label for="inputEmail3" class="col-sm-2 col-form-label">Ngày</label>
                         <div class="col-sm-7">

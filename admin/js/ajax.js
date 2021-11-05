@@ -52,4 +52,24 @@ $(document).ready(function (e) {
        },
      });
    });
+   //xu ly edit baigiang
+     $("#form_update_lesson").on("submit", function (e) {
+       e.preventDefault();
+       $.ajax({
+         url: "http://localhost:7855/BTL/admin/processer_admin/ajax_upload_lesson.php",
+         type: "POST",
+         data: new FormData(this),
+         contentType: false,
+         cache: false,
+         processData: false,
+         
+         success: function (data) {
+           $("#empty_res_slide").val("");
+           $("#empty_res_bt").val("");
+           $(".suc").html(data);
+           alert("Cập nhật bài giảng thành công");
+         },
+       });
+     });
+
 })

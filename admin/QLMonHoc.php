@@ -6,15 +6,36 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 rounded p-3 " style="background-color:#d1e7dd;">
-          <form method="POST" action="processer_admin/proceser_up_diem.php">
-     
+
+          <form method="POST" action="processer_admin/proceser_up_diem.php" enctype="multipart/form-data">
+            <?php
+             
+            if (isset( $_SESSION['success_diem'])) {
+              echo  $_SESSION['success_diem'];
+              unset( $_SESSION['success_diem']);
+            }
+              if (isset($_SESSION['empty_file'])) {
+                echo  $_SESSION['empty_file'];
+                unset($_SESSION['empty_file']);
+              }
+            ?>
             <div class="form-group row mb-3">
               <div class="col-sm-7 img-fluid box ">
                 <div class="mt-3">
-                  <input id='empty_res' class="form-control" type="file"  name="fileToUpload_diem" >
+                  <input id='empty_res' class="form-control" type="file" name="fileToUpload_diem">
                 </div>
               </div>
             </div>
+            <?php
+            if (isset($_SESSION['error-fomat'])) {
+              echo $_SESSION['error-fomat'];
+              unset($_SESSION['error-fomat']);
+            }
+            if (isset($_SESSION['up-file-success'])) {
+              echo $_SESSION['up-file-success'];
+              unset($_SESSION['up-file-success']);
+            }
+            ?>
 
             <div class="form-group row mb-3">
               <label for="inputPassword3" class="col-md-2 col-form-label">Môn học</label>
@@ -149,9 +170,9 @@
               </td>
               <td> <?php echo $row['ten_tl'] ?> </td>
               <td> <?php echo $row['tenmh'] ?> </td>
-              <td> <?php echo 'admin/' . $row['link_tailieu'] ?> </td>
+              <td><a href="<?php echo 'admin/' . $row['link_tailieu'] ?>" class="text-danger"><?php echo  substr($row['link_tailieu'], 10) ?></a> </td>
               <td><a href="../admin/processer_admin/edit_tailieu.php?id_tl=<?php echo $row['id_tl']; ?>"><i class="fas fa-edit"></i></a></td>
-              <td><a href="#" class="btn-tailieu"><i class="far fa-trash-alt text-danger"></i></a></td>
+              <td><a href="processer_admin/processer_delete_tailieu.php?id_tl=<?php echo $row['id_tl'] ?>" class="btn-tailieu"><i class="far fa-trash-alt text-danger"></i></a></td>
             </tr>
         <?php
             $i++;

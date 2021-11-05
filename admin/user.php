@@ -1,6 +1,29 @@
 <?php include('./header_admin.php') ?>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<div class="container">
+<div class="container position-relative">
+    <div class="backgroud__screen ">
+        <div class="backgroud__screen-form shadow ">
+            <p style="font-weight: 500;">Bạn chắc chắn muốn xóa bài giảng này?</p>
+            <div class="backgroud__screen-form-button">
+                <?php
+                $conn = mysqli_connect('localhost', 'root', '', 'db_btl');
+                if (!$conn) {
+                    die("Không thể kết nối");
+                }
+                $sql = "SELECT id_baigiang,ngay,ten_bg,slide,bai_tap,ghichu,tenmh,baigiang.mamh From baigiang,monhoc where baigiang.mamh=monhoc.mamh";
+                $result1 = mysqli_query($conn, $sql);
+                if (mysqli_num_rows($result1) > 0) {
+                    while ($row1 = mysqli_fetch_assoc($result1)) {
+                ?>
+                        <button  class=" hidebt bg-cache" >Hủy</button>
+                        <a href="processer_admin/processer_delete_baigiang.php?id_baigiang=<?php echo $row1['id_baigiang']; ?>" class="btn_ok hidebt"><button type="button" class="btn btn-danger">Xác nhận</button></a>
+                <?php
+                    }
+                }
+                ?>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <section class="col-md-12">
             <!-- Nav tabs -->
@@ -44,7 +67,7 @@
                         <tbody>
                             <?php
                             include("../config/db_conect.php");
-                            $sql = "SELECT ngay,ten_bg,slide,bai_tap,ghichu,tenmh From baigiang,monhoc where baigiang.mamh=monhoc.mamh  ";
+                            $sql = "SELECT id_baigiang,ngay,ten_bg,slide,bai_tap,ghichu,tenmh,baigiang.mamh From baigiang,monhoc where baigiang.mamh=monhoc.mamh  ";
                             $result = (mysqli_query($conn, $sql));
                             // Bước 3 trả về két quả 
                             if (mysqli_num_rows($result) > 0) {
@@ -60,6 +83,8 @@
                                         <td><a href="<?php echo substr($row['bai_tap'], 3);   ?>" class="text-danger"><?php echo substr($row['bai_tap'], 16);   ?></a></td>
                                         <td><?php echo $row['ghichu'];  ?></td>
                                         <td><?php echo $row['tenmh'];  ?></td>
+                                        <td><a href="processer_admin/edit_lesson.php?id_baigiang=<?php echo $row['id_baigiang'] ?>"><i class="fas fa-edit"></i></a></td>
+                                        <td><a class="btn-delete"><i class="far fa-trash-alt text-danger"></i></a></td>
 
                                     </tr>
                             <?php

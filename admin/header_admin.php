@@ -66,7 +66,7 @@
 
                                     <ul class="dropdown-menu  " style=" min-width: 6rem;" aria-labelledby="dropdownUser1">
 
-                                     
+                                        <li><a class="dropdown-item" href="http://localhost:7855/BTL/admin/check_QTV.php">Thêm giáo viên</a></li>
                                         <li><a class="dropdown-item" href="http://localhost:7855/BTL/logout.php">Đăng xuất</a></li>
                                     </ul>
                                 </div>

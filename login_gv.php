@@ -128,7 +128,7 @@ if (isset($_POST['submit'])) {
                                         <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                                             <button type="submit" name="submit" class="btn btn-success btn-lg">Đăng nhập</button>
                                         </div>
-                                        <p class="text-center text-muted mt-5 mb-0">Bạn Chua Có Tài Khoản ? <a href="register_gv.php" class="fw-bold text-danger"><u>Đăng ký</u></a></p>
+                                       
                                     </form>
                                 </div>
                                 <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2  d-flex justify-content-center ">

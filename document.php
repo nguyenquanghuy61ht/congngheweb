@@ -13,7 +13,7 @@ include('login_check.php')
 
         ?>
                 <li class="list-group-item d-flex justify-content-between align-items-start">
-                    <div class="d-flex">
+                    <div class="d-flex box">
                         <img class="img-thumbnail" style="margin-right:7px" width=70px height=100px src="<?php echo 'admin/' . substr($row['avatar_tl'], 3) ?>" alt="">
                         <b class="m-auto "><?php echo $row['ten_tl'] ?> </b>
                     </div>

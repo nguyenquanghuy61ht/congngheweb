@@ -48,9 +48,11 @@ include('login_check.php')
                                     </li>
                                 </ul>
                                 <form class="d-flex ">
-                                    <input class="form-control me-2 rounded-pill" type="search" placeholder="Tài liệu, môn học,..." aria-label="Search">
+                                    <input id="search" class="form-control me-2 rounded-pill search" type="search" placeholder="Tài liệu, môn học,..." aria-label="Search">
                                     <button class="btn btn-outline-success rounded-pill bg-light " type="submit" style="margin-right: 19px; background-color:orange;"><i class="fas fa-search "></i></button>
+                                    <div class="search__box-list" style="display: flex;flex-direction: column;position: absolute;background-color: rgb(255, 255, 255);box-shadow: 5px 10px 18px #818080;left:0;right:85px;border-radius: 2px;top: 58%;z-index: 1;">
 
+                                    </div>
                                 </form>
                                 <div class="dropdown text-end mr-4 drop-logout">
                                     <?php
@@ -85,6 +87,7 @@ include('login_check.php')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/myscript.js"></script>
     <script type="text/javascript" src="assets/js/home.js"></script>
+    <script type="text/javascript" src="assets/js/search_document.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
